@@ -269,6 +269,99 @@ WHERE SourceLedger = '0L'   -- leading ledger only
 
 ---
 
+## Billing Document — VBRK+VBRP → BillingDocument+BillingDocumentItem
+
+> Full field table: see [`csn-sources/sap-s4com-BillingDocument-v1.md`](../csn-sources/sap-s4com-BillingDocument-v1.md)
+
+### BillingDocument (Header) — VBRK
+
+| Silver Column | ECC Table.Field | S/4 CDS Entity | S/4 CDS Field | Notes |
+|---|---|---|---|---|
+| `billing_document` | VBRK.VBELN | BillingDocument | BillingDocument | Key |
+| `billing_document_type` | VBRK.FKART | | BillingDocumentType | F2=invoice, G2=credit memo |
+| `billing_document_date` | VBRK.FKDAT | | BillingDocumentDate | Billing/invoice date |
+| `company_code` | VBRK.BUKRS | | CompanyCode | |
+| `fiscal_year` | VBRK.GJAHR | | FiscalYear | |
+| `fiscal_period` | _(derive from BKPF.MONAT)_ | | FiscalPeriod | S/4: embedded; ECC: join BKPF |
+| `accounting_document` | VBRK.BELNR | | AccountingDocument | Link to BKPF/GL |
+| `sales_organization` | VBRK.VKORG | | SalesOrganization | |
+| `distribution_channel` | VBRK.VTWEG | | DistributionChannel | |
+| `division` | VBRK.SPART | | _(via item)_ | |
+| `payer_party` | VBRK.KUNRG | | PayerParty | Who pays the invoice |
+| `sold_to_party` | VBRK.KUNAG | | SoldToParty | Ordering customer |
+| `transaction_currency` | VBRK.WAERK | | TransactionCurrency | |
+| `total_net_amount` | VBRK.NETWR | | TotalNetAmount | Header-level net; prefer item |
+| `billing_is_cancelled` | VBRK.FKSTO | | BillingDocumentIsCancelled | Exclude cancelled docs |
+| `cancelled_billing_doc` | VBRK.SFAKN | | CancelledBillingDocument | Points to original |
+| `accounting_transfer_status` | VBRK.RFBSK | | AccountingTransferStatus | C=fully transferred to FI |
+
+> **ECC tip**: Filter `VBRK.RFBSK = 'C'` to include only billing docs fully posted to FI. Cross-check with `BKPF.AWTYP = 'VBRK'` and `BKPF.AWKEY = VBRK.VBELN + VBRK.GJAHR` for the GL linkage.
+
+### BillingDocumentItem — VBRP
+
+| Silver Column | ECC Table.Field | S/4 CDS Entity | S/4 CDS Field | Notes |
+|---|---|---|---|---|
+| `billing_document_item` | VBRP.POSNR | BillingDocumentItem | BillingDocumentItem | Key |
+| `material` | VBRP.MATNR | | Material | FK → MARA |
+| `plant` | VBRP.WERKS | | Plant | FK → T001W |
+| `billing_quantity` | VBRP.FKIMG | | BillingQuantity | |
+| `billing_quantity_unit` | VBRP.VRKME | | BillingQuantityUnit | |
+| `net_amount` | VBRP.NETWR | | NetAmount | In transaction currency |
+| `cost_amount` | VBRP.WAVWR | | CostAmount | Standard cost; used for margin |
+| `tax_amount` | VBRP.MWSBP | | TaxAmount | |
+| `profit_center` | VBRP.PRCTR | | ProfitCenter | |
+| `cost_center` | VBRP.KOSTL | | CostCenter | |
+| `controlling_area` | VBRP.KOKRS | | ControllingArea | |
+| `business_area` | VBRP.GSBER | | BusinessArea | |
+| `sales_document` | VBRP.AUBEL | | SalesDocument | Link back to VBAK |
+| `sales_document_item` | VBRP.AUPOS | | SalesDocumentItem | Link back to VBAP |
+
+---
+
+## Sales Order — VBAK+VBAP → SalesOrder+SalesOrderItem
+
+> Full field table: see [`csn-sources/sap-s4com-SalesOrder-v1.md`](../csn-sources/sap-s4com-SalesOrder-v1.md)
+
+### SalesOrder (Header) — VBAK (+VBKD)
+
+| Silver Column | ECC Table.Field | S/4 CDS Entity | S/4 CDS Field | Notes |
+|---|---|---|---|---|
+| `sales_order` | VBAK.VBELN | SalesOrder | SalesOrder | Key |
+| `sales_order_type` | VBAK.AUART | | SalesOrderType | OR=standard, RE=return |
+| `sales_order_date` | VBAK.AUDAT | | SalesOrderDate | Document creation date |
+| `sales_organization` | VBAK.VKORG | | SalesOrganization | |
+| `distribution_channel` | VBAK.VTWEG | | DistributionChannel | |
+| `division` | VBAK.SPART | | OrganizationDivision | |
+| `sold_to_party` | VBAK.KUNNR | | SoldToParty | |
+| `transaction_currency` | VBAK.WAERK | | TransactionCurrency | |
+| `total_net_amount` | VBAK.NETWR | | TotalNetAmount | |
+| `customer_reference` | VBAK.BSTNK | | PurchaseOrderByCustomer | Customer PO number |
+| `overall_process_status` | VBAK.GBSTK | | OverallSDProcessStatus | |
+| `delivery_status` | VBAK.LFSTK | | OverallDeliveryStatus | |
+
+### SalesOrderItem — VBAP (+VEDA)
+
+| Silver Column | ECC Table.Field | S/4 CDS Entity | S/4 CDS Field | Notes |
+|---|---|---|---|---|
+| `sales_order_item` | VBAP.POSNR | SalesOrderItem | SalesOrderItem | Key |
+| `sales_order_item_category` | VBAP.PSTYV | | SalesOrderItemCategory | TAN=standard, TANN=free |
+| `material` | VBAP.MATNR | | Material | FK → MARA |
+| `plant` | VBAP.WERKS | | Plant | |
+| `order_quantity` | VBAP.KWMENG | | RequestedQuantity | ECC: KWMENG; S/4 CDS: RequestedQuantity |
+| `order_quantity_unit` | VBAP.VRKME | | OrderQuantityUnit | |
+| `net_amount` | VBAP.NETWR | | NetAmount | |
+| `cost_amount` | VBAP.WAVWR | | CostAmount | |
+| `net_price` | VBAP.NETPR | | NetPriceAmount | Per price unit |
+| `profit_center` | VBAP.PRCTR | | ProfitCenter | |
+| `wbs_element` | VBAP.PS_PSP_PNR | | WBSElement | |
+| `controlling_area` | VBAP.KOKRS | | ControllingArea | |
+| `rejection_reason` | VBAP.ABGRU | | SalesDocumentRjcnReason | Blank = active; populated = rejected |
+| `billing_status` | VBAP.FKSTA | | _(item billing status)_ | |
+
+> **Open order filter**: Exclude rejected items (`WHERE rejection_reason = ''`). For backlog, join to delivery tables (LIKP/LIPS) or use `delivery_status != 'C'`.
+
+---
+
 ## Hierarchy — SETHEADER+SETNODE+SETLEAF → CostCenterHierarchyNode
 
 | Concept | ECC Tables | ECC Fields | S/4 CDS Entity | S/4 CDS Fields |

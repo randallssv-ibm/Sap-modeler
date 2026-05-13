@@ -337,6 +337,185 @@ Table key: `MANDT + SETCLASS + SUBCLASS + SETNAME + VFROM + VTO` (simplified)
 
 ---
 
+## VBRK — Billing Document Header
+
+Table key: `MANDT + VBELN`
+
+| Field | Type | Len | Business Name | FP&A | Notes |
+|---|---|---|---|---|---|
+| `MANDT` | CLNT | 3 | Client | — | [KEY] |
+| `VBELN` | CHAR | 10 | Billing Document | [FP&A] | [KEY] |
+| `FKART` | CHAR | 4 | Billing Type | [FP&A] | F2=invoice, G2=credit memo, L2=debit memo |
+| `FKTYP` | CHAR | 1 | Billing Category | | F=invoice, S=cancellation |
+| `VBTYPL` | CHAR | 4 | SD Document Category | | |
+| `FKDAT` | DATS | 8 | Billing Date | [FP&A] | Used for period assignment |
+| `ERDAT` | DATS | 8 | Created On | | |
+| `VKORG` | CHAR | 4 | Sales Organization | [FP&A] | FK → TVKO |
+| `VTWEG` | CHAR | 2 | Distribution Channel | [FP&A] | |
+| `SPART` | CHAR | 2 | Division | | |
+| `BUKRS` | CHAR | 4 | Company Code | [FP&A] | FK → T001 |
+| `GJAHR` | NUMC | 4 | Fiscal Year | [FP&A] | |
+| `BELNR` | CHAR | 10 | Accounting Document | [FP&A] | FK → BKPF — link to GL posting |
+| `NETWR` | CURR | 15 | Net Value | [FP&A] | Header total in WAERK |
+| `MWSBP` | CURR | 15 | Tax Amount | | |
+| `WAERK` | CUKY | 5 | Document Currency | [FP&A] | Transaction currency |
+| `KUNAG` | CHAR | 10 | Sold-to Party | [FP&A] | FK → KNA1 |
+| `KUNRG` | CHAR | 10 | Payer | [FP&A] | Who pays the invoice; FK → KNA1 |
+| `KUNWE` | CHAR | 10 | Ship-to Party | | |
+| `KUNRE` | CHAR | 10 | Bill-to Party | | |
+| `RFBSK` | CHAR | 1 | Accounting Transfer Status | [FP&A] | C=fully posted to FI; filter on this |
+| `FKSTO` | CHAR | 1 | Cancelled | [FP&A] | 'X' = cancelled; exclude from revenue |
+| `SFAKN` | CHAR | 10 | Cancelled Billing Doc | | Points to original doc being cancelled |
+| `XBLNR` | CHAR | 16 | Reference | | External reference number |
+| `GBSTK` | CHAR | 1 | Overall Status | | |
+| `KUNNR` | CHAR | 10 | Sold-to (redundant) | | Same as KUNAG in most cases |
+
+> **GL Linkage**: `BKPF.AWTYP = 'VBRK'` and `BKPF.AWKEY = VBELN + GJAHR` traces a GL document to its billing origin. The `BELNR` field on VBRK is the direct accounting document link.
+
+---
+
+## VBRP — Billing Document Item
+
+Table key: `MANDT + VBELN + POSNR`
+
+| Field | Type | Len | Business Name | FP&A | Notes |
+|---|---|---|---|---|---|
+| `MANDT` | CLNT | 3 | Client | — | [KEY] |
+| `VBELN` | CHAR | 10 | Billing Document | [FP&A] | [KEY] FK → VBRK |
+| `POSNR` | NUMC | 6 | Item | [FP&A] | [KEY] |
+| `MATNR` | CHAR | 18 | Material | [FP&A] | FK → MARA |
+| `WERKS` | CHAR | 4 | Plant | [FP&A] | |
+| `ARKTX` | CHAR | 40 | Item Description | | |
+| `FKIMG` | QUAN | 13 | Invoiced Quantity | [FP&A] | |
+| `VRKME` | UNIT | 3 | Sales Unit | [FP&A] | |
+| `NETWR` | CURR | 15 | Net Value | [FP&A] | In WAERK |
+| `WAVWR` | CURR | 15 | Cost | [FP&A] | Standard cost — for margin calculation |
+| `MWSBP` | CURR | 15 | Tax Amount | | |
+| `AUBEL` | CHAR | 10 | Sales Document | [FP&A] | FK → VBAK — originating sales order |
+| `AUPOS` | NUMC | 6 | Sales Document Item | [FP&A] | FK → VBAP |
+| `PRCTR` | CHAR | 18 | Profit Center | [FP&A] | |
+| `KOSTL` | CHAR | 10 | Cost Center | | |
+| `KOKRS` | CHAR | 4 | Controlling Area | | |
+| `GSBER` | CHAR | 4 | Business Area | | |
+| `PS_PSP_PNR` | NUMC | 8 | WBS Element | | |
+| `FKART` | CHAR | 4 | Billing Type | | Repeated from header |
+| `SPART` | CHAR | 2 | Division | | |
+| `KZWI1`–`KZWI6` | CURR | 15 | Pricing Subtotals | | Intermediate pricing conditions |
+
+---
+
+## VBAK — Sales Order Header
+
+Table key: `MANDT + VBELN`
+
+| Field | Type | Len | Business Name | FP&A | Notes |
+|---|---|---|---|---|---|
+| `MANDT` | CLNT | 3 | Client | — | [KEY] |
+| `VBELN` | CHAR | 10 | Sales Document | [FP&A] | [KEY] |
+| `AUART` | CHAR | 4 | Sales Order Type | [FP&A] | OR=standard, RE=return, KR=credit order |
+| `AUDAT` | DATS | 8 | Document Date | [FP&A] | |
+| `VKORG` | CHAR | 4 | Sales Organization | [FP&A] | |
+| `VTWEG` | CHAR | 2 | Distribution Channel | [FP&A] | |
+| `SPART` | CHAR | 2 | Division | | |
+| `KUNNR` | CHAR | 10 | Sold-to Party | [FP&A] | FK → KNA1 |
+| `WAERK` | CUKY | 5 | Document Currency | [FP&A] | |
+| `NETWR` | CURR | 15 | Net Value | [FP&A] | Header total |
+| `BSTNK` | CHAR | 35 | Customer Reference | | Customer PO number |
+| `ERDAT` | DATS | 8 | Created On | | |
+| `GBSTK` | CHAR | 1 | Overall Status | | A=open, B=partial, C=complete |
+| `LFSTK` | CHAR | 1 | Delivery Status | | |
+| `FKSTK` | CHAR | 1 | Billing Status | | |
+| `ABSTK` | CHAR | 1 | Rejection Status | | |
+| `LIFSK` | CHAR | 2 | Delivery Block | | |
+| `FAKSK` | CHAR | 2 | Billing Block | | |
+
+> Complement with `VBKD` (key: MANDT+VBELN+POSNR) for payment terms (DZTERM), incoterms (INCO1, INCO2), and fixed value dates.
+
+---
+
+## VBAP — Sales Order Item
+
+Table key: `MANDT + VBELN + POSNR`
+
+| Field | Type | Len | Business Name | FP&A | Notes |
+|---|---|---|---|---|---|
+| `MANDT` | CLNT | 3 | Client | — | [KEY] |
+| `VBELN` | CHAR | 10 | Sales Document | [FP&A] | [KEY] |
+| `POSNR` | NUMC | 6 | Item | [FP&A] | [KEY] |
+| `PSTYV` | CHAR | 4 | Item Category | [FP&A] | TAN=standard, TANN=free, TAD=service |
+| `MATNR` | CHAR | 18 | Material | [FP&A] | FK → MARA |
+| `ARKTX` | CHAR | 40 | Item Description | | |
+| `WERKS` | CHAR | 4 | Plant | [FP&A] | |
+| `LGORT` | CHAR | 4 | Storage Location | | |
+| `KWMENG` | QUAN | 15 | Order Quantity | [FP&A] | In VRKME |
+| `VRKME` | UNIT | 3 | Sales Unit | [FP&A] | |
+| `NETPR` | CURR | 11 | Net Price | [FP&A] | Per KPEIN price unit |
+| `KPEIN` | DEC | 5 | Price Unit | | |
+| `NETWR` | CURR | 15 | Net Value | [FP&A] | In WAERK |
+| `WAVWR` | CURR | 15 | Cost | [FP&A] | Standard cost; margin = NETWR - WAVWR |
+| `PRCTR` | CHAR | 18 | Profit Center | [FP&A] | FK → CEPC |
+| `GSBER` | CHAR | 4 | Business Area | | |
+| `KOKRS` | CHAR | 4 | Controlling Area | | |
+| `PS_PSP_PNR` | NUMC | 8 | WBS Element | | |
+| `ABGRU` | CHAR | 2 | Rejection Reason | [FP&A] | Non-blank = item rejected — exclude from open orders |
+| `FKSTA` | CHAR | 1 | Item Billing Status | | A=not billed, B=partial, C=complete |
+| `LFSTA` | CHAR | 1 | Item Delivery Status | | |
+| `SPART` | CHAR | 2 | Division | | |
+| `MATKL` | CHAR | 9 | Material Group | | |
+| `KZWI1`–`KZWI6` | CURR | 15 | Pricing Subtotals | | |
+
+> **Open order definition**: `ABGRU = ' '` AND `FKSTA != 'C'`. For backlog value, use `NETWR` of open, undelivered items.
+
+---
+
+## LFA1 — Vendor Master (General)
+
+Table key: `MANDT + LIFNR`
+
+| Field | Type | Len | Business Name | FP&A | Notes |
+|---|---|---|---|---|---|
+| `MANDT` | CLNT | 3 | Client | — | [KEY] |
+| `LIFNR` | CHAR | 10 | Vendor Number | [FP&A] | [KEY] |
+| `NAME1` | CHAR | 35 | Vendor Name | [FP&A] | |
+| `NAME2` | CHAR | 35 | Name 2 | | |
+| `ORT01` | CHAR | 35 | City | | |
+| `LAND1` | CHAR | 3 | Country | [FP&A] | |
+| `REGIO` | CHAR | 3 | Region | | |
+| `KTOKK` | CHAR | 4 | Vendor Account Group | [FP&A] | Controls field selection |
+| `STCD1` | CHAR | 16 | Tax Number 1 | | |
+| `STCD2` | CHAR | 11 | Tax Number 2 | | |
+| `SPRAS` | LANG | 1 | Language | | |
+| `ADRNR` | CHAR | 10 | Address Number | | FK → ADRC |
+| `LOEVM` | CHAR | 1 | Deletion Flag | | Exclude if 'X' |
+
+> Company code-level data (payment terms, reconciliation account) in `LFB1` (key: MANDT+LIFNR+BUKRS). Purchasing org data in `LFM1` (key: MANDT+LIFNR+EKORG).
+
+---
+
+## KNA1 — Customer Master (General)
+
+Table key: `MANDT + KUNNR`
+
+| Field | Type | Len | Business Name | FP&A | Notes |
+|---|---|---|---|---|---|
+| `MANDT` | CLNT | 3 | Client | — | [KEY] |
+| `KUNNR` | CHAR | 10 | Customer Number | [FP&A] | [KEY] |
+| `NAME1` | CHAR | 35 | Customer Name | [FP&A] | |
+| `NAME2` | CHAR | 35 | Name 2 | | |
+| `ORT01` | CHAR | 35 | City | | |
+| `LAND1` | CHAR | 3 | Country | [FP&A] | |
+| `REGIO` | CHAR | 3 | Region | | |
+| `KTOKD` | CHAR | 4 | Customer Account Group | [FP&A] | |
+| `STCD1` | CHAR | 16 | Tax Number 1 | | |
+| `KUNNR_EXT` | CHAR | 18 | External Customer Number | | |
+| `ADRNR` | CHAR | 10 | Address Number | | FK → ADRC |
+| `LOEVM` | CHAR | 1 | Deletion Flag | | Exclude if 'X' |
+| `SPERR` | CHAR | 1 | Posting Block | | |
+
+> Company code-level data (reconciliation account, payment terms, dunning) in `KNB1` (key: MANDT+KUNNR+BUKRS). Dunning history in `KNB5`. Sales area data in `KNVV`.
+
+---
+
 ## Supporting Reference Tables
 
 | Table | Description | Key | Silver Use |

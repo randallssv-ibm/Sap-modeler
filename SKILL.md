@@ -95,6 +95,10 @@ EKKO/EKPO    ──┘                    PurchaseOrder (CDS)                   
 | `VBRP` | Billing Document Item | MANDT+VBELN+POSNR | 1 per item | `silver.billing_item` |
 | `VBAK` | Sales Order Header | MANDT+VBELN | 1 per SO | `silver.sales_order_header` |
 | `VBAP` | Sales Order Item | MANDT+VBELN+POSNR | 1 per item | `silver.sales_order_item` |
+| `VBKD` | Sales Document Business Data | MANDT+VBELN+POSNR | Payment/incoterms per item | Join to `silver.sales_order_header` |
+| `VEDA` | Contract Data | MANDT+VBELN+VPOSN | Contract validity/cancel dates | Join to `silver.sales_order_item` |
+
+> **Revenue tracing**: The GL posting chain is VBRK.VBELN → BKPF.AWKEY (when BKPF.AWTYP='VBRK'). Use this join in Bronze to link billing docs to journal entries. VBRP.AUBEL/AUPOS traces back to the originating sales order (VBAK/VBAP).
 
 ### MM — Materials Management / Procurement
 
@@ -428,15 +432,48 @@ When the ERP upgrades, only Bronze changes. Silver column names are already alig
 - [ ] Replace SET hierarchy tables with `CostCenterHierarchyNode` CDS entity
 - [ ] Remove `MANDT` client filter (handled differently in CDS)
 - [ ] Validate `fiscal_period` padding format matches (ECC: `MONAT` = '3', S/4: `FiscalPeriod` = '003')
+- [ ] SD domain: GL link changes from BKPF.AWTYP='VBRK' / AWKEY lookup → `BillingDocument.AccountingDocument` field directly on the CDS entity
+- [ ] SD domain: `VBRK.BELNR` (accounting document) is embedded in `BillingDocument` CDS — no separate GL join needed in S/4
 
 ---
 
 ## CSN/CDS Parsing — S/4 Readiness Planning
 
-When evaluating S/4 data products (CSN JSON), extract:
+### Pre-parsed Reference — Use This First
+
+The `csn-sources/` directory contains pre-parsed markdown for all 26 SAP data products. Each file provides the full ECC↔S/4 field mapping in a unified table:
+
+```
+| CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC/S4 Diff |
+```
+
+**How to use csn-sources files**:
+- **ECC Table + ECC Field** columns = the physical ABAP table.field to read from in ECC Bronze
+- **ABAP Data Element** = the semantic type (use for field-level documentation and data dictionary lookup)
+- **CDS Field** = the column name to use in Silver (pre-aligned to S/4 CDS field name)
+- **ECC/S4 Diff** = flag rows needing special handling (padding, S/4-only fields, ledger filters)
+- Rows where ECC Table/Field are blank = S/4-only fields; mark as `NULL` in ECC Bronze
+
+Navigate by data product:
+
+| Domain | File |
+|---|---|
+| GL — Line Item | [sap-s4com-GeneralLedgerAccount-v1.md](csn-sources/sap-s4com-GeneralLedgerAccount-v1.md) |
+| GL — Journal Header | [sap-s4com-JournalEntryHeader-v1.md](csn-sources/sap-s4com-JournalEntryHeader-v1.md) |
+| Cost Center | [sap-s4com-CostCenter-v1.md](csn-sources/sap-s4com-CostCenter-v1.md) |
+| Profit Center | [sap-s4com-ProfitCenter-v1.md](csn-sources/sap-s4com-ProfitCenter-v1.md) |
+| Billing | [sap-s4com-BillingDocument-v1.md](csn-sources/sap-s4com-BillingDocument-v1.md) |
+| Sales Order | [sap-s4com-SalesOrder-v1.md](csn-sources/sap-s4com-SalesOrder-v1.md) |
+| Purchase Order | [sap-s4com-PurchaseOrder-v1.md](csn-sources/sap-s4com-PurchaseOrder-v1.md) |
+| Customer | [sap-s4com-Customer-v1.md](csn-sources/sap-s4com-Customer-v1.md) |
+| Supplier | [sap-s4com-Supplier-v1.md](csn-sources/sap-s4com-Supplier-v1.md) |
+| GL Account | [sap-s4com-GeneralLedgerAccount-v1.md](csn-sources/sap-s4com-GeneralLedgerAccount-v1.md) |
+
+### Parsing Raw CSN JSON
+
+When working directly with the JSON files (e.g. evaluating a new data product not yet in `csn-sources/`):
 
 ```python
-# Parse a CSN data product to map fields → Silver columns
 import json
 
 def parse_csn_entity(csn_path, entity_name):
@@ -448,8 +485,11 @@ def parse_csn_entity(csn_path, entity_name):
     for fname, fdef in entity["elements"].items():
         if fdef.get("type") == "cds.Association":
             continue  # skip associations — not columns
+        # The 'type' field is the ABAP data element name (semantic type)
+        abap_data_element = fdef.get("type", "")
         fields.append({
             "cds_name":      fname,
+            "abap_data_element": abap_data_element,  # e.g. FIS_BUKRS, FARP_BELNR_D
             "cds_type":      fdef.get("type"),
             "is_key":        fdef.get("key", False),
             "label":         fdef.get("@EndUserText.label", ""),
@@ -459,6 +499,8 @@ def parse_csn_entity(csn_path, entity_name):
         })
     return fields
 ```
+
+> **ABAP data element → physical field**: The `type` field in CSN is the ABAP data element (semantic name), **not** the physical table.field. To get the physical name: strip namespace prefixes (`FIS_`, `FARP_`, `FAC_`, `FINS_`, `FAGL_`) and suffixes (`_D`, `_ALPHA`, `_NO_CONV`). Then cross-reference with `references/ecc-to-s4-field-map.md` or the relevant `csn-sources/` file.
 
 Key annotations to extract for domain modeling:
 
@@ -471,12 +513,14 @@ Key annotations to extract for domain modeling:
 | `@Analytics.dataCategory: "FACT"` | Fact entity | Maps to Silver fact table |
 | `@Analytics.dataCategory: "DIMENSION"` | Dimension entity | Maps to Silver dimension table |
 | `@VDM.viewType: "BASIC"` | Closest to source tables | Prefer for Bronze→Silver mapping |
+| `@Analytics.dataExtraction.delta.changeDataCapture.mapping` | CDC source table | ECC table used for delta extraction (key fields only) |
 
 ---
 
 ## Reference Files
 
-- **`references/ecc-table-field-catalog.md`** — Full field listing for BKPF, BSEG, CSKS, CEPC, SKA1, EKKO, EKPO
-- **`references/ecc-to-s4-field-map.md`** — Complete ABAP field → CDS field mapping for all Silver tables
-- **`references/gl-account-type-classification.md`** — GL account type codes and P&L sign convention
-- **`references/document-type-reference.md`** — BLART document types and their FP&A classification
+- **`csn-sources/`** — Pre-parsed S/4 data product field reference (26 files). Each file: full ECC Table.Field ↔ CDS Field mapping, ABAP data element, type, key flag, currency/UoM pairs, and ECC/S4 diff notes. **Start here when mapping a specific CDS entity to ECC Bronze.**
+- **`references/ecc-table-field-catalog.md`** — Full field listing for BKPF, BSEG, CSKS, CEPC, SKA1, EKKO, EKPO, VBRK, VBRP, VBAK, VBAP, LFA1, KNA1
+- **`references/ecc-to-s4-field-map.md`** — FP&A-focused ECC Table.Field → S/4 CDS field mapping with Bronze query patterns for GL, Cost Center, Profit Center, GL Account, Customer, Supplier, PO, Billing, and Sales Order
+- **`references/gl-account-type-classification.md`** — GL account type codes (XBILK, GVTYP) and P&L sign convention for FP&A reporting
+- **`references/document-type-reference.md`** — BLART document types, FP&A grouping logic, reversal detection, and origin tracing via AWTYP/AWKEY
