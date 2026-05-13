@@ -13,12 +13,12 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `BusinessTransactionCategory` | `BusinessTransactionCategory` | `String(4)` | Y | Business Transaction Category |  |  | S/4 only entity (no ECC CDC mapping) |
-| `BusTransIsSubjToPerdControl` | `BusTransIsSubjToPerdControl` | `Boolean` |  | Period Control |  |  | S/4 only entity (no ECC CDC mapping) |
-| `PeriodControlIsLedgerSpecific` | `PeriodControlIsLedgerSpecific` | `Boolean` |  | Update by Ledger |  |  | S/4 only entity (no ECC CDC mapping) |
-| `PeriodIsCheckedByLeadingLedger` | `PeriodIsCheckedByLeadingLedger` | `Boolean` |  | Prd by Leading Ldg |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `BusinessTransactionCategory` |  |  | `String(4)` | Y | Business Transaction Category |  |  | S/4 only entity |
+| `BusTransIsSubjToPerdControl` |  |  | `Boolean` |  | Period Control |  |  | S/4 only entity |
+| `PeriodControlIsLedgerSpecific` |  |  | `Boolean` |  | Update by Ledger |  |  | S/4 only entity |
+| `PeriodIsCheckedByLeadingLedger` |  |  | `Boolean` |  | Prd by Leading Ldg |  |  | S/4 only entity |
 
 
 ## Entity: `BusinessTransactionCategoryText`
@@ -29,11 +29,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `Language` | `Language` | `String(2)` | Y | Language Key |  | _Language | S/4 only entity (no ECC CDC mapping) |
-| `BusinessTransactionCategory` | `BusinessTransactionCategory` | `String(4)` | Y | Business Transaction Category |  |  | S/4 only entity (no ECC CDC mapping) |
-| `BusTransactionCategoryName` | `BusTransactionCategoryName` | `String(30)` |  | Business Transaction Category Name |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `Language` |  |  | `String(2)` | Y | Language Key |  | _Language | S/4 only entity |
+| `BusinessTransactionCategory` |  |  | `String(4)` | Y | Business Transaction Category |  |  | S/4 only entity |
+| `BusTransactionCategoryName` |  |  | `String(30)` |  | Business Transaction Category Name |  |  | S/4 only entity |
 
 
 ## Entity: `BusinessTransactionType`
@@ -43,13 +43,13 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `BusinessTransactionType` | `BusinessTransactionType` | `String(4)` | Y | Business Transaction Type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `BusinessTransactionCategory` | `BusinessTransactionCategory` | `String(4)` |  | Business Transaction Category |  | _BusinessTransactionCategory | S/4 only entity (no ECC CDC mapping) |
-| `BusTransIsSubjToPerdControl` | `BusTransIsSubjToPerdControl` | `Boolean` |  | Period Control |  |  | S/4 only entity (no ECC CDC mapping) |
-| `PeriodControlIsLedgerSpecific` | `PeriodControlIsLedgerSpecific` | `Boolean` |  | Prd Ctrll By Ledger |  |  | S/4 only entity (no ECC CDC mapping) |
-| `BusinessTransTypeIsInactive` | `BusinessTransTypeIsInactive` | `Boolean` |  | Inactive |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `BusinessTransactionType` |  |  | `String(4)` | Y | Business Transaction Type |  |  | S/4 only entity |
+| `BusinessTransactionCategory` |  |  | `String(4)` |  | Business Transaction Category |  | _BusinessTransactionCategory | S/4 only entity |
+| `BusTransIsSubjToPerdControl` |  |  | `Boolean` |  | Period Control |  |  | S/4 only entity |
+| `PeriodControlIsLedgerSpecific` |  |  | `Boolean` |  | Prd Ctrll By Ledger |  |  | S/4 only entity |
+| `BusinessTransTypeIsInactive` |  |  | `Boolean` |  | Inactive |  |  | S/4 only entity |
 
 
 ## Entity: `BusinessTransactionTypeText`
@@ -59,11 +59,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `Language` | `Language` | `String(2)` | Y | Language Key |  | _Language | S/4 only entity (no ECC CDC mapping) |
-| `BusinessTransactionType` | `BusinessTransactionType` | `String(4)` | Y | Business Transaction Type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `BusinessTransactionTypeName` | `BusinessTransactionTypeName` | `String(30)` |  | Business Transaction Type Name |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `Language` |  |  | `String(2)` | Y | Language Key |  | _Language | S/4 only entity |
+| `BusinessTransactionType` |  |  | `String(4)` | Y | Business Transaction Type |  |  | S/4 only entity |
+| `BusinessTransactionTypeName` |  |  | `String(30)` |  | Business Transaction Type Name |  |  | S/4 only entity |
 
 
 ## Entity: `FinancialTransactionType`
@@ -73,17 +73,17 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `FinancialTransactionType` | `FinancialTransactionType` | `String(3)` | Y | Financial Transaction Type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `FinancialTransactionTypeGroup` | `FinancialTransactionTypeGroup` | `String(3)` |  | Financial Transaction Type Group |  |  | S/4 only entity (no ECC CDC mapping) |
-| `CarryForwardTransactionType` | `CarryForwardTransactionType` | `String(3)` |  | Carryfwd trans.type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `TransactionTypeIsDerived` | `TransactionTypeIsDerived` | `Boolean` |  | Totals trans. type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `TransacTypeTotalsFormulaText` | `TransacTypeTotalsFormulaText` | `String(75)` |  | Totals formula |  |  | S/4 only entity (no ECC CDC mapping) |
-| `BalanceCarryForwardIsFixed` | `BalanceCarryForwardIsFixed` | `Boolean` |  | No chngs to bal. c/f |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AcquisitionIsCurrentYearOnly` | `AcquisitionIsCurrentYearOnly` | `Boolean` |  | Yr of acq./curr. yr |  |  | S/4 only entity (no ECC CDC mapping) |
-| `BrkdwnByYearsIsNotApplicable` | `BrkdwnByYearsIsNotApplicable` | `Boolean` |  | Save AY - no |  |  | S/4 only entity (no ECC CDC mapping) |
-| `RetirementTransactionType` | `RetirementTransactionType` | `String(3)` |  | TTy: Retirement |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `FinancialTransactionType` |  |  | `String(3)` | Y | Financial Transaction Type |  |  | S/4 only entity |
+| `FinancialTransactionTypeGroup` |  |  | `String(3)` |  | Financial Transaction Type Group |  |  | S/4 only entity |
+| `CarryForwardTransactionType` |  |  | `String(3)` |  | Carryfwd trans.type |  |  | S/4 only entity |
+| `TransactionTypeIsDerived` |  |  | `Boolean` |  | Totals trans. type |  |  | S/4 only entity |
+| `TransacTypeTotalsFormulaText` |  |  | `String(75)` |  | Totals formula |  |  | S/4 only entity |
+| `BalanceCarryForwardIsFixed` |  |  | `Boolean` |  | No chngs to bal. c/f |  |  | S/4 only entity |
+| `AcquisitionIsCurrentYearOnly` |  |  | `Boolean` |  | Yr of acq./curr. yr |  |  | S/4 only entity |
+| `BrkdwnByYearsIsNotApplicable` |  |  | `Boolean` |  | Save AY - no |  |  | S/4 only entity |
+| `RetirementTransactionType` |  |  | `String(3)` |  | TTy: Retirement |  |  | S/4 only entity |
 
 
 ## Entity: `FinancialTransactionTypeText`
@@ -93,11 +93,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `Language` | `Language` | `String(2)` | Y | Language Key |  | _Language | S/4 only entity (no ECC CDC mapping) |
-| `FinancialTransactionType` | `FinancialTransactionType` | `String(3)` | Y | Financial Transaction Type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `FinancialTransactionTypeName` | `FinancialTransactionTypeName` | `String(20)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `Language` |  |  | `String(2)` | Y | Language Key |  | _Language | S/4 only entity |
+| `FinancialTransactionType` |  |  | `String(3)` | Y | Financial Transaction Type |  |  | S/4 only entity |
+| `FinancialTransactionTypeName` |  |  | `String(20)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `JournalEntryCategory`
@@ -107,10 +107,10 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AccountingDocumentCategory` | `AccountingDocumentCategory` | `String(1)` | Y | Document Status |  |  | S/4 only entity (no ECC CDC mapping) |
-| `DomainValue` | `DomainValue` | `String(10)` |  | Lower Value |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AccountingDocumentCategory` |  |  | `String(1)` | Y | Document Status |  |  | S/4 only entity |
+| `DomainValue` |  |  | `String(10)` |  | Lower Value |  |  | S/4 only entity |
 
 
 ## Entity: `JournalEntryCategoryText`
@@ -120,12 +120,12 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AccountingDocumentCategory` | `AccountingDocumentCategory` | `String(1)` | Y | Document Status |  |  | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  | _Language | S/4 only entity (no ECC CDC mapping) |
-| `AccountingDocumentCategoryName` | `AccountingDocumentCategoryName` | `String(60)` |  | Name |  |  | S/4 only entity (no ECC CDC mapping) |
-| `DomainValue` | `DomainValue` | `String(10)` |  | Lower Value |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AccountingDocumentCategory` |  |  | `String(1)` | Y | Document Status |  |  | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  | _Language | S/4 only entity |
+| `AccountingDocumentCategoryName` |  |  | `String(60)` |  | Name |  |  | S/4 only entity |
+| `DomainValue` |  |  | `String(10)` |  | Lower Value |  |  | S/4 only entity |
 
 
 ## Entity: `JournalEntryType`
@@ -135,15 +135,15 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AccountingDocumentType` | `AccountingDocumentType` | `String(2)` | Y | Journal Entry Type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AccountingDocumentNumberRange` | `AccountingDocumentNumberRange` | `String(2)` |  | Number Range |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AuthorizationGroup` | `AuthorizationGroup` | `String(4)` |  | Authorization |  |  | S/4 only entity (no ECC CDC mapping) |
-| `ExchangeRateType` | `ExchangeRateType` | `String(4)` |  | Exchange Rate Type for FC Documents |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AllowedFinancialAccountTypes` | `AllowedFinancialAccountTypes` | `String(5)` |  | Account Types |  |  | S/4 only entity (no ECC CDC mapping) |
-| `CustomerPostingIsAllowed` | `CustomerPostingIsAllowed` | `Boolean` |  | Customer Posting Is Allowed |  |  | S/4 only entity (no ECC CDC mapping) |
-| `SupplierPostingIsAllowed` | `SupplierPostingIsAllowed` | `Boolean` |  | Supplier Posting Is Allowed |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AccountingDocumentType` |  |  | `String(2)` | Y | Journal Entry Type |  |  | S/4 only entity |
+| `AccountingDocumentNumberRange` |  |  | `String(2)` |  | Number Range |  |  | S/4 only entity |
+| `AuthorizationGroup` |  |  | `String(4)` |  | Authorization |  |  | S/4 only entity |
+| `ExchangeRateType` |  |  | `String(4)` |  | Exchange Rate Type for FC Documents |  |  | S/4 only entity |
+| `AllowedFinancialAccountTypes` |  |  | `String(5)` |  | Account Types |  |  | S/4 only entity |
+| `CustomerPostingIsAllowed` |  |  | `Boolean` |  | Customer Posting Is Allowed |  |  | S/4 only entity |
+| `SupplierPostingIsAllowed` |  |  | `Boolean` |  | Supplier Posting Is Allowed |  |  | S/4 only entity |
 
 
 ## Entity: `JournalEntryTypeText`
@@ -153,11 +153,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AccountingDocumentType` | `AccountingDocumentType` | `String(2)` | Y | Journal Entry Type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  | _Language | S/4 only entity (no ECC CDC mapping) |
-| `AccountingDocumentTypeName` | `AccountingDocumentTypeName` | `String(20)` |  | Journal Entry Type Name |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AccountingDocumentType` |  |  | `String(2)` | Y | Journal Entry Type |  |  | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  | _Language | S/4 only entity |
+| `AccountingDocumentTypeName` |  |  | `String(20)` |  | Journal Entry Type Name |  |  | S/4 only entity |
 
 
 ## Entity: `ReferenceDocumentType`
@@ -167,9 +167,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `ReferenceDocumentType` | `ReferenceDocumentType` | `String(5)` | Y | Reference Document Type |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `ReferenceDocumentType` |  |  | `String(5)` | Y | Reference Document Type |  |  | S/4 only entity |
 
 
 ## Entity: `ReferenceDocumentTypeText`
@@ -179,8 +179,8 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `ReferenceDocumentType` | `ReferenceDocumentType` | `String(5)` | Y | Reference Document Type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  | _Language | S/4 only entity (no ECC CDC mapping) |
-| `ReferenceDocumentTypeName` | `ReferenceDocumentTypeName` | `String(20)` |  | Object Type Name |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `ReferenceDocumentType` |  |  | `String(5)` | Y | Reference Document Type |  |  | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  | _Language | S/4 only entity |
+| `ReferenceDocumentTypeName` |  |  | `String(20)` |  | Object Type Name |  |  | S/4 only entity |

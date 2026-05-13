@@ -12,9 +12,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalCustomerGroup1` | `AdditionalCustomerGroup1` | `String(3)` | Y | Customer Group 1 |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalCustomerGroup1` |  |  | `String(3)` | Y | Customer Group 1 |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalCustomerGroup1Text`
@@ -24,11 +24,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalCustomerGroup1` | `AdditionalCustomerGroup1` | `String(3)` | Y | Customer Group 1 |  | _AdditionalCustomerGroup1 | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AdditionalCustomerGroup1Name` | `AdditionalCustomerGroup1Name` | `String(20)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalCustomerGroup1` |  |  | `String(3)` | Y | Customer Group 1 |  | _AdditionalCustomerGroup1 | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `AdditionalCustomerGroup1Name` |  |  | `String(20)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalCustomerGroup2`
@@ -38,9 +38,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalCustomerGroup2` | `AdditionalCustomerGroup2` | `String(3)` | Y | Customer Group 2 |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalCustomerGroup2` |  |  | `String(3)` | Y | Customer Group 2 |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalCustomerGroup2Text`
@@ -50,11 +50,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalCustomerGroup2` | `AdditionalCustomerGroup2` | `String(3)` | Y | Customer Group 2 |  | _AdditionalCustomerGroup2 | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AdditionalCustomerGroup2Name` | `AdditionalCustomerGroup2Name` | `String(20)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalCustomerGroup2` |  |  | `String(3)` | Y | Customer Group 2 |  | _AdditionalCustomerGroup2 | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `AdditionalCustomerGroup2Name` |  |  | `String(20)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalCustomerGroup3`
@@ -64,9 +64,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalCustomerGroup3` | `AdditionalCustomerGroup3` | `String(3)` | Y | Customer Group 3 |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalCustomerGroup3` |  |  | `String(3)` | Y | Customer Group 3 |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalCustomerGroup3Text`
@@ -76,11 +76,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalCustomerGroup3` | `AdditionalCustomerGroup3` | `String(3)` | Y | Customer Group 3 |  | _AdditionalCustomerGroup3 | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AdditionalCustomerGroup3Name` | `AdditionalCustomerGroup3Name` | `String(20)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalCustomerGroup3` |  |  | `String(3)` | Y | Customer Group 3 |  | _AdditionalCustomerGroup3 | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `AdditionalCustomerGroup3Name` |  |  | `String(20)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalCustomerGroup4`
@@ -90,9 +90,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalCustomerGroup4` | `AdditionalCustomerGroup4` | `String(3)` | Y | Customer Group 4 |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalCustomerGroup4` |  |  | `String(3)` | Y | Customer Group 4 |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalCustomerGroup4Text`
@@ -102,11 +102,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalCustomerGroup4` | `AdditionalCustomerGroup4` | `String(3)` | Y | Customer Group 4 |  | _AdditionalCustomerGroup4 | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AdditionalCustomerGroup4Name` | `AdditionalCustomerGroup4Name` | `String(20)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalCustomerGroup4` |  |  | `String(3)` | Y | Customer Group 4 |  | _AdditionalCustomerGroup4 | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `AdditionalCustomerGroup4Name` |  |  | `String(20)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalCustomerGroup5`
@@ -116,9 +116,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalCustomerGroup5` | `AdditionalCustomerGroup5` | `String(3)` | Y | Customer Group 5 |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalCustomerGroup5` |  |  | `String(3)` | Y | Customer Group 5 |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalCustomerGroup5Text`
@@ -128,11 +128,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalCustomerGroup5` | `AdditionalCustomerGroup5` | `String(3)` | Y | Customer Group 5 |  | _AdditionalCustomerGroup5 | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AdditionalCustomerGroup5Name` | `AdditionalCustomerGroup5Name` | `String(20)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalCustomerGroup5` |  |  | `String(3)` | Y | Customer Group 5 |  | _AdditionalCustomerGroup5 | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `AdditionalCustomerGroup5Name` |  |  | `String(20)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalProductGroup1`
@@ -142,9 +142,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalMaterialGroup1` | `AdditionalMaterialGroup1` | `String(3)` | Y | Material Group 1 |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalMaterialGroup1` |  |  | `String(3)` | Y | Material Group 1 |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalProductGroup1Text`
@@ -154,11 +154,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalMaterialGroup1` | `AdditionalMaterialGroup1` | `String(3)` | Y | Material Group 1 |  | _AdditionalMaterialGroup1 | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AdditionalMaterialGroup1Name` | `AdditionalMaterialGroup1Name` | `String(40)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalMaterialGroup1` |  |  | `String(3)` | Y | Material Group 1 |  | _AdditionalMaterialGroup1 | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `AdditionalMaterialGroup1Name` |  |  | `String(40)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalProductGroup2`
@@ -168,9 +168,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalMaterialGroup2` | `AdditionalMaterialGroup2` | `String(3)` | Y | Material Group 2 |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalMaterialGroup2` |  |  | `String(3)` | Y | Material Group 2 |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalProductGroup2Text`
@@ -180,11 +180,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalMaterialGroup2` | `AdditionalMaterialGroup2` | `String(3)` | Y | Material Group 2 |  | _AdditionalMaterialGroup2 | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AdditionalMaterialGroup2Name` | `AdditionalMaterialGroup2Name` | `String(40)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalMaterialGroup2` |  |  | `String(3)` | Y | Material Group 2 |  | _AdditionalMaterialGroup2 | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `AdditionalMaterialGroup2Name` |  |  | `String(40)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalProductGroup3`
@@ -194,9 +194,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalMaterialGroup3` | `AdditionalMaterialGroup3` | `String(3)` | Y | Material Group 3 |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalMaterialGroup3` |  |  | `String(3)` | Y | Material Group 3 |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalProductGroup3Text`
@@ -206,11 +206,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalMaterialGroup3` | `AdditionalMaterialGroup3` | `String(3)` | Y | Material Group 3 |  | _AdditionalMaterialGroup3 | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AdditionalMaterialGroup3Name` | `AdditionalMaterialGroup3Name` | `String(40)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalMaterialGroup3` |  |  | `String(3)` | Y | Material Group 3 |  | _AdditionalMaterialGroup3 | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `AdditionalMaterialGroup3Name` |  |  | `String(40)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalProductGroup4`
@@ -220,9 +220,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalMaterialGroup4` | `AdditionalMaterialGroup4` | `String(3)` | Y | Material Group 4 |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalMaterialGroup4` |  |  | `String(3)` | Y | Material Group 4 |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalProductGroup4Text`
@@ -232,11 +232,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalMaterialGroup4` | `AdditionalMaterialGroup4` | `String(3)` | Y | Material Group 4 |  | _AdditionalMaterialGroup4 | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AdditionalMaterialGroup4Name` | `AdditionalMaterialGroup4Name` | `String(40)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalMaterialGroup4` |  |  | `String(3)` | Y | Material Group 4 |  | _AdditionalMaterialGroup4 | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `AdditionalMaterialGroup4Name` |  |  | `String(40)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalProductGroup5`
@@ -246,9 +246,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalMaterialGroup5` | `AdditionalMaterialGroup5` | `String(3)` | Y | Material Group 5 |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalMaterialGroup5` |  |  | `String(3)` | Y | Material Group 5 |  |  | S/4 only entity |
 
 
 ## Entity: `AdditionalProductGroup5Text`
@@ -258,11 +258,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AdditionalMaterialGroup5` | `AdditionalMaterialGroup5` | `String(3)` | Y | Material Group 5 |  | _AdditionalMaterialGroup5 | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AdditionalMaterialGroup5Name` | `AdditionalMaterialGroup5Name` | `String(40)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AdditionalMaterialGroup5` |  |  | `String(3)` | Y | Material Group 5 |  | _AdditionalMaterialGroup5 | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `AdditionalMaterialGroup5Name` |  |  | `String(40)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `BillingBlockReason`
@@ -272,9 +272,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `BillingBlockReason` | `BillingBlockReason` | `String(2)` | Y | Billing Block |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `BillingBlockReason` |  |  | `String(2)` | Y | Billing Block |  |  | S/4 only entity |
 
 
 ## Entity: `BillingBlockReasonText`
@@ -284,11 +284,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `BillingBlockReason` | `BillingBlockReason` | `String(2)` | Y | Billing Block |  | _BillingBlockReason | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `BillingBlockReasonDescription` | `BillingBlockReasonDescription` | `String(20)` |  | Billing Block Desc. |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `BillingBlockReason` |  |  | `String(2)` | Y | Billing Block |  | _BillingBlockReason | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `BillingBlockReasonDescription` |  |  | `String(20)` |  | Billing Block Desc. |  |  | S/4 only entity |
 
 
 ## Entity: `CustomerAccountAssignmentGroup`
@@ -298,9 +298,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `CustomerAccountAssignmentGroup` | `CustomerAccountAssignmentGroup` | `String(2)` | Y | Acct Assmt Grp Cust. |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `CustomerAccountAssignmentGroup` |  |  | `String(2)` | Y | Acct Assmt Grp Cust. |  |  | S/4 only entity |
 
 
 ## Entity: `CustomerAccountAssignmentGroupText`
@@ -310,11 +310,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `CustomerAccountAssignmentGroup` | `CustomerAccountAssignmentGroup` | `String(2)` | Y | Acct Assmt Grp Cust. |  | _CustomerAccountAssgmtGroup | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `CustomerAccountAssgmtGrpName` | `CustomerAccountAssgmtGrpName` | `String(20)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `CustomerAccountAssignmentGroup` |  |  | `String(2)` | Y | Acct Assmt Grp Cust. |  | _CustomerAccountAssgmtGroup | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `CustomerAccountAssgmtGrpName` |  |  | `String(20)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `CustomerGroup`
@@ -324,9 +324,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `CustomerGroup` | `CustomerGroup` | `String(2)` | Y | Customer Group |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `CustomerGroup` |  |  | `String(2)` | Y | Customer Group |  |  | S/4 only entity |
 
 
 ## Entity: `CustomerGroupText`
@@ -336,11 +336,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `CustomerGroup` | `CustomerGroup` | `String(2)` | Y | Customer Group |  | _CustomerGroup | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `CustomerGroupName` | `CustomerGroupName` | `String(20)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `CustomerGroup` |  |  | `String(2)` | Y | Customer Group |  | _CustomerGroup | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `CustomerGroupName` |  |  | `String(20)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `CustomerPriceGroup`
@@ -350,9 +350,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `CustomerPriceGroup` | `CustomerPriceGroup` | `String(2)` | Y | Customer Price Group |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `CustomerPriceGroup` |  |  | `String(2)` | Y | Customer Price Group |  |  | S/4 only entity |
 
 
 ## Entity: `CustomerPriceGroupText`
@@ -362,11 +362,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `CustomerPriceGroup` | `CustomerPriceGroup` | `String(2)` | Y | Customer Price Group |  | _CustomerPriceGroup | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `CustomerPriceGroupName` | `CustomerPriceGroupName` | `String(20)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `CustomerPriceGroup` |  |  | `String(2)` | Y | Customer Price Group |  | _CustomerPriceGroup | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `CustomerPriceGroupName` |  |  | `String(20)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `DeliveryDateTypeRule`
@@ -376,10 +376,10 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `DeliveryDateTypeRule` | `DeliveryDateTypeRule` | `String(1)` | Y | Deliv Date Rule |  |  | S/4 only entity (no ECC CDC mapping) |
-| `DomainValue` | `DomainValue` | `String(10)` |  | Lower Value |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `DeliveryDateTypeRule` |  |  | `String(1)` | Y | Deliv Date Rule |  |  | S/4 only entity |
+| `DomainValue` |  |  | `String(10)` |  | Lower Value |  |  | S/4 only entity |
 
 
 ## Entity: `DeliveryDateTypeRuleText`
@@ -389,11 +389,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `DeliveryDateTypeRule` | `DeliveryDateTypeRule` | `String(1)` | Y | Deliv Date Rule |  | _DeliveryDateTypeRule | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Lang. |  |  | S/4 only entity (no ECC CDC mapping) |
-| `DeliveryDateTypeRuleDesc` | `DeliveryDateTypeRuleDesc` | `String(60)` |  | Short Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `DeliveryDateTypeRule` |  |  | `String(1)` | Y | Deliv Date Rule |  | _DeliveryDateTypeRule | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Lang. |  |  | S/4 only entity |
+| `DeliveryDateTypeRuleDesc` |  |  | `String(60)` |  | Short Description |  |  | S/4 only entity |
 
 
 ## Entity: `IncotermsClassification`
@@ -403,10 +403,10 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `IncotermsClassification` | `IncotermsClassification` | `String(3)` | Y | Incoterms |  |  | S/4 only entity (no ECC CDC mapping) |
-| `LocationIsMandatory` | `LocationIsMandatory` | `Boolean` |  | Location Mandatory |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `IncotermsClassification` |  |  | `String(3)` | Y | Incoterms |  |  | S/4 only entity |
+| `LocationIsMandatory` |  |  | `Boolean` |  | Location Mandatory |  |  | S/4 only entity |
 
 
 ## Entity: `IncotermsClassificationText`
@@ -416,11 +416,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `IncotermsClassification` | `IncotermsClassification` | `String(3)` | Y | Incoterms |  | _IncotermsClassification | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `IncotermsClassificationName` | `IncotermsClassificationName` | `String(30)` |  | Incoterms Classification Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `IncotermsClassification` |  |  | `String(3)` | Y | Incoterms |  | _IncotermsClassification | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `IncotermsClassificationName` |  |  | `String(30)` |  | Incoterms Classification Description |  |  | S/4 only entity |
 
 
 ## Entity: `IncotermsVersion`
@@ -430,9 +430,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `IncotermsVersion` | `IncotermsVersion` | `String(4)` | Y | Incoterms Version |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `IncotermsVersion` |  |  | `String(4)` | Y | Incoterms Version |  |  | S/4 only entity |
 
 
 ## Entity: `IncotermsVersionText`
@@ -442,11 +442,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `IncotermsVersion` | `IncotermsVersion` | `String(4)` | Y | Incoterms Version |  | _IncotermsVersion | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `IncotermsVersionName` | `IncotermsVersionName` | `String(30)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `IncotermsVersion` |  |  | `String(4)` | Y | Incoterms Version |  | _IncotermsVersion | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `IncotermsVersionName` |  |  | `String(30)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `MaterialPricingGroup`
@@ -456,9 +456,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `MaterialPricingGroup` | `MaterialPricingGroup` | `String(2)` | Y | Material Price Grp |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `MaterialPricingGroup` |  |  | `String(2)` | Y | Material Price Grp |  |  | S/4 only entity |
 
 
 ## Entity: `MaterialPricingGroupText`
@@ -468,11 +468,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `MaterialPricingGroup` | `MaterialPricingGroup` | `String(2)` | Y | Material Price Grp |  | _MaterialPricingGroup | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `MaterialPricingGroupName` | `MaterialPricingGroupName` | `String(20)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `MaterialPricingGroup` |  |  | `String(2)` | Y | Material Price Grp |  | _MaterialPricingGroup | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `MaterialPricingGroupName` |  |  | `String(20)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `ProductCommissionGroup`
@@ -482,9 +482,9 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `MaterialCommissionGroup` | `MaterialCommissionGroup` | `String(2)` | Y | Commission Group |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `MaterialCommissionGroup` |  |  | `String(2)` | Y | Commission Group |  |  | S/4 only entity |
 
 
 ## Entity: `ProductCommissionGroupText`
@@ -494,11 +494,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `MaterialCommissionGroup` | `MaterialCommissionGroup` | `String(2)` | Y | Commission Group |  | _MaterialCommissionGroup | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `MaterialCommissionGroupName` | `MaterialCommissionGroupName` | `String(20)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `MaterialCommissionGroup` |  |  | `String(2)` | Y | Commission Group |  | _MaterialCommissionGroup | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `MaterialCommissionGroupName` |  |  | `String(20)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `ProductItemCategoryGroup`
@@ -508,10 +508,10 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `ItemCategoryGroup` | `ItemCategoryGroup` | `String(4)` | Y | Item Category Group |  |  | S/4 only entity (no ECC CDC mapping) |
-| `ItemCategoryGroupOID` | `ItemCategoryGroupOID` | `String(128)` |  | Item Cat. Group OID |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `ItemCategoryGroup` |  |  | `String(4)` | Y | Item Category Group |  |  | S/4 only entity |
+| `ItemCategoryGroupOID` |  |  | `String(128)` |  | Item Cat. Group OID |  |  | S/4 only entity |
 
 
 ## Entity: `ProductItemCategoryGroupText`
@@ -521,8 +521,8 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `ItemCategoryGroup` | `ItemCategoryGroup` | `String(4)` | Y | Item Category Group |  | _ItemCategoryGroup | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `ItemCategoryGroupName` | `ItemCategoryGroupName` | `String(20)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `ItemCategoryGroup` |  |  | `String(4)` | Y | Item Category Group |  | _ItemCategoryGroup | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `ItemCategoryGroupName` |  |  | `String(20)` |  | Description |  |  | S/4 only entity |

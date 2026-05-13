@@ -12,11 +12,11 @@
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `ControllingArea` | `ControllingArea` | `String(4)` | Y | Controlling Area |  |  | S/4 only entity (no ECC CDC mapping) |
-| `CostOriginType` | `CostOriginType` | `String(2)` | Y | Origin type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `CostOriginGroup` | `CostOriginGroup` | `String(4)` | Y | Origin Group |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `ControllingArea` | `TKA01` | `KOKRS` | `String(4)` | Y | Controlling Area |  |  |  |
+| `CostOriginType` |  |  | `String(2)` | Y | Origin type |  |  | S/4 only entity |
+| `CostOriginGroup` |  |  | `String(4)` | Y | Origin Group |  |  | S/4 only entity |
 
 
 ## Entity: `CostOriginGroupText`
@@ -26,10 +26,10 @@
 - **VDM Type:** `BASIC` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `CostOriginGroup` | `CostOriginGroup` | `String(4)` | Y | Origin Group |  |  | S/4 only entity (no ECC CDC mapping) |
-| `CostOriginType` | `CostOriginType` | `String(2)` | Y | Origin type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `ControllingArea` | `ControllingArea` | `String(4)` | Y | Controlling Area |  |  | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `CostOriginGroupName` | `CostOriginGroupName` | `String(40)` |  | Name |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `CostOriginGroup` |  |  | `String(4)` | Y | Origin Group |  |  | S/4 only entity |
+| `CostOriginType` |  |  | `String(2)` | Y | Origin type |  |  | S/4 only entity |
+| `ControllingArea` | `TKA01` | `KOKRS` | `String(4)` | Y | Controlling Area |  |  |  |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `CostOriginGroupName` |  |  | `String(40)` |  | Name |  |  | S/4 only entity |

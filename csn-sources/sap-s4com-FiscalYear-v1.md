@@ -10,12 +10,12 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `FiscalYearVariant` | `FiscalYearVariant` | `String(2)` | Y | Fiscal Year Variant |  | _FiscalYearVariant | S/4 only entity (no ECC CDC mapping) |
-| `FiscalYear` | `FiscalYear` | `String(4)` | Y | Fiscal Year |  |  | S/4 only entity (no ECC CDC mapping) |
-| `FiscalYearStartDate` | `FiscalYearStartDate` | `Date` |  | Start of Fiscal Year |  |  | S/4 only entity (no ECC CDC mapping) |
-| `FiscalYearEndDate` | `FiscalYearEndDate` | `Date` |  | End of Fiscal Year |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `FiscalYearVariant` | `T009` | `PERIV` | `String(2)` | Y | Fiscal Year Variant |  | _FiscalYearVariant |  |
+| `FiscalYear` | `T009B` | `BDATJ` | `String(4)` | Y | Fiscal Year |  |  |  |
+| `FiscalYearStartDate` | `T009B` | `XJABJ` | `Date` |  | Start of Fiscal Year |  |  |  |
+| `FiscalYearEndDate` | `T009B` | `BDATJ` | `Date` |  | End of Fiscal Year |  |  |  |
 
 
 ## Entity: `FiscalYearVariant`
@@ -25,15 +25,15 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `FiscalYearVariant` | `FiscalYearVariant` | `String(2)` | Y | Fiscal Year Variant |  |  | S/4 only entity (no ECC CDC mapping) |
-| `FiscalPeriodIsEqualMonth` | `FiscalPeriodIsEqualMonth` | `Boolean` |  | Fscl Perd Equal Mnth |  |  | S/4 only entity (no ECC CDC mapping) |
-| `IsYearDependent` | `IsYearDependent` | `Boolean` |  | Year-dependent |  |  | S/4 only entity (no ECC CDC mapping) |
-| `PostingPeriodsNumberVal` | `PostingPeriodsNumberVal` | `String(3)` |  | Posting Period |  |  | S/4 only entity (no ECC CDC mapping) |
-| `NumberOfSpecialPeriods` | `NumberOfSpecialPeriods` | `String(2)` |  | No. Special Periods |  |  | S/4 only entity (no ECC CDC mapping) |
-| `FsclWeekStartIsFsclYearStart` | `FsclWeekStartIsFsclYearStart` | `Boolean` |  | Fiscal Week Start |  |  | S/4 only entity (no ECC CDC mapping) |
-| `FiscalCalendarIsWeekBased` | `FiscalCalendarIsWeekBased` | `Boolean` |  | Weekly Calendar |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `FiscalYearVariant` |  |  | `String(2)` | Y | Fiscal Year Variant |  |  | S/4 only entity |
+| `FiscalPeriodIsEqualMonth` |  |  | `Boolean` |  | Fscl Perd Equal Mnth |  |  | S/4 only entity |
+| `IsYearDependent` |  |  | `Boolean` |  | Year-dependent |  |  | S/4 only entity |
+| `PostingPeriodsNumberVal` |  |  | `String(3)` |  | Posting Period |  |  | S/4 only entity |
+| `NumberOfSpecialPeriods` |  |  | `String(2)` |  | No. Special Periods |  |  | S/4 only entity |
+| `FsclWeekStartIsFsclYearStart` |  |  | `Boolean` |  | Fiscal Week Start |  |  | S/4 only entity |
+| `FiscalCalendarIsWeekBased` |  |  | `Boolean` |  | Weekly Calendar |  |  | S/4 only entity |
 
 
 ## Entity: `FiscalYearVariantText`
@@ -43,8 +43,8 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `FiscalYearVariant` | `FiscalYearVariant` | `String(2)` | Y | Fiscal Year Variant |  |  | S/4 only entity (no ECC CDC mapping) |
-| `FiscalYearVariantDescription` | `FiscalYearVariantDescription` | `String(30)` |  | Fiscal Year Variant Name |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `FiscalYearVariant` |  |  | `String(2)` | Y | Fiscal Year Variant |  |  | S/4 only entity |
+| `FiscalYearVariantDescription` |  |  | `String(30)` |  | Fiscal Year Variant Name |  |  | S/4 only entity |

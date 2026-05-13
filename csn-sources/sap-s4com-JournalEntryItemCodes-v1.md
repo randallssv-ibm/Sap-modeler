@@ -10,9 +10,9 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AssetAcctTransClassfctn` | `AssetAcctTransClassfctn` | `String(2)` | Y | Trans. Type Category |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AssetAcctTransClassfctn` |  |  | `String(2)` | Y | Trans. Type Category |  |  | S/4 only entity |
 
 
 ## Entity: `ControllingDebitCreditCode`
@@ -22,11 +22,11 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `ControllingDebitCreditCode` | `ControllingDebitCreditCode` | `String(1)` | Y | Dr/Cr indicator  CO |  |  | S/4 only entity (no ECC CDC mapping) |
-| `DomainValue` | `DomainValue` | `String(1)` |  |  |  |  | S/4 only entity (no ECC CDC mapping) |
-| `DomainValue_2` | `DomainValue_2` | `String(10)` |  | Lower Value |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `ControllingDebitCreditCode` |  |  | `String(1)` | Y | Dr/Cr indicator  CO |  |  | S/4 only entity |
+| `DomainValue` |  |  | `String(1)` |  |  |  |  | S/4 only entity |
+| `DomainValue_2` |  |  | `String(10)` |  | Lower Value |  |  | S/4 only entity |
 
 
 ## Entity: `ControllingDebitCreditCodeText`
@@ -36,11 +36,11 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `ControllingDebitCreditCode` | `ControllingDebitCreditCode` | `String(1)` | Y |  |  |  | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `ControllingDebitCreditCodeName` | `ControllingDebitCreditCodeName` | `String(60)` |  | Short Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `ControllingDebitCreditCode` |  |  | `String(1)` | Y |  |  |  | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `ControllingDebitCreditCodeName` |  |  | `String(60)` |  | Short Description |  |  | S/4 only entity |
 
 
 ## Entity: `DebitCreditCode`
@@ -50,9 +50,9 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `DebitCreditCode` | `DebitCreditCode` | `String(1)` | Y | Debit/Credit Code |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `DebitCreditCode` |  |  | `String(1)` | Y | Debit/Credit Code |  |  | S/4 only entity |
 
 
 ## Entity: `DebitCreditCodeText`
@@ -62,11 +62,11 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `DebitCreditCode` | `DebitCreditCode` | `String(1)` | Y | Debit/Credit Code |  |  | S/4 only entity (no ECC CDC mapping) |
-| `DebitCreditCodeName` | `DebitCreditCodeName` | `String(60)` |  | D/C Code Name |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `DebitCreditCode` |  |  | `String(1)` | Y | Debit/Credit Code |  |  | S/4 only entity |
+| `DebitCreditCodeName` |  |  | `String(60)` |  | D/C Code Name |  |  | S/4 only entity |
 
 
 ## Entity: `FinancialAccountType`
@@ -76,10 +76,10 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `FinancialAccountType` | `FinancialAccountType` | `String(1)` | Y | Account Type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `DomainValue` | `DomainValue` | `String(10)` |  | Lower Value |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `FinancialAccountType` |  |  | `String(1)` | Y | Account Type |  |  | S/4 only entity |
+| `DomainValue` |  |  | `String(10)` |  | Lower Value |  |  | S/4 only entity |
 
 
 ## Entity: `FinancialAccountTypeText`
@@ -89,12 +89,12 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `FinancialAccountType` | `FinancialAccountType` | `String(1)` | Y | Account Type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `FinancialAccountTypeName` | `FinancialAccountTypeName` | `String(60)` |  | Fin. Acc. Type Name |  |  | S/4 only entity (no ECC CDC mapping) |
-| `DomainValue` | `DomainValue` | `String(10)` |  | Lower Value |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `FinancialAccountType` |  |  | `String(1)` | Y | Account Type |  |  | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `FinancialAccountTypeName` |  |  | `String(60)` |  | Fin. Acc. Type Name |  |  | S/4 only entity |
+| `DomainValue` |  |  | `String(10)` |  | Lower Value |  |  | S/4 only entity |
 
 
 ## Entity: `GeneralLedgerRecordType`
@@ -104,9 +104,9 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `GLRecordType` | `GLRecordType` | `String(1)` | Y | Record Type |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `GLRecordType` |  |  | `String(1)` | Y | Record Type |  |  | S/4 only entity |
 
 
 ## Entity: `JournalEntryItemObsoleteReason`
@@ -116,10 +116,10 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `JrnlEntryItemObsoleteReason` | `JrnlEntryItemObsoleteReason` | `String(1)` | Y | Obsolete Reason |  |  | S/4 only entity (no ECC CDC mapping) |
-| `DomainValue` | `DomainValue` | `String(10)` |  | Lower Value |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `JrnlEntryItemObsoleteReason` |  |  | `String(1)` | Y | Obsolete Reason |  |  | S/4 only entity |
+| `DomainValue` |  |  | `String(10)` |  | Lower Value |  |  | S/4 only entity |
 
 
 ## Entity: `JrnlEntryItemObsltRsnText`
@@ -129,12 +129,12 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `JrnlEntryItemObsoleteReason` | `JrnlEntryItemObsoleteReason` | `String(1)` | Y | Obsolete Reason |  |  | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `DomainValue` | `DomainValue` | `String(10)` |  | Lower Value |  |  | S/4 only entity (no ECC CDC mapping) |
-| `JrnlEntryItemObsoleteRsnName` | `JrnlEntryItemObsoleteRsnName` | `String(60)` |  | Fin. Acc. Type Name |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `JrnlEntryItemObsoleteReason` |  |  | `String(1)` | Y | Obsolete Reason |  |  | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `DomainValue` |  |  | `String(10)` |  | Lower Value |  |  | S/4 only entity |
+| `JrnlEntryItemObsoleteRsnName` |  |  | `String(60)` |  | Fin. Acc. Type Name |  |  | S/4 only entity |
 
 
 ## Entity: `MovementCategoryText`
@@ -144,11 +144,11 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `AssetAcctTransClassfctn` | `AssetAcctTransClassfctn` | `String(2)` | Y | Trans. Type Category |  |  | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `AssetAcctTransClassfctnName` | `AssetAcctTransClassfctnName` | `String(50)` |  | Trans.Type Cat. Text |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `AssetAcctTransClassfctn` |  |  | `String(2)` | Y | Trans. Type Category |  |  | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `AssetAcctTransClassfctnName` |  |  | `String(50)` |  | Trans.Type Cat. Text |  |  | S/4 only entity |
 
 
 ## Entity: `PostingKey`
@@ -158,15 +158,15 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `PostingKey` | `PostingKey` | `String(2)` | Y | Posting Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `DebitCreditCode` | `DebitCreditCode` | `String(1)` |  | Debit/Credit Code |  |  | S/4 only entity (no ECC CDC mapping) |
-| `FinancialAccountType` | `FinancialAccountType` | `String(1)` |  | Account Type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `IsSalesRelated` | `IsSalesRelated` | `Boolean` |  | Sales-Related Item |  |  | S/4 only entity (no ECC CDC mapping) |
-| `IsUsedInPaymentTransaction` | `IsUsedInPaymentTransaction` | `Boolean` |  | Payment Transaction |  |  | S/4 only entity (no ECC CDC mapping) |
-| `ReversalPostingKey` | `ReversalPostingKey` | `String(2)` |  | Reversal Posting Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `IsSpecialGLTransaction` | `IsSpecialGLTransaction` | `Boolean` |  | Special G/L |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `PostingKey` |  |  | `String(2)` | Y | Posting Key |  |  | S/4 only entity |
+| `DebitCreditCode` |  |  | `String(1)` |  | Debit/Credit Code |  |  | S/4 only entity |
+| `FinancialAccountType` |  |  | `String(1)` |  | Account Type |  |  | S/4 only entity |
+| `IsSalesRelated` |  |  | `Boolean` |  | Sales-Related Item |  |  | S/4 only entity |
+| `IsUsedInPaymentTransaction` |  |  | `Boolean` |  | Payment Transaction |  |  | S/4 only entity |
+| `ReversalPostingKey` |  |  | `String(2)` |  | Reversal Posting Key |  |  | S/4 only entity |
+| `IsSpecialGLTransaction` |  |  | `Boolean` |  | Special G/L |  |  | S/4 only entity |
 
 
 ## Entity: `PostingKeyText`
@@ -176,11 +176,11 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `PostingKey` | `PostingKey` | `String(2)` | Y | Posting Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `PostingKeyName` | `PostingKeyName` | `String(20)` |  | Posting Key Name |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `PostingKey` |  |  | `String(2)` | Y | Posting Key |  |  | S/4 only entity |
+| `PostingKeyName` |  |  | `String(20)` |  | Posting Key Name |  |  | S/4 only entity |
 
 
 ## Entity: `PostingKeyWithSpecialGLCode`
@@ -190,10 +190,10 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `PostingKey` | `PostingKey` | `String(2)` | Y | Posting Key |  | _PostingKey | S/4 only entity (no ECC CDC mapping) |
-| `SpecialGLCode` | `SpecialGLCode` | `String(1)` | Y | Special G/L |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `PostingKey` |  |  | `String(2)` | Y | Posting Key |  | _PostingKey | S/4 only entity |
+| `SpecialGLCode` |  |  | `String(1)` | Y | Special G/L |  |  | S/4 only entity |
 
 
 ## Entity: `PostingKeyWithSpecialGLCodeText`
@@ -203,13 +203,13 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `PostingKey` | `PostingKey` | `String(2)` | Y | Posting Key |  | _PostingKey | S/4 only entity (no ECC CDC mapping) |
-| `SpecialGLCode` | `SpecialGLCode` | `String(1)` | Y | Special G/L |  | _SpecialGLCode | S/4 only entity (no ECC CDC mapping) |
-| `FinancialAccountType` | `FinancialAccountType` | `String(1)` |  | Account Type |  | _FinancialAccountType | S/4 only entity (no ECC CDC mapping) |
-| `PostingKeyName` | `PostingKeyName` | `String(20)` |  | Posting Key Name |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `PostingKey` |  |  | `String(2)` | Y | Posting Key |  | _PostingKey | S/4 only entity |
+| `SpecialGLCode` |  |  | `String(1)` | Y | Special G/L |  | _SpecialGLCode | S/4 only entity |
+| `FinancialAccountType` |  |  | `String(1)` |  | Account Type |  | _FinancialAccountType | S/4 only entity |
+| `PostingKeyName` |  |  | `String(20)` |  | Posting Key Name |  |  | S/4 only entity |
 
 
 ## Entity: `SpecialGeneralLedgerCode`
@@ -219,13 +219,13 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `SpecialGLCode` | `SpecialGLCode` | `String(1)` | Y | Special G/L Ind. |  |  | S/4 only entity (no ECC CDC mapping) |
-| `FinancialAccountType` | `FinancialAccountType` | `String(1)` | Y | Account Type |  | _FinancialAccountType | S/4 only entity (no ECC CDC mapping) |
-| `SpecialGLTransactionType` | `SpecialGLTransactionType` | `String(1)` |  | Sp. G/L Trans.Type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `CreditLimitIsChecked` | `CreditLimitIsChecked` | `Boolean` |  | Rel.to Credit Limit |  |  | S/4 only entity (no ECC CDC mapping) |
-| `IsNotedItmWithoutBalUpdt` | `IsNotedItmWithoutBalUpdt` | `Boolean` |  | Noted Items |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `SpecialGLCode` |  |  | `String(1)` | Y | Special G/L Ind. |  |  | S/4 only entity |
+| `FinancialAccountType` |  |  | `String(1)` | Y | Account Type |  | _FinancialAccountType | S/4 only entity |
+| `SpecialGLTransactionType` |  |  | `String(1)` |  | Sp. G/L Trans.Type |  |  | S/4 only entity |
+| `CreditLimitIsChecked` |  |  | `Boolean` |  | Rel.to Credit Limit |  |  | S/4 only entity |
+| `IsNotedItmWithoutBalUpdt` |  |  | `Boolean` |  | Noted Items |  |  | S/4 only entity |
 
 
 ## Entity: `SpecialGeneralLedgerCodeText`
@@ -235,13 +235,13 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `FinancialAccountType` | `FinancialAccountType` | `String(1)` | Y | Account Type |  | _FinancialAccountType | S/4 only entity (no ECC CDC mapping) |
-| `SpecialGLCode` | `SpecialGLCode` | `String(1)` | Y | Special G/L Ind. |  |  | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `SpecialGLCodeName` | `SpecialGLCodeName` | `String(7)` |  | Name |  |  | S/4 only entity (no ECC CDC mapping) |
-| `SpecialGLCodeLongName` | `SpecialGLCodeLongName` | `String(30)` |  | Description |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `FinancialAccountType` |  |  | `String(1)` | Y | Account Type |  | _FinancialAccountType | S/4 only entity |
+| `SpecialGLCode` |  |  | `String(1)` | Y | Special G/L Ind. |  |  | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `SpecialGLCodeName` |  |  | `String(7)` |  | Name |  |  | S/4 only entity |
+| `SpecialGLCodeLongName` |  |  | `String(30)` |  | Description |  |  | S/4 only entity |
 
 
 ## Entity: `SubledgerAccountLineItemType`
@@ -251,9 +251,9 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `SubLedgerAcctLineItemType` | `SubLedgerAcctLineItemType` | `String(5)` | Y | SLA Line Item Type |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `SubLedgerAcctLineItemType` |  |  | `String(5)` | Y | SLA Line Item Type |  |  | S/4 only entity |
 
 
 ## Entity: `SubledgerAccountLineItemTypeText`
@@ -263,8 +263,8 @@
 - **VDM Type:** `` | **Data Category:** ``
 - **ECC Source Tables:** —
 
-| CDS Field | ABAP Name | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
-|---|---|---|---|---|---|---|---|
-| `SubLedgerAcctLineItemType` | `SubLedgerAcctLineItemType` | `String(5)` | Y | SLA Line Item Type |  |  | S/4 only entity (no ECC CDC mapping) |
-| `Language` | `Language` | `String(2)` | Y | Language Key |  |  | S/4 only entity (no ECC CDC mapping) |
-| `SubLedgerAcctLineItemTypeName` | `SubLedgerAcctLineItemTypeName` | `String(70)` |  | Subl. LIt. Type Text |  |  | S/4 only entity (no ECC CDC mapping) |
+| CDS Field | ABAP Table | ABAP Field | Type | Key | Label | Currency/UOM Ref | FK Association | ECC / S4 Diff |
+|---|---|---|---|---|---|---|---|---|
+| `SubLedgerAcctLineItemType` |  |  | `String(5)` | Y | SLA Line Item Type |  |  | S/4 only entity |
+| `Language` |  |  | `String(2)` | Y | Language Key |  |  | S/4 only entity |
+| `SubLedgerAcctLineItemTypeName` |  |  | `String(70)` |  | Subl. LIt. Type Text |  |  | S/4 only entity |
