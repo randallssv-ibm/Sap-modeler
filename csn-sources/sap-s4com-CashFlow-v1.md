@@ -8,7 +8,7 @@
 - **ABAP CDS Name:** `I_CashLiquidityActualFlow`
 - **Label:** Cash Liquidity Actual Flow for WCI
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -35,7 +35,7 @@
 - **ABAP CDS Name:** `I_CashLiquidityForecastFlow`
 - **Label:** Cash Liquidity Forecast Flow for WCI
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|

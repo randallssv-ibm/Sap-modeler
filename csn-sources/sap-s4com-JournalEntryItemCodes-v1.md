@@ -8,7 +8,7 @@
 - **ABAP CDS Name:** `I_MovementCategory`
 - **Label:** Movement Category
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -20,7 +20,7 @@
 - **ABAP CDS Name:** `I_ControllingDebitCreditCode`
 - **Label:** Controlling Debit Credit Code
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -34,7 +34,7 @@
 - **ABAP CDS Name:** `I_ControllingDebitCreditCodeT`
 - **Label:** Debit Credit Code in Controlling - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -48,7 +48,7 @@
 - **ABAP CDS Name:** `I_DebitCreditCode`
 - **Label:** Debit Credit Code
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -60,7 +60,7 @@
 - **ABAP CDS Name:** `I_DebitCreditCodeText`
 - **Label:** Debit Credit Code - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -74,7 +74,7 @@
 - **ABAP CDS Name:** `I_FinancialAccountType`
 - **Label:** Financial Account Type
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -87,7 +87,7 @@
 - **ABAP CDS Name:** `I_FinancialAccountTypeText`
 - **Label:** Financial Account Type - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -102,7 +102,7 @@
 - **ABAP CDS Name:** `I_GLRecordType`
 - **Label:** General Ledger Record Type
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -114,7 +114,7 @@
 - **ABAP CDS Name:** `I_JrnlEntryItemObsoleteRsn`
 - **Label:** Obsolete Reason of Journal Entry Item
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -127,7 +127,7 @@
 - **ABAP CDS Name:** `I_JrnlEntryItemObsltRsnT`
 - **Label:** Obsolete Reason of Entry Item - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -142,7 +142,7 @@
 - **ABAP CDS Name:** `I_MovementCategoryText`
 - **Label:** Movement Category - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -156,17 +156,17 @@
 - **ABAP CDS Name:** `I_PostingKey`
 - **Label:** Posting Key
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** TBSL, TBSLT
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `PostingKey` | `FIS_BSCHL` |  |  |  |  | `String(2)` | Y | Posting Key |  | S/4 only entity |
-| `DebitCreditCode` | `FIS_SHKZG` |  |  |  |  | `String(1)` |  | Debit/Credit Code |  | S/4 only entity |
-| `FinancialAccountType` | `FARP_KOART` |  |  |  |  | `String(1)` |  | Account Type |  | S/4 only entity |
-| `IsSalesRelated` | `FARP_XUMSW` |  |  |  |  | `Boolean` |  | Sales-Related Item |  | S/4 only entity |
-| `IsUsedInPaymentTransaction` | `XZAHL` |  |  |  |  | `Boolean` |  | Payment Transaction |  | S/4 only entity |
-| `ReversalPostingKey` | `STBSL` |  |  |  |  | `String(2)` |  | Reversal Posting Key |  | S/4 only entity |
-| `IsSpecialGLTransaction` | `XSONU` |  |  |  |  | `Boolean` |  | Special G/L |  | S/4 only entity |
+| `PostingKey` | `FIS_BSCHL` |  |  |  |  | `String(2)` | Y | Posting Key |  |  |
+| `DebitCreditCode` | `FIS_SHKZG` |  |  |  |  | `String(1)` |  | Debit/Credit Code |  |  |
+| `FinancialAccountType` | `FARP_KOART` |  |  |  |  | `String(1)` |  | Account Type |  |  |
+| `IsSalesRelated` | `FARP_XUMSW` |  |  |  |  | `Boolean` |  | Sales-Related Item |  |  |
+| `IsUsedInPaymentTransaction` | `XZAHL` |  |  |  |  | `Boolean` |  | Payment Transaction |  |  |
+| `ReversalPostingKey` | `STBSL` |  |  |  |  | `String(2)` |  | Reversal Posting Key |  |  |
+| `IsSpecialGLTransaction` | `XSONU` |  |  |  |  | `Boolean` |  | Special G/L |  |  |
 
 
 ## Entity: `PostingKeyText`
@@ -174,13 +174,13 @@
 - **ABAP CDS Name:** `I_PostingKeyText`
 - **Label:** Posting Key - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** TBSLT
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `Language` | `SPRAS` |  |  |  |  | `String(2)` | Y | Language Key |  | S/4 only entity |
-| `PostingKey` | `FIS_BSCHL` |  |  |  |  | `String(2)` | Y | Posting Key |  | S/4 only entity |
-| `PostingKeyName` | `FIS_BSCHL_NAME` |  |  |  |  | `String(20)` |  | Posting Key Name |  | S/4 only entity |
+| `Language` | `SPRAS` |  |  |  |  | `String(2)` | Y | Language Key |  |  |
+| `PostingKey` | `FIS_BSCHL` |  |  |  |  | `String(2)` | Y | Posting Key |  |  |
+| `PostingKeyName` | `FIS_BSCHL_NAME` |  |  |  |  | `String(20)` |  | Posting Key Name |  |  |
 
 
 ## Entity: `PostingKeyWithSpecialGLCode`
@@ -188,12 +188,12 @@
 - **ABAP CDS Name:** `I_PostingKeyWithSpecialGLCode`
 - **Label:** Posting Key with Special General Ledger Code
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** T074, T074T
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `PostingKey` | `FIS_BSCHL` |  |  |  |  | `String(2)` | Y | Posting Key |  | S/4 only entity |
-| `SpecialGLCode` | `FAC_UMSKZ` |  |  |  |  | `String(1)` | Y | Special G/L |  | S/4 only entity |
+| `PostingKey` | `FIS_BSCHL` |  |  |  |  | `String(2)` | Y | Posting Key |  |  |
+| `SpecialGLCode` | `FAC_UMSKZ` |  |  |  |  | `String(1)` | Y | Special G/L |  |  |
 
 
 ## Entity: `PostingKeyWithSpecialGLCodeText`
@@ -201,15 +201,15 @@
 - **ABAP CDS Name:** `I_PostingKeyWthSpclGLCodeTxt`
 - **Label:** Posting Key With Special General Leder Code - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** T074T
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `Language` | `SPRAS` |  |  |  |  | `String(2)` | Y | Language Key |  | S/4 only entity |
-| `PostingKey` | `FIS_BSCHL` |  |  |  |  | `String(2)` | Y | Posting Key |  | S/4 only entity |
-| `SpecialGLCode` | `FAC_UMSKZ` |  |  |  |  | `String(1)` | Y | Special G/L |  | S/4 only entity |
-| `FinancialAccountType` | `FARP_KOART` |  |  |  |  | `String(1)` |  | Account Type |  | S/4 only entity |
-| `PostingKeyName` | `FIS_BSCHL_NAME` |  |  |  |  | `String(20)` |  | Posting Key Name |  | S/4 only entity |
+| `Language` | `SPRAS` |  |  |  |  | `String(2)` | Y | Language Key |  |  |
+| `PostingKey` | `FIS_BSCHL` |  |  |  |  | `String(2)` | Y | Posting Key |  |  |
+| `SpecialGLCode` | `FAC_UMSKZ` |  |  |  |  | `String(1)` | Y | Special G/L |  |  |
+| `FinancialAccountType` | `FARP_KOART` |  |  |  |  | `String(1)` |  | Account Type |  |  |
+| `PostingKeyName` | `FIS_BSCHL_NAME` |  |  |  |  | `String(20)` |  | Posting Key Name |  |  |
 
 
 ## Entity: `SpecialGeneralLedgerCode`
@@ -217,15 +217,15 @@
 - **ABAP CDS Name:** `I_SpecialGLCode`
 - **Label:** Special General Ledger Code
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** T074, T074T
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `SpecialGLCode` | `UMSKZ` |  |  |  |  | `String(1)` | Y | Special G/L Ind. |  | S/4 only entity |
-| `FinancialAccountType` | `KOART` |  |  |  |  | `String(1)` | Y | Account Type |  | S/4 only entity |
-| `SpecialGLTransactionType` | `UMSKS` |  |  |  |  | `String(1)` |  | Sp. G/L Trans.Type |  | S/4 only entity |
-| `CreditLimitIsChecked` | `KLIMP_074U` |  |  |  |  | `Boolean` |  | Rel.to Credit Limit |  | S/4 only entity |
-| `IsNotedItmWithoutBalUpdt` | `MERKP_074U` |  |  |  |  | `Boolean` |  | Noted Items |  | S/4 only entity |
+| `SpecialGLCode` | `UMSKZ` |  |  |  |  | `String(1)` | Y | Special G/L Ind. |  |  |
+| `FinancialAccountType` | `KOART` |  |  |  |  | `String(1)` | Y | Account Type |  |  |
+| `SpecialGLTransactionType` | `UMSKS` |  |  |  |  | `String(1)` |  | Sp. G/L Trans.Type |  |  |
+| `CreditLimitIsChecked` | `KLIMP_074U` |  |  |  |  | `Boolean` |  | Rel.to Credit Limit |  |  |
+| `IsNotedItmWithoutBalUpdt` | `MERKP_074U` |  |  |  |  | `Boolean` |  | Noted Items |  |  |
 
 
 ## Entity: `SpecialGeneralLedgerCodeText`
@@ -233,15 +233,15 @@
 - **ABAP CDS Name:** `I_SpecialGLCodeText`
 - **Label:** Special General Ledger Code - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** T074T
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `FinancialAccountType` | `KOART` |  |  |  |  | `String(1)` | Y | Account Type |  | S/4 only entity |
-| `SpecialGLCode` | `UMSKZ` |  |  |  |  | `String(1)` | Y | Special G/L Ind. |  | S/4 only entity |
-| `Language` | `SPRAS` |  |  |  |  | `String(2)` | Y | Language Key |  | S/4 only entity |
-| `SpecialGLCodeName` | `KTEXT_074T` |  |  |  |  | `String(7)` |  | Name |  | S/4 only entity |
-| `SpecialGLCodeLongName` | `LTEXT_074T` |  |  |  |  | `String(30)` |  | Description |  | S/4 only entity |
+| `FinancialAccountType` | `KOART` |  |  |  |  | `String(1)` | Y | Account Type |  |  |
+| `SpecialGLCode` | `UMSKZ` |  |  |  |  | `String(1)` | Y | Special G/L Ind. |  |  |
+| `Language` | `SPRAS` |  |  |  |  | `String(2)` | Y | Language Key |  |  |
+| `SpecialGLCodeName` | `KTEXT_074T` |  |  |  |  | `String(7)` |  | Name |  |  |
+| `SpecialGLCodeLongName` | `LTEXT_074T` |  |  |  |  | `String(30)` |  | Description |  |  |
 
 
 ## Entity: `SubledgerAccountLineItemType`
@@ -249,7 +249,7 @@
 - **ABAP CDS Name:** `I_SubLedgerAccLineItemType`
 - **Label:** SubLedger Account LineItem Type
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -261,7 +261,7 @@
 - **ABAP CDS Name:** `I_SubLedgerAccLineItemTypeT`
 - **Label:** Subledger Account Line Item Type - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|

@@ -10,7 +10,7 @@
 - **ABAP CDS Name:** `I_SalesOrder`
 - **Label:** Sales Order
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** VBAK, VBKD, VEDA
+- **ECC Source Tables:** VBAK, VBKD
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -98,7 +98,7 @@
 | `PaymentMethod` | `SCHZW_BSEG` |  |  |  |  | `String(1)` |  | Payment Method |  |  |
 | `FixedValueDate` | `VALDT` |  |  |  |  | `Date` |  | Fixed Value Date |  |  |
 | `FiscalYear` | `GJAHR` |  |  |  |  | `String(4)` |  | Fiscal Year |  |  |
-| `FiscalPeriod` | `POPER` |  |  |  |  | `String(3)` |  | Posting Period |  | ECC MONAT unpadded '3'; S/4 ACDOCA.POPER zero-padded '003' |
+| `FiscalPeriod` | `POPER` |  |  |  |  | `String(3)` |  | Posting Period |  |  |
 | `ExchangeRateDate` | `WWERT_D` |  |  |  |  | `Date` |  | Translation Date |  |  |
 | `ExchangeRateType` | `KURST` |  |  |  |  | `String(4)` |  | Exchange Rate Type |  |  |
 | `AccountingExchangeRate` | `KURRF` |  |  |  |  | `Decimal(9,5)` |  | Exchng. Rate Accntg. |  |  |
@@ -179,7 +179,7 @@
 - **ABAP CDS Name:** `I_SalesOrderItem`
 - **Label:** Sales Order Item
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** VBAK, VBAP, VBKD, VEDA
+- **ECC Source Tables:** VBAP, VEDA
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -331,7 +331,7 @@
 | `ItemBillingBlockReason` | `FAKSP_AP` |  |  |  |  | `String(2)` |  | Billing Block |  |  |
 | `BillingPlan` | `FPLNR` |  |  |  |  | `String(10)` |  | Bill. Plan No. |  |  |
 | `FiscalYear` | `GJAHR` |  |  |  |  | `String(4)` |  | Fiscal Year |  |  |
-| `FiscalPeriod` | `POPER` |  |  |  |  | `String(3)` |  | Posting Period |  | ECC MONAT unpadded '3'; S/4 ACDOCA.POPER zero-padded '003' |
+| `FiscalPeriod` | `POPER` |  |  |  |  | `String(3)` |  | Posting Period |  |  |
 | `CustomerAccountAssignmentGroup` | `KTGRD` |  |  |  |  | `String(2)` |  | Acct Assmt Grp Cust. |  |  |
 | `BusinessArea` | `GSBER` |  |  |  |  | `String(4)` |  | Business Area |  |  |
 | `ControllingArea` | `KOKRS` |  |  |  |  | `String(4)` |  | Controlling Area |  |  |

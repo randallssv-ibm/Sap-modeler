@@ -8,13 +8,13 @@
 - **ABAP CDS Name:** `I_FXFixingReferenceText`
 - **Label:** Foreign Exchange Fixing Reference - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** VTBFXFR
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `Language` | `SPRAS` |  |  |  |  | `String(2)` | Y | Language Key |  | S/4 only entity |
-| `ForeignExchangeFixingReference` | `FTR_FIXING_REF_ID` |  |  |  |  | `String(30)` | Y | Fixing Reference ID |  | S/4 only entity |
-| `FXFixingReferenceName` | `FTR_FIXING_REF_ID_TEXT` |  |  |  |  | `String(40)` |  | Fixing Ref. Desc. |  | S/4 only entity |
+| `Language` | `SPRAS` |  |  |  |  | `String(2)` | Y | Language Key |  |  |
+| `ForeignExchangeFixingReference` | `FTR_FIXING_REF_ID` |  |  |  |  | `String(30)` | Y | Fixing Reference ID |  |  |
+| `FXFixingReferenceName` | `FTR_FIXING_REF_ID_TEXT` |  |  |  |  | `String(40)` |  | Fixing Ref. Desc. |  |  |
 
 
 ## Entity: `FinInstrActivityCategoryText`
@@ -22,7 +22,7 @@
 - **ABAP CDS Name:** `I_FinInstrActivityCategoryText`
 - **Label:** Fin Instrument Activity Category - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -38,7 +38,7 @@
 - **ABAP CDS Name:** `I_FinInstrProdTypeSuplmnt`
 - **Label:** Product Type Supplements
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -57,7 +57,7 @@
 - **ABAP CDS Name:** `I_FinancialInstrProdTypeText`
 - **Label:** Product Type - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -71,7 +71,7 @@
 - **ABAP CDS Name:** `I_FinInstrTransCatText`
 - **Label:** Transaction Category - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -86,7 +86,7 @@
 - **ABAP CDS Name:** `I_FinInstrTransCat`
 - **Label:** Transaction Category
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -99,7 +99,7 @@
 - **ABAP CDS Name:** `I_FinancialInstrTransTypeText`
 - **Label:** Transaction Type - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -114,7 +114,7 @@
 - **ABAP CDS Name:** `I_FinInstrActivityCategory`
 - **Label:** Financial Instrument Activity Category
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -129,7 +129,7 @@
 - **ABAP CDS Name:** `I_FinTransNoticePeriodUnit`
 - **Label:** Financial Transaction Notice Period Unit
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -142,7 +142,7 @@
 - **ABAP CDS Name:** `I_FinTransNoticePeriodUnitText`
 - **Label:** Fin Trans Notice Period Unit - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -157,7 +157,7 @@
 - **ABAP CDS Name:** `I_OptionExerciseType`
 - **Label:** Option exercise type
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -169,7 +169,7 @@
 - **ABAP CDS Name:** `I_OptionExerciseTypeText`
 - **Label:** Option exercise type - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -183,7 +183,7 @@
 - **ABAP CDS Name:** `I_OptionSettlementType`
 - **Label:** Option settlement type
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -195,7 +195,7 @@
 - **ABAP CDS Name:** `I_OptionSettlementTypeText`
 - **Label:** Option settlement type - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -209,7 +209,7 @@
 - **ABAP CDS Name:** `I_FinTransOptnUndrlgAllocation`
 - **Label:** Fin Trans Option Underlying Allocation
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -223,7 +223,7 @@
 - **ABAP CDS Name:** `I_FinTransReleaseStatus`
 - **Label:** Financial Transaction Release Status
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -236,7 +236,7 @@
 - **ABAP CDS Name:** `I_FinTransReleaseStatusText`
 - **Label:** Fin Transaction Release Status - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -251,7 +251,7 @@
 - **ABAP CDS Name:** `I_FinTransUnderlyingFlow`
 - **Label:** Fin Transaction Underlying Flow
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -323,7 +323,7 @@
 - **ABAP CDS Name:** `I_FinancialInstrTransType`
 - **Label:** Transaction Type
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -338,7 +338,7 @@
 - **ABAP CDS Name:** `I_FinancialinstrProductType`
 - **Label:** Product Type
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -353,7 +353,7 @@
 - **ABAP CDS Name:** `I_FinInstrumentStatus`
 - **Label:** Financial Instrument Status
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -366,7 +366,7 @@
 - **ABAP CDS Name:** `I_FinInstrumentStatusText`
 - **Label:** Financial Instrument Status - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -381,107 +381,107 @@
 - **ABAP CDS Name:** `I_FinancialTransactionDEX`
 - **Label:** Financial Transaction
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** VTBFHA, VTBFHAZU
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `CompanyCode` | `BUKRS` |  |  |  |  | `String(4)` | Y | Company Code |  | S/4 only entity |
-| `FinancialTransaction` | `TB_RFHA` |  |  |  |  | `String(13)` | Y | Transaction |  | S/4 only entity |
-| `FinTransCreationDate` | `FTR_CREATION_DATE` |  |  |  |  | `Date` |  | Created On |  | S/4 only entity |
-| `FinTransCreationTime` | `TB_TCRTIM` |  |  |  |  | `String(6)` |  | Entry Time |  | S/4 only entity |
-| `LastChangeDate` | `TB_DUPDAT` |  |  |  |  | `Date` |  | Changed On |  | S/4 only entity |
-| `FinInstrumentLastChangedTime` | `TB_TUPTIM` |  |  |  |  | `String(6)` |  | Time Changed |  | S/4 only entity |
-| `TreasuryContractType` | `RANTYP` |  |  |  |  | `String(1)` |  | Contract Type |  | S/4 only entity |
-| `FinancialInstrProductCategory` | `FTR_GEN_FIN_INSTR_PROD_CATEG` |  |  |  |  | `String(3)` |  | Product Category |  | S/4 only entity |
-| `FinancialInstrumentProductType` | `VVSART` |  |  |  |  | `String(3)` |  | Product Type |  | S/4 only entity |
-| `FinInstrTransactionCategory` | `TB_SFGTYP` |  |  |  |  | `String(3)` |  | Transaction Category |  | S/4 only entity |
-| `FinancialInstrTransactionType` | `FTR_GEN_TRANSACTION_TYPE` |  |  |  |  | `String(3)` |  | Transaction Type |  | S/4 only entity |
-| `TermStartDate` | `TB_DBLFZ` |  |  |  |  | `Date` |  | Term Start |  | S/4 only entity |
-| `FinTransNoticePeriod` | `TB_AKUEND` |  |  |  |  | `String(3)` |  | Period of Notice |  | S/4 only entity |
-| `FinTransNoticePeriodUnit` | `TB_SKUEND` |  |  |  |  | `String(1)` |  | Unit |  | S/4 only entity |
-| `FinTransFactoryCalendar1` | `SKALID` |  |  |  |  | `String(2)` |  | Calendar |  | S/4 only entity |
-| `FinTransFactoryCalendar2` | `SKALID` |  |  |  |  | `String(2)` |  | Calendar |  | S/4 only entity |
-| `Counterparty` | `RKONTRAH_NEW` |  |  |  |  | `String(10)` |  | Counterparty |  | S/4 only entity |
-| `FinancialInstrumentGuarantor` | `TB_RGARANT_NEW` |  |  |  |  | `String(10)` |  | Guarantor |  | S/4 only entity |
-| `Portfolio` | `RPORTB` |  |  |  |  | `String(10)` |  | Portfolio |  | S/4 only entity |
-| `TreasuryFinanceProject` | `TB_TFPROJ` |  |  |  |  | `String(13)` |  | Finance Project |  | S/4 only entity |
-| `FinancialInstrumentAssignment` | `FTR_GEN_FIN_INSTR_ASSIGNMENT` |  |  |  |  | `String(18)` |  | Free Assignment |  | S/4 only entity |
-| `FinancialInstrumentReference` | `FTR_GEN_FIN_INSTR_INTERNAL_REF` |  |  |  |  | `String(16)` |  | Free Internal Ref. |  | S/4 only entity |
-| `FinancialInstrCharacteristic` | `FTR_GEN_FIN_INSTR_CHAR` |  |  |  |  | `String(25)` |  | Free Charact. |  | S/4 only entity |
-| `ControllingArea` | `KOKRS` |  |  |  |  | `String(4)` |  | Controlling Area |  | S/4 only entity |
-| `CostCenter` | `KOSTL` |  |  |  |  | `String(10)` |  | Cost Center |  | S/4 only entity |
-| `HedgingClassification` | `TOE_HEDGING_CLASSIFICATION` |  |  |  |  | `String(5)` |  | Hedging Classificatn |  | S/4 only entity |
-| `HedgeRequestIdentifier` | `HEDGE_REQUEST_IDENTIFIER` |  |  |  |  | `String(13)` |  | Hedge Request ID |  | S/4 only entity |
-| `ProfitCenter` | `PRCTR` |  |  |  |  | `String(10)` |  | Profit Center |  | S/4 only entity |
-| `WBSElementInternalID` | `PS_S4_PSPNR` |  |  |  |  | `String(8)` |  | WBS Internal ID |  | S/4 only entity |
-| `TreasuryFacilityCompanyCode` | `TB_FACILITYBUKRS` |  |  |  |  | `String(4)` |  | CoCd of Facility |  | S/4 only entity |
-| `TreasuryFacility` | `TB_FACILITYNR` |  |  |  |  | `String(13)` |  | Facility |  | S/4 only entity |
-| `FinancialInstrumentStatus` | `TB_SAKTIV` |  |  |  |  | `String(1)` |  | Active Status |  | S/4 only entity |
-| `FinTransReleaseStatus` | `TB_FRGZUST` |  |  |  |  | `String(1)` |  | Release Status |  | S/4 only entity |
-| `TransactionCurrency` | `TB_WGSCHFT` |  |  |  |  | `String(5)` |  | Transaction Currency |  | S/4 only entity |
-| `FinInstrumentOutgoingCurrency` | `TB_WGSCHF1` |  |  |  |  | `String(5)` |  | Outgoing Currency |  | S/4 only entity |
-| `FinInstrumentIncomingCurrency` | `TB_WGSCHF2` |  |  |  |  | `String(5)` |  | Incoming Currency |  | S/4 only entity |
-| `TradedCurrency` | `FTR_TRADED_CURR` |  |  |  |  | `String(5)` |  | Traded Currency |  | S/4 only entity |
-| `SecurityClass` | `FTR_GEN_SECURITY_CLASS` |  |  |  |  | `String(13)` |  | Security Class |  | S/4 only entity |
-| `ClassificationOfFinInstr` | `FTR_CFI_CODE` |  |  |  |  | `String(6)` |  | CFI Code |  | S/4 only entity |
-| `SecurityAccount` | `FTR_GEN_SECURITY_ACCOUNT` |  |  |  |  | `String(10)` |  | Securities Account |  | S/4 only entity |
-| `FinTransIsRiskMitigating` | `FTR_THRESHOLD_RISK_MITIGATING` |  |  |  |  | `Boolean` |  | Risk Mitigation |  | S/4 only entity |
-| `FinInstrLastActiveActivity` | `FTR_GEN_FIN_INSTR_LAST_ACT_ACT` |  |  |  |  | `String(5)` |  | Last Active Activity |  | S/4 only entity |
-| `TrsyTradedAmountBuySellCode` | `TTM_FX_BUY_SELL` |  |  |  |  | `String(1)` |  | Buy/Sell |  | S/4 only entity |
-| `Segment` | `FB_SEGMENT` |  |  |  |  | `String(10)` |  | Segment |  | S/4 only entity |
-| `OnBehalfOfCompany` | `TRBA_BEHALF_OF_COMPANY` |  |  |  |  | `String(4)` |  | On Behalf of CoCode |  | S/4 only entity |
-| `MarketIdentifierCode` | `TBA_MIC` |  |  |  |  | `String(4)` |  | MIC |  | S/4 only entity |
-| `FinTransRoundingCategory` | `TB_SRNDNG` |  |  |  |  | `String(1)` |  | Round |  | S/4 only entity |
-| `FinTransGeneralValuationClass` | `TPM_COM_VAL_CLASS` |  |  |  |  | `String(4)` |  | Gen. Valn Class |  | S/4 only entity |
-| `Fund` | `FM_FUND` |  |  |  |  | `String(10)` |  | Fund |  | S/4 only entity |
-| `GrantID` | `GM_GRANT_NBR` |  |  |  |  | `String(20)` |  | Grant |  | S/4 only entity |
-| `FinTransAuthorizationGroup` | `TBEGRU` |  |  |  |  | `String(4)` |  | Authorization Group |  | S/4 only entity |
-| `BusinessPlace` | `BUPLA` |  |  |  |  | `String(4)` |  | Business Place |  | S/4 only entity |
-| `FunctionalArea` | `FKBER` |  |  |  |  | `String(16)` |  | Functional Area |  | S/4 only entity |
-| `TrsyPosCustomDiffntnTerm1` | `TPM_CUST_DIFF_TERM_VALUE` |  |  |  |  | `String(20)` |  | Cust.Diff.Term Val. |  | S/4 only entity |
-| `TrsyPosCustomDiffntnTerm2` | `TPM_CUST_DIFF_TERM_VALUE` |  |  |  |  | `String(20)` |  | Cust.Diff.Term Val. |  | S/4 only entity |
-| `TrsyPosCustomDiffntnTerm3` | `TPM_CUST_DIFF_TERM_VALUE` |  |  |  |  | `String(20)` |  | Cust.Diff.Term Val. |  | S/4 only entity |
-| `TrsyPosCustomDiffntnTerm4` | `TPM_CUST_DIFF_TERM_VALUE` |  |  |  |  | `String(20)` |  | Cust.Diff.Term Val. |  | S/4 only entity |
-| `TrsyPosCustomDiffntnTerm5` | `TPM_CUST_DIFF_TERM_VALUE` |  |  |  |  | `String(20)` |  | Cust.Diff.Term Val. |  | S/4 only entity |
-| `UniqueProductIdentifier` | `FTR_UPI` |  |  |  |  | `String(12)` |  | Unique Product ID |  | S/4 only entity |
-| `InternationalSecuritiesIdnNmbr` | `RANL_ISIN` |  |  |  |  | `String(12)` |  | Security ID (ISIN) |  | S/4 only entity |
-| `ReportTrackingNumber` | `FTR_RTN` |  |  |  |  | `String(52)` |  | Report Tracking No. |  | S/4 only entity |
-| `FinTransOptionNumber` | `TI_RGATT` |  |  |  |  | `String(13)` |  | Class |  | S/4 only entity |
-| `FinancialInstrActivityCategory` | `TB_SFGZUTY` |  |  |  |  | `String(2)` |  | Activity Category |  | S/4 only entity |
-| `TermEndDate` | `TB_DELFZ` |  |  |  |  | `Date` |  | Term End |  | S/4 only entity |
-| `FinTransTermCategory` | `FTR_TERM_CATEGORY` |  |  |  |  | `String(1)` |  | Term Category |  | S/4 only entity |
-| `FinTransTermStartEndInclusive` | `FTR_TERM_START_END_INCLUSIVE` |  |  |  |  | `String(1)` |  | Term Start and End Inclusive |  | S/4 only entity |
-| `FinTransNoticeDate` | `TB_NOTICE_DATE` |  |  |  |  | `Date` |  | Notice Date |  | S/4 only entity |
-| `FinTransActyConclusionDate` | `FTR_ACTY_CONCLUSION_DTE` |  |  |  |  | `Date` |  | Conclusion Date |  | S/4 only entity |
-| `FinTransActyConclusionTime` | `TB_TVTRAB` |  |  |  |  | `String(6)` |  | Contract.Concl.Time |  | S/4 only entity |
-| `FinTransActyConclusionTimeZone` | `TB_ZVTRAB` |  |  |  |  | `String(6)` |  | Time Zone Contr.Date |  | S/4 only entity |
-| `FinTransRolloverDate` | `TB_DBLFZ` |  |  |  |  | `Date` |  | Term Start |  | S/4 only entity |
-| `FinTransExerciseDate` | `TB_DELFZ` |  |  |  |  | `Date` |  | Term End |  | S/4 only entity |
-| `FinTransOrderValidityEndDate` | `TB_LIMITDA` |  |  |  |  | `Date` |  | Limit Date |  | S/4 only entity |
-| `FinTransFixingDate` | `TB_DFIX` |  |  |  |  | `Date` |  | Fixing Date |  | S/4 only entity |
-| `ForeignExchangeFixingReference` | `FTR_FIXING_REF_ID` |  |  |  |  | `String(30)` |  | Fixing Reference ID |  | S/4 only entity |
-| `Trader` | `RDEALER` |  |  |  |  | `String(12)` |  | Trader |  | S/4 only entity |
-| `FinancialInstrContactPerson` | `TB_GSPPART` |  |  |  |  | `String(19)` |  | Contact Person |  | S/4 only entity |
-| `FinInstrExternalReference` | `TB_NORDEXT` |  |  |  |  | `String(16)` |  | External Reference |  | S/4 only entity |
-| `TreasuryReversalReason` | `SSTOGRD` |  |  |  |  | `String(2)` |  | Reason for Reversal |  | S/4 only entity |
-| `LeadingCurrency` | `TB_WLWAERS` |  |  |  |  | `String(5)` |  | Leading Currency |  | S/4 only entity |
-| `FollowingCurrency` | `TB_WFWAERS` |  |  |  |  | `String(5)` |  | Following Currency |  | S/4 only entity |
-| `ExchangeRate` | `TB_KKURS` |  |  |  |  | `Decimal(13,9)` |  | Transaction Rate |  | S/4 only entity |
-| `SpotExchangeRate` | `TB_KKASSA` |  |  |  |  | `Decimal(13,9)` |  | Spot Rate |  | S/4 only entity |
-| `SwapExchangeRate` | `TB_KSWAP` |  |  |  |  | `Decimal(13,9)` |  | Swap Rate |  | S/4 only entity |
-| `LiquidityEffectValue` | `TX_KWLIQ` |  |  |  |  | `Decimal(13,9)` |  | Liquidity Effect |  | S/4 only entity |
-| `CurrencyPair` | `FTR_CURR_PAIR` |  |  |  |  | `String(20)` |  | Currency Pair |  | S/4 only entity |
-| `EffectiveInterestRate` | `TB_PYIELD` |  |  |  |  | `Decimal(10,7)` |  | Effect.Interest Rate |  | S/4 only entity |
-| `EffectiveInterestMethod` | `SEFFMETH` |  |  |  |  | `String(1)` |  | Effect. Int. Method |  | S/4 only entity |
-| `LetterOfCredit` | `FTR_LC_NUMBER` |  |  |  |  | `String(16)` |  | Letter of Credit No. |  | S/4 only entity |
-| `TreasuryApplicant` | `FTR_APPLICANT` |  |  |  |  | `String(10)` |  | Applicant |  | S/4 only entity |
-| `TreasuryBeneficiary` | `FTR_BENEFICIARY` |  |  |  |  | `String(10)` |  | Beneficiary |  | S/4 only entity |
-| `TrsyMnllyEnteredBnfcyName` | `FTR_MAN_BENE_NAME` |  |  |  |  | `String(25)` |  | Benefic. Name (Man.) |  | S/4 only entity |
-| `TrsyMnllyEnteredApplcntName` | `FTR_MAN_APPL_NAME` |  |  |  |  | `String(25)` |  | ApplicantName (Man.) |  | S/4 only entity |
-| `TreasuryAdvisingBank` | `FTR_ADVISING_BANK` |  |  |  |  | `String(10)` |  | Advising Bank |  | S/4 only entity |
-| `TreasuryIssuingBank` | `FTR_ISSUE_BANK` |  |  |  |  | `String(10)` |  | Issuing Bank |  | S/4 only entity |
-| `BankGuaranteeNumber` | `FTR_BG_NUMBER` |  |  |  |  | `String(16)` |  | Bank Guarantee No. |  | S/4 only entity |
-| `BankGuaranteeType` | `FTR_BG_TYPE` |  |  |  |  | `String(4)` |  | Bank Guarantee Type |  | S/4 only entity |
+| `CompanyCode` | `BUKRS` |  |  |  |  | `String(4)` | Y | Company Code |  |  |
+| `FinancialTransaction` | `TB_RFHA` |  |  |  |  | `String(13)` | Y | Transaction |  |  |
+| `FinTransCreationDate` | `FTR_CREATION_DATE` |  |  |  |  | `Date` |  | Created On |  |  |
+| `FinTransCreationTime` | `TB_TCRTIM` |  |  |  |  | `String(6)` |  | Entry Time |  |  |
+| `LastChangeDate` | `TB_DUPDAT` |  |  |  |  | `Date` |  | Changed On |  |  |
+| `FinInstrumentLastChangedTime` | `TB_TUPTIM` |  |  |  |  | `String(6)` |  | Time Changed |  |  |
+| `TreasuryContractType` | `RANTYP` |  |  |  |  | `String(1)` |  | Contract Type |  |  |
+| `FinancialInstrProductCategory` | `FTR_GEN_FIN_INSTR_PROD_CATEG` |  |  |  |  | `String(3)` |  | Product Category |  |  |
+| `FinancialInstrumentProductType` | `VVSART` |  |  |  |  | `String(3)` |  | Product Type |  |  |
+| `FinInstrTransactionCategory` | `TB_SFGTYP` |  |  |  |  | `String(3)` |  | Transaction Category |  |  |
+| `FinancialInstrTransactionType` | `FTR_GEN_TRANSACTION_TYPE` |  |  |  |  | `String(3)` |  | Transaction Type |  |  |
+| `TermStartDate` | `TB_DBLFZ` |  |  |  |  | `Date` |  | Term Start |  |  |
+| `FinTransNoticePeriod` | `TB_AKUEND` |  |  |  |  | `String(3)` |  | Period of Notice |  |  |
+| `FinTransNoticePeriodUnit` | `TB_SKUEND` |  |  |  |  | `String(1)` |  | Unit |  |  |
+| `FinTransFactoryCalendar1` | `SKALID` |  |  |  |  | `String(2)` |  | Calendar |  |  |
+| `FinTransFactoryCalendar2` | `SKALID` |  |  |  |  | `String(2)` |  | Calendar |  |  |
+| `Counterparty` | `RKONTRAH_NEW` |  |  |  |  | `String(10)` |  | Counterparty |  |  |
+| `FinancialInstrumentGuarantor` | `TB_RGARANT_NEW` |  |  |  |  | `String(10)` |  | Guarantor |  |  |
+| `Portfolio` | `RPORTB` |  |  |  |  | `String(10)` |  | Portfolio |  |  |
+| `TreasuryFinanceProject` | `TB_TFPROJ` |  |  |  |  | `String(13)` |  | Finance Project |  |  |
+| `FinancialInstrumentAssignment` | `FTR_GEN_FIN_INSTR_ASSIGNMENT` |  |  |  |  | `String(18)` |  | Free Assignment |  |  |
+| `FinancialInstrumentReference` | `FTR_GEN_FIN_INSTR_INTERNAL_REF` |  |  |  |  | `String(16)` |  | Free Internal Ref. |  |  |
+| `FinancialInstrCharacteristic` | `FTR_GEN_FIN_INSTR_CHAR` |  |  |  |  | `String(25)` |  | Free Charact. |  |  |
+| `ControllingArea` | `KOKRS` |  |  |  |  | `String(4)` |  | Controlling Area |  |  |
+| `CostCenter` | `KOSTL` |  |  |  |  | `String(10)` |  | Cost Center |  |  |
+| `HedgingClassification` | `TOE_HEDGING_CLASSIFICATION` |  |  |  |  | `String(5)` |  | Hedging Classificatn |  |  |
+| `HedgeRequestIdentifier` | `HEDGE_REQUEST_IDENTIFIER` |  |  |  |  | `String(13)` |  | Hedge Request ID |  |  |
+| `ProfitCenter` | `PRCTR` |  |  |  |  | `String(10)` |  | Profit Center |  |  |
+| `WBSElementInternalID` | `PS_S4_PSPNR` |  |  |  |  | `String(8)` |  | WBS Internal ID |  |  |
+| `TreasuryFacilityCompanyCode` | `TB_FACILITYBUKRS` |  |  |  |  | `String(4)` |  | CoCd of Facility |  |  |
+| `TreasuryFacility` | `TB_FACILITYNR` |  |  |  |  | `String(13)` |  | Facility |  |  |
+| `FinancialInstrumentStatus` | `TB_SAKTIV` |  |  |  |  | `String(1)` |  | Active Status |  |  |
+| `FinTransReleaseStatus` | `TB_FRGZUST` |  |  |  |  | `String(1)` |  | Release Status |  |  |
+| `TransactionCurrency` | `TB_WGSCHFT` |  |  |  |  | `String(5)` |  | Transaction Currency |  |  |
+| `FinInstrumentOutgoingCurrency` | `TB_WGSCHF1` |  |  |  |  | `String(5)` |  | Outgoing Currency |  |  |
+| `FinInstrumentIncomingCurrency` | `TB_WGSCHF2` |  |  |  |  | `String(5)` |  | Incoming Currency |  |  |
+| `TradedCurrency` | `FTR_TRADED_CURR` |  |  |  |  | `String(5)` |  | Traded Currency |  |  |
+| `SecurityClass` | `FTR_GEN_SECURITY_CLASS` |  |  |  |  | `String(13)` |  | Security Class |  |  |
+| `ClassificationOfFinInstr` | `FTR_CFI_CODE` |  |  |  |  | `String(6)` |  | CFI Code |  |  |
+| `SecurityAccount` | `FTR_GEN_SECURITY_ACCOUNT` |  |  |  |  | `String(10)` |  | Securities Account |  |  |
+| `FinTransIsRiskMitigating` | `FTR_THRESHOLD_RISK_MITIGATING` |  |  |  |  | `Boolean` |  | Risk Mitigation |  |  |
+| `FinInstrLastActiveActivity` | `FTR_GEN_FIN_INSTR_LAST_ACT_ACT` |  |  |  |  | `String(5)` |  | Last Active Activity |  |  |
+| `TrsyTradedAmountBuySellCode` | `TTM_FX_BUY_SELL` |  |  |  |  | `String(1)` |  | Buy/Sell |  |  |
+| `Segment` | `FB_SEGMENT` |  |  |  |  | `String(10)` |  | Segment |  |  |
+| `OnBehalfOfCompany` | `TRBA_BEHALF_OF_COMPANY` |  |  |  |  | `String(4)` |  | On Behalf of CoCode |  |  |
+| `MarketIdentifierCode` | `TBA_MIC` |  |  |  |  | `String(4)` |  | MIC |  |  |
+| `FinTransRoundingCategory` | `TB_SRNDNG` |  |  |  |  | `String(1)` |  | Round |  |  |
+| `FinTransGeneralValuationClass` | `TPM_COM_VAL_CLASS` |  |  |  |  | `String(4)` |  | Gen. Valn Class |  |  |
+| `Fund` | `FM_FUND` |  |  |  |  | `String(10)` |  | Fund |  |  |
+| `GrantID` | `GM_GRANT_NBR` |  |  |  |  | `String(20)` |  | Grant |  |  |
+| `FinTransAuthorizationGroup` | `TBEGRU` |  |  |  |  | `String(4)` |  | Authorization Group |  |  |
+| `BusinessPlace` | `BUPLA` |  |  |  |  | `String(4)` |  | Business Place |  |  |
+| `FunctionalArea` | `FKBER` |  |  |  |  | `String(16)` |  | Functional Area |  |  |
+| `TrsyPosCustomDiffntnTerm1` | `TPM_CUST_DIFF_TERM_VALUE` |  |  |  |  | `String(20)` |  | Cust.Diff.Term Val. |  |  |
+| `TrsyPosCustomDiffntnTerm2` | `TPM_CUST_DIFF_TERM_VALUE` |  |  |  |  | `String(20)` |  | Cust.Diff.Term Val. |  |  |
+| `TrsyPosCustomDiffntnTerm3` | `TPM_CUST_DIFF_TERM_VALUE` |  |  |  |  | `String(20)` |  | Cust.Diff.Term Val. |  |  |
+| `TrsyPosCustomDiffntnTerm4` | `TPM_CUST_DIFF_TERM_VALUE` |  |  |  |  | `String(20)` |  | Cust.Diff.Term Val. |  |  |
+| `TrsyPosCustomDiffntnTerm5` | `TPM_CUST_DIFF_TERM_VALUE` |  |  |  |  | `String(20)` |  | Cust.Diff.Term Val. |  |  |
+| `UniqueProductIdentifier` | `FTR_UPI` |  |  |  |  | `String(12)` |  | Unique Product ID |  |  |
+| `InternationalSecuritiesIdnNmbr` | `RANL_ISIN` |  |  |  |  | `String(12)` |  | Security ID (ISIN) |  |  |
+| `ReportTrackingNumber` | `FTR_RTN` |  |  |  |  | `String(52)` |  | Report Tracking No. |  |  |
+| `FinTransOptionNumber` | `TI_RGATT` |  |  |  |  | `String(13)` |  | Class |  |  |
+| `FinancialInstrActivityCategory` | `TB_SFGZUTY` |  |  |  |  | `String(2)` |  | Activity Category |  |  |
+| `TermEndDate` | `TB_DELFZ` |  |  |  |  | `Date` |  | Term End |  |  |
+| `FinTransTermCategory` | `FTR_TERM_CATEGORY` |  |  |  |  | `String(1)` |  | Term Category |  |  |
+| `FinTransTermStartEndInclusive` | `FTR_TERM_START_END_INCLUSIVE` |  |  |  |  | `String(1)` |  | Term Start and End Inclusive |  |  |
+| `FinTransNoticeDate` | `TB_NOTICE_DATE` |  |  |  |  | `Date` |  | Notice Date |  |  |
+| `FinTransActyConclusionDate` | `FTR_ACTY_CONCLUSION_DTE` |  |  |  |  | `Date` |  | Conclusion Date |  |  |
+| `FinTransActyConclusionTime` | `TB_TVTRAB` |  |  |  |  | `String(6)` |  | Contract.Concl.Time |  |  |
+| `FinTransActyConclusionTimeZone` | `TB_ZVTRAB` |  |  |  |  | `String(6)` |  | Time Zone Contr.Date |  |  |
+| `FinTransRolloverDate` | `TB_DBLFZ` |  |  |  |  | `Date` |  | Term Start |  |  |
+| `FinTransExerciseDate` | `TB_DELFZ` |  |  |  |  | `Date` |  | Term End |  |  |
+| `FinTransOrderValidityEndDate` | `TB_LIMITDA` |  |  |  |  | `Date` |  | Limit Date |  |  |
+| `FinTransFixingDate` | `TB_DFIX` |  |  |  |  | `Date` |  | Fixing Date |  |  |
+| `ForeignExchangeFixingReference` | `FTR_FIXING_REF_ID` |  |  |  |  | `String(30)` |  | Fixing Reference ID |  |  |
+| `Trader` | `RDEALER` |  |  |  |  | `String(12)` |  | Trader |  |  |
+| `FinancialInstrContactPerson` | `TB_GSPPART` |  |  |  |  | `String(19)` |  | Contact Person |  |  |
+| `FinInstrExternalReference` | `TB_NORDEXT` |  |  |  |  | `String(16)` |  | External Reference |  |  |
+| `TreasuryReversalReason` | `SSTOGRD` |  |  |  |  | `String(2)` |  | Reason for Reversal |  |  |
+| `LeadingCurrency` | `TB_WLWAERS` |  |  |  |  | `String(5)` |  | Leading Currency |  |  |
+| `FollowingCurrency` | `TB_WFWAERS` |  |  |  |  | `String(5)` |  | Following Currency |  |  |
+| `ExchangeRate` | `TB_KKURS` |  |  |  |  | `Decimal(13,9)` |  | Transaction Rate |  |  |
+| `SpotExchangeRate` | `TB_KKASSA` |  |  |  |  | `Decimal(13,9)` |  | Spot Rate |  |  |
+| `SwapExchangeRate` | `TB_KSWAP` |  |  |  |  | `Decimal(13,9)` |  | Swap Rate |  |  |
+| `LiquidityEffectValue` | `TX_KWLIQ` |  |  |  |  | `Decimal(13,9)` |  | Liquidity Effect |  |  |
+| `CurrencyPair` | `FTR_CURR_PAIR` |  |  |  |  | `String(20)` |  | Currency Pair |  |  |
+| `EffectiveInterestRate` | `TB_PYIELD` |  |  |  |  | `Decimal(10,7)` |  | Effect.Interest Rate |  |  |
+| `EffectiveInterestMethod` | `SEFFMETH` |  |  |  |  | `String(1)` |  | Effect. Int. Method |  |  |
+| `LetterOfCredit` | `FTR_LC_NUMBER` |  |  |  |  | `String(16)` |  | Letter of Credit No. |  |  |
+| `TreasuryApplicant` | `FTR_APPLICANT` |  |  |  |  | `String(10)` |  | Applicant |  |  |
+| `TreasuryBeneficiary` | `FTR_BENEFICIARY` |  |  |  |  | `String(10)` |  | Beneficiary |  |  |
+| `TrsyMnllyEnteredBnfcyName` | `FTR_MAN_BENE_NAME` |  |  |  |  | `String(25)` |  | Benefic. Name (Man.) |  |  |
+| `TrsyMnllyEnteredApplcntName` | `FTR_MAN_APPL_NAME` |  |  |  |  | `String(25)` |  | ApplicantName (Man.) |  |  |
+| `TreasuryAdvisingBank` | `FTR_ADVISING_BANK` |  |  |  |  | `String(10)` |  | Advising Bank |  |  |
+| `TreasuryIssuingBank` | `FTR_ISSUE_BANK` |  |  |  |  | `String(10)` |  | Issuing Bank |  |  |
+| `BankGuaranteeNumber` | `FTR_BG_NUMBER` |  |  |  |  | `String(16)` |  | Bank Guarantee No. |  |  |
+| `BankGuaranteeType` | `FTR_BG_TYPE` |  |  |  |  | `String(4)` |  | Bank Guarantee Type |  |  |
 
 
 ## Entity: `ForeignExchangeFixingReference`
@@ -489,7 +489,7 @@
 - **ABAP CDS Name:** `I_FXFixingReference`
 - **Label:** Foreign Exchange Fixing Reference
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -501,7 +501,7 @@
 - **ABAP CDS Name:** `I_TradeFinanceCategory`
 - **Label:** Trade Finance Category
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -513,7 +513,7 @@
 - **ABAP CDS Name:** `I_TradeFinanceCategoryText`
 - **Label:** Trade Finance Category - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -527,7 +527,7 @@
 - **ABAP CDS Name:** `I_TreasuryContractType`
 - **Label:** Treasury Contract Type
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -540,7 +540,7 @@
 - **ABAP CDS Name:** `I_TreasuryContractTypeText`
 - **Label:** Treasury Contract Type - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -555,12 +555,12 @@
 - **ABAP CDS Name:** `I_TreasuryPortfolio`
 - **Label:** Portfolio
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** VTBFHA
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `CompanyCode` | `BUKRS` |  |  |  |  | `String(4)` | Y | Company Code |  | S/4 only entity |
-| `Portfolio` | `RPORTB` |  |  |  |  | `String(10)` | Y | Portfolio |  | S/4 only entity |
+| `CompanyCode` | `BUKRS` |  |  |  |  | `String(4)` | Y | Company Code |  |  |
+| `Portfolio` | `RPORTB` |  |  |  |  | `String(10)` | Y | Portfolio |  |  |
 
 
 ## Entity: `TreasuryPortfolioText`
@@ -568,7 +568,7 @@
 - **ABAP CDS Name:** `I_TreasuryPortfolioText`
 - **Label:** Portfolio - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -583,7 +583,7 @@
 - **ABAP CDS Name:** `I_FinancialInstrProdCat`
 - **Label:** Product Category
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -596,7 +596,7 @@
 - **ABAP CDS Name:** `I_FinancialInstrProdCatText`
 - **Label:** Product Category - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -610,7 +610,7 @@
 - **ABAP CDS Name:** `I_TreasuryReversalReason`
 - **Label:** Treasury Reversal Reason
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -622,7 +622,7 @@
 - **ABAP CDS Name:** `I_TreasuryReversalReasonText`
 - **Label:** Treasury Reversal Reason - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|

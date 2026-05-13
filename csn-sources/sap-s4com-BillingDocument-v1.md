@@ -76,7 +76,7 @@
 | `CompanyCode` | `BUKRS` | `VBRK` | `BUKRS` |  |  | `String(4)` |  | Company Code |  |  |
 | `FiscalYear` | `GJAHR` | `VBRK` | `GJAHR` |  |  | `String(4)` |  | Fiscal Year |  |  |
 | `AccountingDocument` | `BELNR_D` | `VBRK` | `BELNR` |  |  | `String(10)` |  | Document Number |  |  |
-| `FiscalPeriod` | `POPER` |  |  |  |  | `String(3)` |  | Posting Period |  | ECC MONAT unpadded '3'; S/4 ACDOCA.POPER zero-padded '003' |
+| `FiscalPeriod` | `POPER` |  |  |  |  | `String(3)` |  | Posting Period |  |  |
 | `CustomerAccountAssignmentGroup` | `KTGRD` |  |  |  |  | `String(2)` |  | Acct Assmt Grp Cust. |  |  |
 | `AccountingExchangeRateIsSet` | `CPKUR` |  |  |  |  | `Boolean` |  | Set Exchange Rate |  |  |
 | `AccountingExchangeRate` | `KURRF_NOT_CONVERTED` |  |  |  |  | `Decimal(9,5)` |  | Accounting Exchange Rate |  |  |

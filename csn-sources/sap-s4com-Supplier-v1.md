@@ -10,7 +10,7 @@
 - **ABAP CDS Name:** `I_Supplier`
 - **Label:** Supplier
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** ADRC, LFA1
+- **ECC Source Tables:** LFA1, ADRC
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -47,7 +47,7 @@
 | `SupplierCorporateGroup` | `KONZS` |  |  |  |  | `String(10)` |  | Group Key |  |  |
 | `Customer` | `KUNNR` |  |  |  |  | `String(10)` |  | Customer |  |  |
 | `Industry` | `BRSCH` |  |  |  |  | `String(4)` |  | Industry |  |  |
-| `TaxNumber1` | `STCD1` | `LFA1` | `STCD1` |  |  | `String(16)` |  | Tax Number 1 |  |  |
+| `TaxNumber1` | `STCD1` |  |  |  |  | `String(16)` |  | Tax Number 1 |  |  |
 | `TaxNumber2` | `STCD2` |  |  |  |  | `String(11)` |  | Tax Number 2 |  |  |
 | `TaxNumber3` | `STCD3` |  |  |  |  | `String(18)` |  | Tax Number 3 |  |  |
 | `TaxNumber4` | `STCD4` |  |  |  |  | `String(18)` |  | Tax Number 4 |  |  |
@@ -154,7 +154,7 @@
 - **ABAP CDS Name:** `I_SupplierCompany`
 - **Label:** Supplier Company
 - **VDM Type:** `BASIC` | **Data Category:** `FACT`
-- **ECC Source Tables:** LFB1, T001
+- **ECC Source Tables:** LFB1
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -162,7 +162,7 @@
 | `CompanyCode` | `BUKRS` | `T001` | `BUKRS` |  |  | `String(4)` | Y | Company Code |  |  |
 | `AuthorizationGroup` | `BRGRU` |  |  |  |  | `String(4)` |  | Authorization |  |  |
 | `CompanyCodeName` | `BUTXT` |  |  |  |  | `String(25)` |  | Company Name |  |  |
-| `PaymentBlockingReason` | `DZAHLS` | `LFB1` | `ZAHLS` |  |  | `String(1)` |  | Payment Block |  |  |
+| `PaymentBlockingReason` | `DZAHLS` |  |  |  |  | `String(1)` |  | Payment Block |  |  |
 | `SupplierIsBlockedForPosting` | `SPERB_B` |  |  |  |  | `Boolean` |  | Co.code post.block |  |  |
 | `IsBusinessPurposeCompleted` |  |  |  |  |  | `Boolean` |  | Purpose Completed |  |  |
 | `AccountingClerk` | `BUSAB` |  |  |  |  | `String(2)` |  | Clerk Abbrev. |  |  |
@@ -235,7 +235,7 @@
 - **ABAP CDS Name:** `I_SupplierPurchasingOrg`
 - **Label:** Supplier Purchasing Organization
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** LFA1, LFM1
+- **ECC Source Tables:** LFM1
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -299,19 +299,19 @@
 - **ABAP CDS Name:** `I_SupplierWithHoldingTax`
 - **Label:** Supplier WithHolding Tax
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** —
+- **ECC Source Tables:** LFBW
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `Supplier` | `LIFNR` |  |  |  |  | `String(10)` | Y | Supplier |  | S/4 only entity |
-| `CompanyCode` | `BUKRS` |  |  |  |  | `String(4)` | Y | Company Code |  | S/4 only entity |
-| `WithholdingTaxType` | `WITHT` |  |  |  |  | `String(2)` | Y | Withholding Tax Type |  | S/4 only entity |
-| `WithholdingTaxNumber` | `WT_WTSTCD` |  |  |  |  | `String(16)` |  | W/tax number |  | S/4 only entity |
-| `WithholdingTaxCode` | `WT_WITHCD` |  |  |  |  | `String(2)` |  | W/Tax Code |  | S/4 only entity |
-| `IsWithholdingTaxSubject` | `WT_SUBJCT` |  |  |  |  | `Boolean` |  | Subject to W/Tx |  | S/4 only entity |
-| `RecipientType` | `WT_QSREC` |  |  |  |  | `String(2)` |  | Recipient Type |  | S/4 only entity |
-| `WithholdingTaxCertificate` | `WT_EXNR` |  |  |  |  | `String(25)` |  | Exemption Number |  | S/4 only entity |
-| `WithholdingTaxExmptPercent` | `WT_EXRT` |  |  |  |  | `Decimal(5,2)` |  | Exemption Rate |  | S/4 only entity |
-| `ExemptionDateBegin` | `WT_EXDF` |  |  |  |  | `Date` |  | Exemption Start Date |  | S/4 only entity |
-| `ExemptionDateEnd` | `WT_EXDT` |  |  |  |  | `Date` |  | Exemption End Date |  | S/4 only entity |
-| `ExemptionReason` | `WT_WTEXRS` |  |  |  |  | `String(2)` |  | Exemption Reason |  | S/4 only entity |
+| `Supplier` | `LIFNR` |  |  |  |  | `String(10)` | Y | Supplier |  |  |
+| `CompanyCode` | `BUKRS` |  |  |  |  | `String(4)` | Y | Company Code |  |  |
+| `WithholdingTaxType` | `WITHT` |  |  |  |  | `String(2)` | Y | Withholding Tax Type |  |  |
+| `WithholdingTaxNumber` | `WT_WTSTCD` |  |  |  |  | `String(16)` |  | W/tax number |  |  |
+| `WithholdingTaxCode` | `WT_WITHCD` |  |  |  |  | `String(2)` |  | W/Tax Code |  |  |
+| `IsWithholdingTaxSubject` | `WT_SUBJCT` |  |  |  |  | `Boolean` |  | Subject to W/Tx |  |  |
+| `RecipientType` | `WT_QSREC` |  |  |  |  | `String(2)` |  | Recipient Type |  |  |
+| `WithholdingTaxCertificate` | `WT_EXNR` |  |  |  |  | `String(25)` |  | Exemption Number |  |  |
+| `WithholdingTaxExmptPercent` | `WT_EXRT` |  |  |  |  | `Decimal(5,2)` |  | Exemption Rate |  |  |
+| `ExemptionDateBegin` | `WT_EXDF` |  |  |  |  | `Date` |  | Exemption Start Date |  |  |
+| `ExemptionDateEnd` | `WT_EXDT` |  |  |  |  | `Date` |  | Exemption End Date |  |  |
+| `ExemptionReason` | `WT_WTEXRS` |  |  |  |  | `String(2)` |  | Exemption Reason |  |  |

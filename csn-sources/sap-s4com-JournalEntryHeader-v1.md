@@ -124,34 +124,34 @@
 - **ABAP CDS Name:** `I_BillOfExchange`
 - **Label:** Bill of Exchange
 - **VDM Type:** `BASIC` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** BKPF, BSEG
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `CompanyCode` | `BUKRS` |  |  |  |  | `String(4)` | Y | Company Code |  | S/4 only entity |
-| `AccountingDocument` | `BELNR_D` |  |  |  |  | `String(10)` | Y | Document Number |  | S/4 only entity |
-| `FiscalYear` | `FIS_GJAHR_NO_CONV` |  |  |  |  | `String(4)` | Y | Fiscal Year |  | S/4 only entity |
-| `AccountingDocumentItem` | `BUZEI` |  |  |  |  | `String(3)` | Y | Item |  | S/4 only entity |
-| `Cheque` | `CHECT` |  |  |  |  | `String(13)` |  | Check number |  | S/4 only entity |
-| `BillOfExchangeIssueDate` | `WDATE` |  |  |  |  | `Date` |  | Issue Date |  | S/4 only entity |
-| `BillOfExchangeUsageDate` | `WVERD` |  |  |  |  | `Date` |  | Used On |  | S/4 only entity |
-| `BillOfExchangeUsage` | `FARP_WVERW` |  |  |  |  | `String(1)` |  | Bill/Exchange Usage |  | S/4 only entity |
-| `PlannedBillOfExchangeUsage` | `WEVWV` |  |  |  |  | `String(1)` |  | Planned Usage |  | S/4 only entity |
-| `BillOfExchangeDrawer` | `WNAME` |  |  |  |  | `String(30)` |  | Drawer |  | S/4 only entity |
-| `BillOfExchangeDrawerCityName` | `WORT1` |  |  |  |  | `String(30)` |  | City of Drawer |  | S/4 only entity |
-| `BillOfExchangeDrawee` | `WBZOG` |  |  |  |  | `String(30)` |  | Drawee |  | S/4 only entity |
-| `BillOfExchangeDraweeCityName` | `WORT2` |  |  |  |  | `String(30)` |  | City of Drawee |  | S/4 only entity |
-| `BillOfExchangeDomicileText` | `WBANK` |  |  |  |  | `String(60)` |  | Domicile |  | S/4 only entity |
-| `BillOfExchangeIsAccepted` | `XAKTZ` |  |  |  |  | `Boolean` |  | Accepted |  | S/4 only entity |
-| `Region` | `REGIO` |  |  |  |  | `String(3)` |  | Region |  | S/4 only entity |
-| `BillOfExchangeDocumentStatus` | `WSTAT` |  |  |  |  | `String(1)` |  | Bill/Ex. Status |  | S/4 only entity |
-| `BillOfExchangeIsProtested` |  |  |  |  |  | `String(1)` |  | Bill Protest ID |  | S/4 only entity |
-| `BillOfExchangeIsOnDemand` | `XSIWE` |  |  |  |  | `Boolean` |  | Bill on Demand |  | S/4 only entity |
-| `BusinessPlace` | `BUPLA` |  |  |  |  | `String(4)` |  | Business Place |  | S/4 only entity |
-| `BusinessSectionCode` | `SECCO` |  |  |  |  | `String(4)` |  | Section Code |  | S/4 only entity |
-| `BillOfExchangePortfolio` | `PORTFO` |  |  |  |  | `String(10)` |  | Bill Portfolio |  | S/4 only entity |
-| `BillOfExchangeCntrlBankLocText` | `WLZBP` |  |  |  |  | `String(60)` |  | Cen.Bank Loc. |  | S/4 only entity |
-| `BOEDraweeBankKey` | `BANKK` |  |  |  |  | `String(15)` |  | Bank Key |  | S/4 only entity |
-| `BillOfExchangeDataAgingDate` | `DATA_TEMPERATURE` |  |  |  |  | `Date` |  | Data Aging |  | S/4 only entity |
-| `IsBusinessPurposeCompleted` |  |  |  |  |  | `Boolean` |  | Purpose Completed |  | S/4 only entity |
-| `AuthorizationGroup` | `BRGRU` |  |  |  |  | `String(4)` |  | Authorization |  | S/4 only entity |
+| `CompanyCode` | `BUKRS` |  |  |  |  | `String(4)` | Y | Company Code |  |  |
+| `AccountingDocument` | `BELNR_D` |  |  |  |  | `String(10)` | Y | Document Number |  |  |
+| `FiscalYear` | `FIS_GJAHR_NO_CONV` |  |  |  |  | `String(4)` | Y | Fiscal Year |  |  |
+| `AccountingDocumentItem` | `BUZEI` |  |  |  |  | `String(3)` | Y | Item |  |  |
+| `Cheque` | `CHECT` |  |  |  |  | `String(13)` |  | Check number |  |  |
+| `BillOfExchangeIssueDate` | `WDATE` |  |  |  |  | `Date` |  | Issue Date |  |  |
+| `BillOfExchangeUsageDate` | `WVERD` |  |  |  |  | `Date` |  | Used On |  |  |
+| `BillOfExchangeUsage` | `FARP_WVERW` |  |  |  |  | `String(1)` |  | Bill/Exchange Usage |  |  |
+| `PlannedBillOfExchangeUsage` | `WEVWV` |  |  |  |  | `String(1)` |  | Planned Usage |  |  |
+| `BillOfExchangeDrawer` | `WNAME` |  |  |  |  | `String(30)` |  | Drawer |  |  |
+| `BillOfExchangeDrawerCityName` | `WORT1` |  |  |  |  | `String(30)` |  | City of Drawer |  |  |
+| `BillOfExchangeDrawee` | `WBZOG` |  |  |  |  | `String(30)` |  | Drawee |  |  |
+| `BillOfExchangeDraweeCityName` | `WORT2` |  |  |  |  | `String(30)` |  | City of Drawee |  |  |
+| `BillOfExchangeDomicileText` | `WBANK` |  |  |  |  | `String(60)` |  | Domicile |  |  |
+| `BillOfExchangeIsAccepted` | `XAKTZ` |  |  |  |  | `Boolean` |  | Accepted |  |  |
+| `Region` | `REGIO` |  |  |  |  | `String(3)` |  | Region |  |  |
+| `BillOfExchangeDocumentStatus` | `WSTAT` |  |  |  |  | `String(1)` |  | Bill/Ex. Status |  |  |
+| `BillOfExchangeIsProtested` |  |  |  |  |  | `String(1)` |  | Bill Protest ID |  |  |
+| `BillOfExchangeIsOnDemand` | `XSIWE` |  |  |  |  | `Boolean` |  | Bill on Demand |  |  |
+| `BusinessPlace` | `BUPLA` |  |  |  |  | `String(4)` |  | Business Place |  |  |
+| `BusinessSectionCode` | `SECCO` |  |  |  |  | `String(4)` |  | Section Code |  |  |
+| `BillOfExchangePortfolio` | `PORTFO` |  |  |  |  | `String(10)` |  | Bill Portfolio |  |  |
+| `BillOfExchangeCntrlBankLocText` | `WLZBP` |  |  |  |  | `String(60)` |  | Cen.Bank Loc. |  |  |
+| `BOEDraweeBankKey` | `BANKK` |  |  |  |  | `String(15)` |  | Bank Key |  |  |
+| `BillOfExchangeDataAgingDate` | `DATA_TEMPERATURE` |  |  |  |  | `Date` |  | Data Aging |  |  |
+| `IsBusinessPurposeCompleted` |  |  |  |  |  | `Boolean` |  | Purpose Completed |  |  |
+| `AuthorizationGroup` | `BRGRU` |  |  |  |  | `String(4)` |  | Authorization |  |  |

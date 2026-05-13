@@ -10,7 +10,7 @@
 - **ABAP CDS Name:** `I_Customer`
 - **Label:** Customer
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** ADRC, KNA1
+- **ECC Source Tables:** KNA1, ADRC
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -44,7 +44,7 @@
 | `CustomerCorporateGroup` | `KONZS` |  |  |  |  | `String(10)` |  | Group Key |  |  |
 | `Supplier` | `LIFNR` |  |  |  |  | `String(10)` |  | Supplier |  |  |
 | `NielsenRegion` | `NIELS` |  |  |  |  | `String(2)` |  | Nielsen Indicator |  |  |
-| `IndustryCode1` | `BRAN1_D` | `KNA1` | `BRSCH` |  |  | `String(10)` |  | Industry Code 1 |  |  |
+| `IndustryCode1` | `BRAN1_D` |  |  |  |  | `String(10)` |  | Industry Code 1 |  |  |
 | `IndustryCode2` | `BRAN2` |  |  |  |  | `String(10)` |  | Industry Code 2 |  |  |
 | `IndustryCode3` | `BRAN3` |  |  |  |  | `String(10)` |  | Industry Code 3 |  |  |
 | `IndustryCode4` | `BRAN4` |  |  |  |  | `String(10)` |  | Industry Code 4 |  |  |
@@ -135,7 +135,7 @@
 - **ABAP CDS Name:** `I_CustomerCompany`
 - **Label:** Customer Company
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** KNB1, KNB5
+- **ECC Source Tables:** KNB1
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -146,7 +146,7 @@
 | `AuthorizationGroup` | `BRGRU` |  |  |  |  | `String(4)` |  | Authorization |  |  |
 | `CustomerHeadOffice` | `KNRZE` |  |  |  |  | `String(10)` |  | Head Office |  |  |
 | `AlternativePayerAccount` | `KNRZB` |  |  |  |  | `String(10)` |  | Alternative payer |  |  |
-| `PaymentBlockingReason` | `DZAHLS` | `KNB1` | `ZAHLS` |  |  | `String(1)` |  | Payment Block |  |  |
+| `PaymentBlockingReason` | `DZAHLS` |  |  |  |  | `String(1)` |  | Payment Block |  |  |
 | `InterestCalculationCode` | `VZSKZ` |  |  |  |  | `String(2)` |  | Interest Indicator |  |  |
 | `InterestCalculationDate` | `DZINDT` |  |  |  |  | `Date` |  | Last Key Date |  |  |
 | `IntrstCalcFrequencyInMonths` | `DZINRT` |  |  |  |  | `String(2)` |  | Int.Calc.Freq. |  |  |
@@ -215,20 +215,20 @@
 - **ABAP CDS Name:** `I_CustomerDunning`
 - **Label:** Customer Company Code Dunning Fields
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** —
+- **ECC Source Tables:** KNB5
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `CompanyCode` | `BUKRS` |  |  |  |  | `String(4)` | Y | Company Code |  | S/4 only entity |
-| `Customer` | `KUNNR` |  |  |  |  | `String(10)` | Y | Customer |  | S/4 only entity |
-| `DunningArea` | `MABER` |  |  |  |  | `String(2)` | Y | Dunning Area |  | S/4 only entity |
-| `LastDunnedOn` | `MADAT` |  |  |  |  | `Date` |  | Last Dunned |  | S/4 only entity |
-| `DunningProcedure` | `MAHNA` |  |  |  |  | `String(4)` |  | Dunning Procedure |  | S/4 only entity |
-| `DunningLevel` | `MAHNS_D` |  |  |  |  | `String(1)` |  | Dunning Level |  | S/4 only entity |
-| `DunningBlock` | `MANSP` |  |  |  |  | `String(1)` |  | Dunning Block |  | S/4 only entity |
-| `DunningRecipient` | `KNRMA` |  |  |  |  | `String(10)` |  | Dunning Recipient |  | S/4 only entity |
-| `LegDunningProcedureOn` | `GMVDT` |  |  |  |  | `Date` |  | Legal Dunn.Proc.From |  | S/4 only entity |
-| `DunningClerk` | `BUSAB_MA` |  |  |  |  | `String(2)` |  | Dunning Clerk |  | S/4 only entity |
+| `CompanyCode` | `BUKRS` |  |  |  |  | `String(4)` | Y | Company Code |  |  |
+| `Customer` | `KUNNR` |  |  |  |  | `String(10)` | Y | Customer |  |  |
+| `DunningArea` | `MABER` |  |  |  |  | `String(2)` | Y | Dunning Area |  |  |
+| `LastDunnedOn` | `MADAT` |  |  |  |  | `Date` |  | Last Dunned |  |  |
+| `DunningProcedure` | `MAHNA` |  |  |  |  | `String(4)` |  | Dunning Procedure |  |  |
+| `DunningLevel` | `MAHNS_D` |  |  |  |  | `String(1)` |  | Dunning Level |  |  |
+| `DunningBlock` | `MANSP` |  |  |  |  | `String(1)` |  | Dunning Block |  |  |
+| `DunningRecipient` | `KNRMA` |  |  |  |  | `String(10)` |  | Dunning Recipient |  |  |
+| `LegDunningProcedureOn` | `GMVDT` |  |  |  |  | `Date` |  | Legal Dunn.Proc.From |  |  |
+| `DunningClerk` | `BUSAB_MA` |  |  |  |  | `String(2)` |  | Dunning Clerk |  |  |
 
 
 ## Entity: `CustomerSalesArea`
@@ -236,82 +236,82 @@
 - **ABAP CDS Name:** `I_CustomerSalesArea`
 - **Label:** Customer Sales Area
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** —
+- **ECC Source Tables:** KNVV
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `Customer` | `KUNNR` |  |  |  |  | `String(10)` | Y | Customer |  | S/4 only entity |
-| `SalesOrganization` | `VKORG` |  |  |  |  | `String(4)` | Y | Sales Organization |  | S/4 only entity |
-| `DistributionChannel` | `VTWEG` |  |  |  |  | `String(2)` | Y | Distribution Channel |  | S/4 only entity |
-| `Division` | `SPART` |  |  |  |  | `String(2)` | Y | Division |  | S/4 only entity |
-| `CustomerABCClassification` | `KLABC` |  |  |  |  | `String(2)` |  | ABC Classification |  | S/4 only entity |
-| `SalesOffice` | `VKBUR` |  |  |  |  | `String(4)` |  | Sales Office |  | S/4 only entity |
-| `SalesGroup` | `VKGRP` |  |  |  |  | `String(3)` |  | Sales Group |  | S/4 only entity |
-| `OrderIsBlockedForCustomer` | `AUFSD_V` |  |  |  |  | `String(2)` |  | Ord.blk:sls ar. |  | S/4 only entity |
-| `Currency` | `WAERS_V02D` |  |  |  |  | `String(5)` |  | Currency |  | S/4 only entity |
-| `CustomerPriceGroup` | `KONDA` |  |  |  |  | `String(2)` |  | Customer Price Group |  | S/4 only entity |
-| `PriceListType` | `PLTYP` |  |  |  |  | `String(2)` |  | Price List Type |  | S/4 only entity |
-| `DeliveryPriority` | `LPRIO` |  |  |  |  | `String(2)` |  | Delivery Priority |  | S/4 only entity |
-| `ShippingCondition` | `VSBED` |  |  |  |  | `String(2)` |  | Shipping Conditions |  | S/4 only entity |
-| `IncotermsClassification` | `INCO1` |  |  |  |  | `String(3)` |  | Incoterms |  | S/4 only entity |
-| `SupplyingPlant` | `DWERK_EXT` |  |  |  |  | `String(4)` |  | Delivering Plant |  | S/4 only entity |
-| `CompleteDeliveryIsDefined` | `AUTLF` |  |  |  |  | `Boolean` |  | Complete Delivery |  | S/4 only entity |
-| `DeliveryIsBlockedForCustomer` | `LIFSD_V` |  |  |  |  | `String(2)` |  | DelBlckSalesAr. |  | S/4 only entity |
-| `BillingIsBlockedForCustomer` | `FAKSD_V` |  |  |  |  | `String(2)` |  | BBlock for SlsA |  | S/4 only entity |
-| `CustomerPaymentTerms` | `DZTERM` |  |  |  |  | `String(4)` |  | Terms of Payment |  | S/4 only entity |
-| `CustomerAccountAssignmentGroup` | `KTGRD` |  |  |  |  | `String(2)` |  | Acct Assmt Grp Cust. |  | S/4 only entity |
-| `AccountByCustomer` | `EIKTO` |  |  |  |  | `String(12)` |  | Account at Customer |  | S/4 only entity |
-| `CustomerGroup` | `KDGRP` |  |  |  |  | `String(2)` |  | Customer Group |  | S/4 only entity |
-| `CustomerPricingProcedure` | `KALKS` |  |  |  |  | `String(2)` |  | Cust.Pric.Procedure |  | S/4 only entity |
-| `OrderCombinationIsAllowed` | `KZAZU_D` |  |  |  |  | `Boolean` |  | Order Combination |  | S/4 only entity |
-| `PartialDeliveryIsAllowed` | `KZTLF` |  |  |  |  | `String(1)` |  | Partial Deliv./Item |  | S/4 only entity |
-| `InvoiceDate` | `PERFK` |  |  |  |  | `String(2)` |  | Invoicing Dates |  | S/4 only entity |
-| `PaymentTerms` | `DZTERM` |  |  |  |  | `String(4)` |  | Terms of Payment |  | S/4 only entity |
-| `IncotermsTransferLocation` | `INCO2` |  |  |  |  | `String(28)` |  | Incoterms (Part 2) |  | S/4 only entity |
-| `ItemOrderProbabilityInPercent` | `AWAHR` |  |  |  |  | `String(3)` |  | Order Probability |  | S/4 only entity |
-| `IncotermsLocation2` | `INCO3_L` |  |  |  |  | `String(70)` |  | Incoterms Location 2 |  | S/4 only entity |
-| `RecordCreatedDate` | `ERDAT` |  |  |  |  | `Date` |  | Created On |  | S/4 only entity |
-| `AuthorizationGroup` | `BEGRU` |  |  |  |  | `String(4)` |  | Authorization Group |  | S/4 only entity |
-| `SalesDistrict` | `BZIRK` |  |  |  |  | `String(6)` |  | Sales District |  | S/4 only entity |
-| `IncotermsVersion` | `INCOV` |  |  |  |  | `String(4)` |  | Incoterms Version |  | S/4 only entity |
-| `IncotermsLocation1` | `INCO2_L` |  |  |  |  | `String(70)` |  | Incoterms Location 1 |  | S/4 only entity |
-| `DeletionIndicator` | `LOEVM_V` |  |  |  |  | `Boolean` |  | Del.ID SlsArea |  | S/4 only entity |
-| `IsBusinessPurposeCompleted` |  |  |  |  |  | `Boolean` |  | Purpose Completed |  | S/4 only entity |
-| `SalesItemProposal` | `VSORT` |  |  |  |  | `String(10)` |  | Item proposal |  | S/4 only entity |
-| `CustProdProposalProcedure` | `PVKSM` |  |  |  |  | `String(2)` |  | PP customer proced. |  | S/4 only entity |
-| `ProofOfDeliveryTime` |  |  |  |  |  | `String(6)` |  |  |  | S/4 only entity |
-| `ProofOfDeliveryTimeValue` | `CUST_POD` |  |  |  |  | `Decimal(6,2)` |  | POD timeframe |  | S/4 only entity |
-| `MaxNmbrOfPartialDelivery` | `ANTLF` |  |  |  |  | `Decimal(1,0)` |  | Max.Part.Deliveries |  | S/4 only entity |
-| `UnderdelivTolrtdLmtRatioInPct` | `UNTTO` |  |  |  |  | `Decimal(3,1)` |  | Underdel. Tolerance |  | S/4 only entity |
-| `OverdelivTolrtdLmtRatioInPct` | `UEBTO` |  |  |  |  | `Decimal(3,1)` |  | Overdeliv. Tolerance |  | S/4 only entity |
-| `IsActiveEntity` | `SDRAFT_IS_ACTIVE` |  |  |  |  | `Boolean` |  | Is active |  | S/4 only entity |
-| `AdditionalCustomerGroup1` | `KVGR1` |  |  |  |  | `String(3)` |  | Customer Group 1 |  | S/4 only entity |
-| `AdditionalCustomerGroup2` | `KVGR2` |  |  |  |  | `String(3)` |  | Customer Group 2 |  | S/4 only entity |
-| `AdditionalCustomerGroup3` | `KVGR3` |  |  |  |  | `String(3)` |  | Customer Group 3 |  | S/4 only entity |
-| `AdditionalCustomerGroup4` | `KVGR4` |  |  |  |  | `String(3)` |  | Customer Group 4 |  | S/4 only entity |
-| `AdditionalCustomerGroup5` | `KVGR5` |  |  |  |  | `String(3)` |  | Customer Group 5 |  | S/4 only entity |
-| `InvoiceListSchedule` | `PERRL` |  |  |  |  | `String(2)` |  | Invoice List Sched. |  | S/4 only entity |
-| `ExchangeRateType` | `KURST` |  |  |  |  | `String(4)` |  | Exchange Rate Type |  | S/4 only entity |
-| `PaymentGuaranteeProcedure` | `KABSSCH_CM` |  |  |  |  | `String(4)` |  | Paymt guarant. proc. |  | S/4 only entity |
-| `SuplrIsRlvtForSettlmtMgmt` | `AGREL` |  |  |  |  | `Boolean` |  | Settlement Mgmt. |  | S/4 only entity |
-| `CustIsRlvtForSettlmtMgmt` | `AGREL` |  |  |  |  | `Boolean` |  | Settlement Mgmt. |  | S/4 only entity |
-| `ProductUnitGroup` | `MEGRU` |  |  |  |  | `String(4)` |  | Unit of Measure Grp |  | S/4 only entity |
-| `SlsDocIsRlvtForProofOfDeliv` | `PODKZ` |  |  |  |  | `Boolean` |  | Relevant for POD |  | S/4 only entity |
-| `SlsUnlmtdOvrdelivIsAllwd` | `UEBTK_V` |  |  |  |  | `Boolean` |  | Unlimited Tolerance |  | S/4 only entity |
-| `CreditControlArea` | `KKBER` |  |  |  |  | `String(4)` |  | Credit Control Area |  | S/4 only entity |
-| `CustomerIsRebateRelevant` | `BOKRE` |  |  |  |  | `Boolean` |  | Rebate |  | S/4 only entity |
-| `InspSbstHasNoTimeOrQuantity` | `PRFRE` |  |  |  |  | `Boolean` |  | Price determination |  | S/4 only entity |
-| `ManualInvoiceMaintIsRelevant` | `MRNKZ` |  |  |  |  | `Boolean` |  | Man. Invoice Maint. |  | S/4 only entity |
-| `IncotermsSupChnLoc1AddlUUID` |  |  |  |  |  | `UUID` |  | Location UUID |  | S/4 only entity |
-| `IncotermsSupChnLoc2AddlUUID` |  |  |  |  |  | `UUID` |  | Location UUID |  | S/4 only entity |
-| `IncotermsSupChnDvtgLocAddlUUID` |  |  |  |  |  | `UUID` |  | Location UUID |  | S/4 only entity |
-| `SalesBlockForCustomer` | `CASSD_V` |  |  |  |  | `String(2)` |  | Sales Block |  | S/4 only entity |
-| `CustomerStatisticsGroup` | `STGKU` |  |  |  |  | `String(1)` |  | Customer Stats.Group |  | S/4 only entity |
-| `RetailAdditionalCustomerGrp6` | `FSH_KVGR6` |  |  |  |  | `String(3)` |  | Customer Group 6 |  | S/4 only entity |
-| `RetailAdditionalCustomerGrp7` | `FSH_KVGR7` |  |  |  |  | `String(3)` |  | Customer Group 7 |  | S/4 only entity |
-| `RetailAdditionalCustomerGrp8` | `FSH_KVGR8` |  |  |  |  | `String(3)` |  | Customer Group 8 |  | S/4 only entity |
-| `RetailAdditionalCustomerGrp9` | `FSH_KVGR9` |  |  |  |  | `String(3)` |  | Customer Group 9 |  | S/4 only entity |
-| `RetailAdditionalCustomerGrp10` | `FSH_KVGR10` |  |  |  |  | `String(3)` |  | Customer Group 10 |  | S/4 only entity |
+| `Customer` | `KUNNR` |  |  |  |  | `String(10)` | Y | Customer |  |  |
+| `SalesOrganization` | `VKORG` |  |  |  |  | `String(4)` | Y | Sales Organization |  |  |
+| `DistributionChannel` | `VTWEG` |  |  |  |  | `String(2)` | Y | Distribution Channel |  |  |
+| `Division` | `SPART` |  |  |  |  | `String(2)` | Y | Division |  |  |
+| `CustomerABCClassification` | `KLABC` |  |  |  |  | `String(2)` |  | ABC Classification |  |  |
+| `SalesOffice` | `VKBUR` |  |  |  |  | `String(4)` |  | Sales Office |  |  |
+| `SalesGroup` | `VKGRP` |  |  |  |  | `String(3)` |  | Sales Group |  |  |
+| `OrderIsBlockedForCustomer` | `AUFSD_V` |  |  |  |  | `String(2)` |  | Ord.blk:sls ar. |  |  |
+| `Currency` | `WAERS_V02D` |  |  |  |  | `String(5)` |  | Currency |  |  |
+| `CustomerPriceGroup` | `KONDA` |  |  |  |  | `String(2)` |  | Customer Price Group |  |  |
+| `PriceListType` | `PLTYP` |  |  |  |  | `String(2)` |  | Price List Type |  |  |
+| `DeliveryPriority` | `LPRIO` |  |  |  |  | `String(2)` |  | Delivery Priority |  |  |
+| `ShippingCondition` | `VSBED` |  |  |  |  | `String(2)` |  | Shipping Conditions |  |  |
+| `IncotermsClassification` | `INCO1` |  |  |  |  | `String(3)` |  | Incoterms |  |  |
+| `SupplyingPlant` | `DWERK_EXT` |  |  |  |  | `String(4)` |  | Delivering Plant |  |  |
+| `CompleteDeliveryIsDefined` | `AUTLF` |  |  |  |  | `Boolean` |  | Complete Delivery |  |  |
+| `DeliveryIsBlockedForCustomer` | `LIFSD_V` |  |  |  |  | `String(2)` |  | DelBlckSalesAr. |  |  |
+| `BillingIsBlockedForCustomer` | `FAKSD_V` |  |  |  |  | `String(2)` |  | BBlock for SlsA |  |  |
+| `CustomerPaymentTerms` | `DZTERM` |  |  |  |  | `String(4)` |  | Terms of Payment |  |  |
+| `CustomerAccountAssignmentGroup` | `KTGRD` |  |  |  |  | `String(2)` |  | Acct Assmt Grp Cust. |  |  |
+| `AccountByCustomer` | `EIKTO` |  |  |  |  | `String(12)` |  | Account at Customer |  |  |
+| `CustomerGroup` | `KDGRP` |  |  |  |  | `String(2)` |  | Customer Group |  |  |
+| `CustomerPricingProcedure` | `KALKS` |  |  |  |  | `String(2)` |  | Cust.Pric.Procedure |  |  |
+| `OrderCombinationIsAllowed` | `KZAZU_D` |  |  |  |  | `Boolean` |  | Order Combination |  |  |
+| `PartialDeliveryIsAllowed` | `KZTLF` |  |  |  |  | `String(1)` |  | Partial Deliv./Item |  |  |
+| `InvoiceDate` | `PERFK` |  |  |  |  | `String(2)` |  | Invoicing Dates |  |  |
+| `PaymentTerms` | `DZTERM` |  |  |  |  | `String(4)` |  | Terms of Payment |  |  |
+| `IncotermsTransferLocation` | `INCO2` |  |  |  |  | `String(28)` |  | Incoterms (Part 2) |  |  |
+| `ItemOrderProbabilityInPercent` | `AWAHR` |  |  |  |  | `String(3)` |  | Order Probability |  |  |
+| `IncotermsLocation2` | `INCO3_L` |  |  |  |  | `String(70)` |  | Incoterms Location 2 |  |  |
+| `RecordCreatedDate` | `ERDAT` |  |  |  |  | `Date` |  | Created On |  |  |
+| `AuthorizationGroup` | `BEGRU` |  |  |  |  | `String(4)` |  | Authorization Group |  |  |
+| `SalesDistrict` | `BZIRK` |  |  |  |  | `String(6)` |  | Sales District |  |  |
+| `IncotermsVersion` | `INCOV` |  |  |  |  | `String(4)` |  | Incoterms Version |  |  |
+| `IncotermsLocation1` | `INCO2_L` |  |  |  |  | `String(70)` |  | Incoterms Location 1 |  |  |
+| `DeletionIndicator` | `LOEVM_V` |  |  |  |  | `Boolean` |  | Del.ID SlsArea |  |  |
+| `IsBusinessPurposeCompleted` |  |  |  |  |  | `Boolean` |  | Purpose Completed |  |  |
+| `SalesItemProposal` | `VSORT` |  |  |  |  | `String(10)` |  | Item proposal |  |  |
+| `CustProdProposalProcedure` | `PVKSM` |  |  |  |  | `String(2)` |  | PP customer proced. |  |  |
+| `ProofOfDeliveryTime` |  |  |  |  |  | `String(6)` |  |  |  |  |
+| `ProofOfDeliveryTimeValue` | `CUST_POD` |  |  |  |  | `Decimal(6,2)` |  | POD timeframe |  |  |
+| `MaxNmbrOfPartialDelivery` | `ANTLF` |  |  |  |  | `Decimal(1,0)` |  | Max.Part.Deliveries |  |  |
+| `UnderdelivTolrtdLmtRatioInPct` | `UNTTO` |  |  |  |  | `Decimal(3,1)` |  | Underdel. Tolerance |  |  |
+| `OverdelivTolrtdLmtRatioInPct` | `UEBTO` |  |  |  |  | `Decimal(3,1)` |  | Overdeliv. Tolerance |  |  |
+| `IsActiveEntity` | `SDRAFT_IS_ACTIVE` |  |  |  |  | `Boolean` |  | Is active |  |  |
+| `AdditionalCustomerGroup1` | `KVGR1` |  |  |  |  | `String(3)` |  | Customer Group 1 |  |  |
+| `AdditionalCustomerGroup2` | `KVGR2` |  |  |  |  | `String(3)` |  | Customer Group 2 |  |  |
+| `AdditionalCustomerGroup3` | `KVGR3` |  |  |  |  | `String(3)` |  | Customer Group 3 |  |  |
+| `AdditionalCustomerGroup4` | `KVGR4` |  |  |  |  | `String(3)` |  | Customer Group 4 |  |  |
+| `AdditionalCustomerGroup5` | `KVGR5` |  |  |  |  | `String(3)` |  | Customer Group 5 |  |  |
+| `InvoiceListSchedule` | `PERRL` |  |  |  |  | `String(2)` |  | Invoice List Sched. |  |  |
+| `ExchangeRateType` | `KURST` |  |  |  |  | `String(4)` |  | Exchange Rate Type |  |  |
+| `PaymentGuaranteeProcedure` | `KABSSCH_CM` |  |  |  |  | `String(4)` |  | Paymt guarant. proc. |  |  |
+| `SuplrIsRlvtForSettlmtMgmt` | `AGREL` |  |  |  |  | `Boolean` |  | Settlement Mgmt. |  |  |
+| `CustIsRlvtForSettlmtMgmt` | `AGREL` |  |  |  |  | `Boolean` |  | Settlement Mgmt. |  |  |
+| `ProductUnitGroup` | `MEGRU` |  |  |  |  | `String(4)` |  | Unit of Measure Grp |  |  |
+| `SlsDocIsRlvtForProofOfDeliv` | `PODKZ` |  |  |  |  | `Boolean` |  | Relevant for POD |  |  |
+| `SlsUnlmtdOvrdelivIsAllwd` | `UEBTK_V` |  |  |  |  | `Boolean` |  | Unlimited Tolerance |  |  |
+| `CreditControlArea` | `KKBER` |  |  |  |  | `String(4)` |  | Credit Control Area |  |  |
+| `CustomerIsRebateRelevant` | `BOKRE` |  |  |  |  | `Boolean` |  | Rebate |  |  |
+| `InspSbstHasNoTimeOrQuantity` | `PRFRE` |  |  |  |  | `Boolean` |  | Price determination |  |  |
+| `ManualInvoiceMaintIsRelevant` | `MRNKZ` |  |  |  |  | `Boolean` |  | Man. Invoice Maint. |  |  |
+| `IncotermsSupChnLoc1AddlUUID` |  |  |  |  |  | `UUID` |  | Location UUID |  |  |
+| `IncotermsSupChnLoc2AddlUUID` |  |  |  |  |  | `UUID` |  | Location UUID |  |  |
+| `IncotermsSupChnDvtgLocAddlUUID` |  |  |  |  |  | `UUID` |  | Location UUID |  |  |
+| `SalesBlockForCustomer` | `CASSD_V` |  |  |  |  | `String(2)` |  | Sales Block |  |  |
+| `CustomerStatisticsGroup` | `STGKU` |  |  |  |  | `String(1)` |  | Customer Stats.Group |  |  |
+| `RetailAdditionalCustomerGrp6` | `FSH_KVGR6` |  |  |  |  | `String(3)` |  | Customer Group 6 |  |  |
+| `RetailAdditionalCustomerGrp7` | `FSH_KVGR7` |  |  |  |  | `String(3)` |  | Customer Group 7 |  |  |
+| `RetailAdditionalCustomerGrp8` | `FSH_KVGR8` |  |  |  |  | `String(3)` |  | Customer Group 8 |  |  |
+| `RetailAdditionalCustomerGrp9` | `FSH_KVGR9` |  |  |  |  | `String(3)` |  | Customer Group 9 |  |  |
+| `RetailAdditionalCustomerGrp10` | `FSH_KVGR10` |  |  |  |  | `String(3)` |  | Customer Group 10 |  |  |
 
 
 ## Entity: `CustomerSalesAreaTax`
@@ -319,19 +319,19 @@
 - **ABAP CDS Name:** `I_CustSalesAreaTax`
 - **Label:** Customer Sales Area Tax
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** —
+- **ECC Source Tables:** KNVI
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `Customer` | `KUNNR` |  |  |  |  | `String(10)` | Y | Customer |  | S/4 only entity |
-| `SalesOrganization` | `VKORG` |  |  |  |  | `String(4)` | Y | Sales Organization |  | S/4 only entity |
-| `DistributionChannel` | `VTWKU` |  |  |  |  | `String(2)` | Y | RefDistCh-Cust/Mat. |  | S/4 only entity |
-| `Division` | `SPART` |  |  |  |  | `String(2)` | Y | Division |  | S/4 only entity |
-| `DepartureCountry` | `ALAND` |  |  |  |  | `String(3)` | Y | Departure Ctry/Reg. |  | S/4 only entity |
-| `CustomerTaxCategory` | `TATYP` |  |  |  |  | `String(4)` | Y | Tax Condition Type |  | S/4 only entity |
-| `CustomerTaxClassification` | `TAKLD` |  |  |  |  | `String(1)` |  | Tax Classification |  | S/4 only entity |
-| `AuthorizationGroup` | `BRGRU` |  |  |  |  | `String(4)` |  | Authorization |  | S/4 only entity |
-| `IsBusinessPurposeCompleted` |  |  |  |  |  | `Boolean` |  | Purpose Completed |  | S/4 only entity |
+| `Customer` | `KUNNR` |  |  |  |  | `String(10)` | Y | Customer |  |  |
+| `SalesOrganization` | `VKORG` |  |  |  |  | `String(4)` | Y | Sales Organization |  |  |
+| `DistributionChannel` | `VTWKU` |  |  |  |  | `String(2)` | Y | RefDistCh-Cust/Mat. |  |  |
+| `Division` | `SPART` |  |  |  |  | `String(2)` | Y | Division |  |  |
+| `DepartureCountry` | `ALAND` |  |  |  |  | `String(3)` | Y | Departure Ctry/Reg. |  |  |
+| `CustomerTaxCategory` | `TATYP` |  |  |  |  | `String(4)` | Y | Tax Condition Type |  |  |
+| `CustomerTaxClassification` | `TAKLD` |  |  |  |  | `String(1)` |  | Tax Classification |  |  |
+| `AuthorizationGroup` | `BRGRU` |  |  |  |  | `String(4)` |  | Authorization |  |  |
+| `IsBusinessPurposeCompleted` |  |  |  |  |  | `Boolean` |  | Purpose Completed |  |  |
 
 
 ## Entity: `CustomerUnloadingPoint`
@@ -339,43 +339,43 @@
 - **ABAP CDS Name:** `I_CustomerUnloadingPoint`
 - **Label:** Customer Unloading Point
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** —
+- **ECC Source Tables:** KNVA
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `Customer` | `KUNNR` |  |  |  |  | `String(10)` | Y | Customer |  | S/4 only entity |
-| `UnloadingPointName` | `ABLAD` |  |  |  |  | `String(25)` | Y | Unloading Point |  | S/4 only entity |
-| `CustomerFactoryCalenderCode` | `KNKAL` |  |  |  |  | `String(2)` |  | Cust.fact.calendar |  | S/4 only entity |
-| `BPGoodsReceivingHoursCode` | `WANID` |  |  |  |  | `String(3)` |  | Goods receiving hrs |  | S/4 only entity |
-| `IsDfltBPUnloadingPoint` | `DEFAB` |  |  |  |  | `Boolean` |  | Default unloading pt |  | S/4 only entity |
-| `MondayMorningOpeningTime` | `WAMOAB1` |  |  |  |  | `String(6)` |  | Monday |  | S/4 only entity |
-| `MondayMorningClosingTime` | `WAMOBI1` |  |  |  |  | `String(6)` |  | Monday |  | S/4 only entity |
-| `MondayAfternoonOpeningTime` | `WAMOAB2` |  |  |  |  | `String(6)` |  | Monday |  | S/4 only entity |
-| `MondayAfternoonClosingTime` | `WAMOBI2` |  |  |  |  | `String(6)` |  | Monday |  | S/4 only entity |
-| `TuesdayMorningOpeningTime` | `WADIAB1` |  |  |  |  | `String(6)` |  | Tuesday |  | S/4 only entity |
-| `TuesdayMorningClosingTime` | `WADIBI1` |  |  |  |  | `String(6)` |  | Tuesday |  | S/4 only entity |
-| `TuesdayAfternoonOpeningTime` | `WADIAB2` |  |  |  |  | `String(6)` |  | Tuesday |  | S/4 only entity |
-| `TuesdayAfternoonClosingTime` | `WADIBI2` |  |  |  |  | `String(6)` |  | Tuesday |  | S/4 only entity |
-| `WednesdayMorningOpeningTime` | `WAMIAB1` |  |  |  |  | `String(6)` |  | Wednesday |  | S/4 only entity |
-| `WednesdayMorningClosingTime` | `WAMIBI1` |  |  |  |  | `String(6)` |  | Wednesday |  | S/4 only entity |
-| `WednesdayAfternoonOpeningTime` | `WAMIAB2` |  |  |  |  | `String(6)` |  | Wednesday |  | S/4 only entity |
-| `WednesdayAfternoonClosingTime` | `WAMIBI2` |  |  |  |  | `String(6)` |  | Wednesday |  | S/4 only entity |
-| `ThursdayMorningOpeningTime` | `WADOAB1` |  |  |  |  | `String(6)` |  | Thursday |  | S/4 only entity |
-| `ThursdayMorningClosingTime` | `WADOBI1` |  |  |  |  | `String(6)` |  | Thursday |  | S/4 only entity |
-| `ThursdayAfternoonOpeningTime` | `WADOAB2` |  |  |  |  | `String(6)` |  | Thursday |  | S/4 only entity |
-| `ThursdayAfternoonClosingTime` | `WADOBI2` |  |  |  |  | `String(6)` |  | Thursday |  | S/4 only entity |
-| `FridayMorningOpeningTime` | `WAFRAB1` |  |  |  |  | `String(6)` |  | Friday |  | S/4 only entity |
-| `FridayMorningClosingTime` | `WAFRBI1` |  |  |  |  | `String(6)` |  | Friday |  | S/4 only entity |
-| `FridayAfternoonOpeningTime` | `WAFRAB2` |  |  |  |  | `String(6)` |  | Friday |  | S/4 only entity |
-| `FridayAfternoonClosingTime` | `WAFRBI2` |  |  |  |  | `String(6)` |  | Friday |  | S/4 only entity |
-| `SaturdayMorningOpeningTime` | `WASAAB1` |  |  |  |  | `String(6)` |  | Saturday |  | S/4 only entity |
-| `SaturdayMorningClosingTime` | `WASABI1` |  |  |  |  | `String(6)` |  | Saturday |  | S/4 only entity |
-| `SaturdayAfternoonOpeningTime` | `WASAAB2` |  |  |  |  | `String(6)` |  | Saturday |  | S/4 only entity |
-| `SaturdayAfternoonClosingTime` | `WASABI2` |  |  |  |  | `String(6)` |  | Saturday |  | S/4 only entity |
-| `SundayMorningOpeningTime` | `WASOAB1` |  |  |  |  | `String(6)` |  | Sunday |  | S/4 only entity |
-| `SundayMorningClosingTime` | `WASOBI1` |  |  |  |  | `String(6)` |  | Sunday |  | S/4 only entity |
-| `SundayAfternoonOpeningTime` | `WASOAB2` |  |  |  |  | `String(6)` |  | Sunday |  | S/4 only entity |
-| `SundayAfternoonClosingTime` | `WASOBI2` |  |  |  |  | `String(6)` |  | Sunday |  | S/4 only entity |
+| `Customer` | `KUNNR` |  |  |  |  | `String(10)` | Y | Customer |  |  |
+| `UnloadingPointName` | `ABLAD` |  |  |  |  | `String(25)` | Y | Unloading Point |  |  |
+| `CustomerFactoryCalenderCode` | `KNKAL` |  |  |  |  | `String(2)` |  | Cust.fact.calendar |  |  |
+| `BPGoodsReceivingHoursCode` | `WANID` |  |  |  |  | `String(3)` |  | Goods receiving hrs |  |  |
+| `IsDfltBPUnloadingPoint` | `DEFAB` |  |  |  |  | `Boolean` |  | Default unloading pt |  |  |
+| `MondayMorningOpeningTime` | `WAMOAB1` |  |  |  |  | `String(6)` |  | Monday |  |  |
+| `MondayMorningClosingTime` | `WAMOBI1` |  |  |  |  | `String(6)` |  | Monday |  |  |
+| `MondayAfternoonOpeningTime` | `WAMOAB2` |  |  |  |  | `String(6)` |  | Monday |  |  |
+| `MondayAfternoonClosingTime` | `WAMOBI2` |  |  |  |  | `String(6)` |  | Monday |  |  |
+| `TuesdayMorningOpeningTime` | `WADIAB1` |  |  |  |  | `String(6)` |  | Tuesday |  |  |
+| `TuesdayMorningClosingTime` | `WADIBI1` |  |  |  |  | `String(6)` |  | Tuesday |  |  |
+| `TuesdayAfternoonOpeningTime` | `WADIAB2` |  |  |  |  | `String(6)` |  | Tuesday |  |  |
+| `TuesdayAfternoonClosingTime` | `WADIBI2` |  |  |  |  | `String(6)` |  | Tuesday |  |  |
+| `WednesdayMorningOpeningTime` | `WAMIAB1` |  |  |  |  | `String(6)` |  | Wednesday |  |  |
+| `WednesdayMorningClosingTime` | `WAMIBI1` |  |  |  |  | `String(6)` |  | Wednesday |  |  |
+| `WednesdayAfternoonOpeningTime` | `WAMIAB2` |  |  |  |  | `String(6)` |  | Wednesday |  |  |
+| `WednesdayAfternoonClosingTime` | `WAMIBI2` |  |  |  |  | `String(6)` |  | Wednesday |  |  |
+| `ThursdayMorningOpeningTime` | `WADOAB1` |  |  |  |  | `String(6)` |  | Thursday |  |  |
+| `ThursdayMorningClosingTime` | `WADOBI1` |  |  |  |  | `String(6)` |  | Thursday |  |  |
+| `ThursdayAfternoonOpeningTime` | `WADOAB2` |  |  |  |  | `String(6)` |  | Thursday |  |  |
+| `ThursdayAfternoonClosingTime` | `WADOBI2` |  |  |  |  | `String(6)` |  | Thursday |  |  |
+| `FridayMorningOpeningTime` | `WAFRAB1` |  |  |  |  | `String(6)` |  | Friday |  |  |
+| `FridayMorningClosingTime` | `WAFRBI1` |  |  |  |  | `String(6)` |  | Friday |  |  |
+| `FridayAfternoonOpeningTime` | `WAFRAB2` |  |  |  |  | `String(6)` |  | Friday |  |  |
+| `FridayAfternoonClosingTime` | `WAFRBI2` |  |  |  |  | `String(6)` |  | Friday |  |  |
+| `SaturdayMorningOpeningTime` | `WASAAB1` |  |  |  |  | `String(6)` |  | Saturday |  |  |
+| `SaturdayMorningClosingTime` | `WASABI1` |  |  |  |  | `String(6)` |  | Saturday |  |  |
+| `SaturdayAfternoonOpeningTime` | `WASAAB2` |  |  |  |  | `String(6)` |  | Saturday |  |  |
+| `SaturdayAfternoonClosingTime` | `WASABI2` |  |  |  |  | `String(6)` |  | Saturday |  |  |
+| `SundayMorningOpeningTime` | `WASOAB1` |  |  |  |  | `String(6)` |  | Sunday |  |  |
+| `SundayMorningClosingTime` | `WASOBI1` |  |  |  |  | `String(6)` |  | Sunday |  |  |
+| `SundayAfternoonOpeningTime` | `WASOAB2` |  |  |  |  | `String(6)` |  | Sunday |  |  |
+| `SundayAfternoonClosingTime` | `WASOBI2` |  |  |  |  | `String(6)` |  | Sunday |  |  |
 
 
 ## Entity: `CustomerWithHoldingTax`
@@ -383,20 +383,20 @@
 - **ABAP CDS Name:** `I_CustomerWithTax`
 - **Label:** Customer WithHolding Tax
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** —
+- **ECC Source Tables:** KNBW
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `Customer` | `KUNNR` |  |  |  |  | `String(10)` | Y | Customer |  | S/4 only entity |
-| `CompanyCode` | `BUKRS` |  |  |  |  | `String(4)` | Y | Company Code |  | S/4 only entity |
-| `WithholdingTaxType` | `WITHT` |  |  |  |  | `String(2)` | Y | Withholding Tax Type |  | S/4 only entity |
-| `WithholdingTaxCode` | `WT_WITHCD` |  |  |  |  | `String(2)` |  | W/Tax Code |  | S/4 only entity |
-| `WithholdingTaxAgent` | `WT_WTAGT` |  |  |  |  | `Boolean` |  | WTax Agent |  | S/4 only entity |
-| `ObligationDateBegin` | `WT_AGTDF` |  |  |  |  | `Date` |  | W/Tax Obligated Frm |  | S/4 only entity |
-| `ObligationDateEnd` | `WT_AGTDT` |  |  |  |  | `Date` |  | Oblig.to W/Tax Until |  | S/4 only entity |
-| `WithholdingTaxNumber` | `WT_WTSTCD` |  |  |  |  | `String(16)` |  | W/tax number |  | S/4 only entity |
-| `WithholdingTaxCertificate` | `WT_EXNR` |  |  |  |  | `String(25)` |  | Exemption Number |  | S/4 only entity |
-| `WithholdingTaxExmptPercent` | `WT_EXRT` |  |  |  |  | `Decimal(5,2)` |  | Exemption Rate |  | S/4 only entity |
-| `ExemptionDateBegin` | `WT_EXDF` |  |  |  |  | `Date` |  | Exemption Start Date |  | S/4 only entity |
-| `ExemptionDateEnd` | `WT_EXDT` |  |  |  |  | `Date` |  | Exemption End Date |  | S/4 only entity |
-| `ExemptionReason` | `WT_WTEXRS` |  |  |  |  | `String(2)` |  | Exemption Reason |  | S/4 only entity |
+| `Customer` | `KUNNR` |  |  |  |  | `String(10)` | Y | Customer |  |  |
+| `CompanyCode` | `BUKRS` |  |  |  |  | `String(4)` | Y | Company Code |  |  |
+| `WithholdingTaxType` | `WITHT` |  |  |  |  | `String(2)` | Y | Withholding Tax Type |  |  |
+| `WithholdingTaxCode` | `WT_WITHCD` |  |  |  |  | `String(2)` |  | W/Tax Code |  |  |
+| `WithholdingTaxAgent` | `WT_WTAGT` |  |  |  |  | `Boolean` |  | WTax Agent |  |  |
+| `ObligationDateBegin` | `WT_AGTDF` |  |  |  |  | `Date` |  | W/Tax Obligated Frm |  |  |
+| `ObligationDateEnd` | `WT_AGTDT` |  |  |  |  | `Date` |  | Oblig.to W/Tax Until |  |  |
+| `WithholdingTaxNumber` | `WT_WTSTCD` |  |  |  |  | `String(16)` |  | W/tax number |  |  |
+| `WithholdingTaxCertificate` | `WT_EXNR` |  |  |  |  | `String(25)` |  | Exemption Number |  |  |
+| `WithholdingTaxExmptPercent` | `WT_EXRT` |  |  |  |  | `Decimal(5,2)` |  | Exemption Rate |  |  |
+| `ExemptionDateBegin` | `WT_EXDF` |  |  |  |  | `Date` |  | Exemption Start Date |  |  |
+| `ExemptionDateEnd` | `WT_EXDT` |  |  |  |  | `Date` |  | Exemption End Date |  |  |
+| `ExemptionReason` | `WT_WTEXRS` |  |  |  |  | `String(2)` |  | Exemption Reason |  |  |

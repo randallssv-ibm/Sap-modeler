@@ -11,7 +11,7 @@
 - **Technical Name:** `IBUSTRANCAT`
 - **Label:** Business Transaction Category
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -27,7 +27,7 @@
 - **Technical Name:** `IFIBUSTXCATT`
 - **Label:** Business Transaction Category - Text
 - **VDM Type:** `BASIC` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -41,7 +41,7 @@
 - **ABAP CDS Name:** `I_BusinessTransactionType`
 - **Label:** Business Transaction Type
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -57,7 +57,7 @@
 - **ABAP CDS Name:** `I_BusTransactionTypeText`
 - **Label:** Business Transaction Type - Text
 - **VDM Type:** `BASIC` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -71,7 +71,7 @@
 - **ABAP CDS Name:** `I_FinancialTransactionType`
 - **Label:** Financial Transaction Type
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -91,7 +91,7 @@
 - **ABAP CDS Name:** `I_FinancialTransactionTypeT`
 - **Label:** Financial Transaction Type - Text
 - **VDM Type:** `BASIC` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -105,7 +105,7 @@
 - **ABAP CDS Name:** `I_AccountingDocumentCategory`
 - **Label:** Accounting Document Category
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -118,7 +118,7 @@
 - **ABAP CDS Name:** `I_AccountingDocumentCategoryT`
 - **Label:** Accounting Document Category - Text
 - **VDM Type:** `BASIC` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -133,17 +133,17 @@
 - **ABAP CDS Name:** `I_AccountingDocumentType`
 - **Label:** Journal Entry Type
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** —
+- **ECC Source Tables:** T003, T003T
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `AccountingDocumentType` | `FARP_BLART` |  |  |  |  | `String(2)` | Y | Journal Entry Type |  | S/4 only entity |
-| `AccountingDocumentNumberRange` | `NUMKR` |  |  |  |  | `String(2)` |  | Number Range |  | S/4 only entity |
-| `AuthorizationGroup` | `BRGRU` |  |  |  |  | `String(4)` |  | Authorization |  | S/4 only entity |
-| `ExchangeRateType` | `KURST_003` |  |  |  |  | `String(4)` |  | Exchange Rate Type for FC Documents |  | S/4 only entity |
-| `AllowedFinancialAccountTypes` | `KOARS_003` |  |  |  |  | `String(5)` |  | Account Types |  | S/4 only entity |
-| `CustomerPostingIsAllowed` | `FIS_XKOAD` |  |  |  |  | `Boolean` |  | Customer Posting Is Allowed |  | S/4 only entity |
-| `SupplierPostingIsAllowed` | `FIS_XKOAK` |  |  |  |  | `Boolean` |  | Supplier Posting Is Allowed |  | S/4 only entity |
+| `AccountingDocumentType` | `FARP_BLART` |  |  |  |  | `String(2)` | Y | Journal Entry Type |  |  |
+| `AccountingDocumentNumberRange` | `NUMKR` |  |  |  |  | `String(2)` |  | Number Range |  |  |
+| `AuthorizationGroup` | `BRGRU` |  |  |  |  | `String(4)` |  | Authorization |  |  |
+| `ExchangeRateType` | `KURST_003` |  |  |  |  | `String(4)` |  | Exchange Rate Type for FC Documents |  |  |
+| `AllowedFinancialAccountTypes` | `KOARS_003` |  |  |  |  | `String(5)` |  | Account Types |  |  |
+| `CustomerPostingIsAllowed` | `FIS_XKOAD` |  |  |  |  | `Boolean` |  | Customer Posting Is Allowed |  |  |
+| `SupplierPostingIsAllowed` | `FIS_XKOAK` |  |  |  |  | `Boolean` |  | Supplier Posting Is Allowed |  |  |
 
 
 ## Entity: `JournalEntryTypeText`
@@ -151,13 +151,13 @@
 - **ABAP CDS Name:** `I_AccountingDocumentTypeText`
 - **Label:** Accounting Document Type - Text
 - **VDM Type:** `BASIC` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** T003T
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `AccountingDocumentType` | `FARP_BLART` |  |  |  |  | `String(2)` | Y | Journal Entry Type |  | S/4 only entity |
-| `Language` | `SPRAS` |  |  |  |  | `String(2)` | Y | Language Key |  | S/4 only entity |
-| `AccountingDocumentTypeName` | `FARP_LTEXT_003T` |  |  |  |  | `String(20)` |  | Journal Entry Type Name |  | S/4 only entity |
+| `AccountingDocumentType` | `FARP_BLART` |  |  |  |  | `String(2)` | Y | Journal Entry Type |  |  |
+| `Language` | `SPRAS` |  |  |  |  | `String(2)` | Y | Language Key |  |  |
+| `AccountingDocumentTypeName` | `FARP_LTEXT_003T` |  |  |  |  | `String(20)` |  | Journal Entry Type Name |  |  |
 
 
 ## Entity: `ReferenceDocumentType`
@@ -165,7 +165,7 @@
 - **ABAP CDS Name:** `I_ReferenceDocumentType`
 - **Label:** Reference Document Type
 - **VDM Type:** `BASIC` | **Data Category:** `DIMENSION`
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -177,7 +177,7 @@
 - **ABAP CDS Name:** `I_ReferenceDocumentTypeText`
 - **Label:** Reference Document Type - Text
 - **VDM Type:** `BASIC` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|

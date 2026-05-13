@@ -8,14 +8,14 @@
 - **ABAP CDS Name:** `I_ChartOfAccounts`
 - **Label:** Chart Of Accounts
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** T004
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `ChartOfAccounts` |  |  |  |  |  | `String(4)` | Y | Chart of Accounts |  | S/4 only entity |
-| `CorporateGroupChartOfAccounts` |  |  |  |  |  | `String(4)` |  | Group Chart of Accts |  | S/4 only entity |
-| `ChartOfAcctsIsBlocked` |  |  |  |  |  | `Boolean` |  | Blocked |  | S/4 only entity |
-| `MaintenanceLanguage` |  |  |  |  |  | `String(2)` |  | Maint.Language |  | S/4 only entity |
+| `ChartOfAccounts` |  |  |  |  |  | `String(4)` | Y | Chart of Accounts |  |  |
+| `CorporateGroupChartOfAccounts` |  |  |  |  |  | `String(4)` |  | Group Chart of Accts |  |  |
+| `ChartOfAcctsIsBlocked` |  |  |  |  |  | `Boolean` |  | Blocked |  |  |
+| `MaintenanceLanguage` |  |  |  |  |  | `String(2)` |  | Maint.Language |  |  |
 
 
 ## Entity: `ChartOfAccountsText`
@@ -23,13 +23,13 @@
 - **ABAP CDS Name:** `I_ChartOfAccountsText`
 - **Label:** Chart Of Accounts - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** T004T
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `ChartOfAccounts` |  |  |  |  |  | `String(4)` | Y | Chart of Accounts |  | S/4 only entity |
-| `Language` |  |  |  |  |  | `String(2)` | Y | Language Key |  | S/4 only entity |
-| `ChartOfAccountsName` |  |  |  |  |  | `String(50)` |  | Chart of Accounts Description |  | S/4 only entity |
+| `ChartOfAccounts` |  |  |  |  |  | `String(4)` | Y | Chart of Accounts |  |  |
+| `Language` |  |  |  |  |  | `String(2)` | Y | Language Key |  |  |
+| `ChartOfAccountsName` |  |  |  |  |  | `String(50)` |  | Chart of Accounts Description |  |  |
 
 
 ## Entity: `FinancialStatementHierNode`
@@ -37,26 +37,26 @@
 - **ABAP CDS Name:** `I_FinancialStatementHierNode`
 - **Label:** Financial Statement Hierarchy Node
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** FINSC_FS_ITEM
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `FinancialStatementHierarchy` |  |  |  |  |  | `String(42)` | Y | Hierarchy ID |  | S/4 only entity |
-| `HierarchyNode` |  |  |  |  |  | `String(50)` | Y | Node |  | S/4 only entity |
-| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Valid To |  | S/4 only entity |
-| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Validity Start Date |  | S/4 only entity |
-| `ParentNode` |  |  |  |  |  | `String(50)` |  | Par. Node |  | S/4 only entity |
-| `HierarchyVersion` |  |  |  |  |  | `String(15)` |  | Version |  | S/4 only entity |
-| `FinancialStatementLeafItem` |  |  |  |  |  | `String(50)` |  | Node |  | S/4 only entity |
-| `SequenceNumber` |  |  |  |  |  | `String(56)` |  |  |  | S/4 only entity |
-| `SignIsInverted` |  |  |  |  |  | `Boolean` |  | Attribute Value |  | S/4 only entity |
-| `ChartOfAccounts` |  |  |  |  |  | `String(12)` |  | Node Class |  | S/4 only entity |
-| `FinancialStatementNodeType` |  |  |  |  |  | `String(1)` |  | Node Type |  | S/4 only entity |
-| `FinStmntNodeFormattedID` |  |  |  |  |  | `String(32)` |  | Node for Extraction |  | S/4 only entity |
-| `HierarchyNodeVal` |  |  |  |  |  | `String(40)` |  | Value |  | S/4 only entity |
-| `HierarchyNodeSequence` |  |  |  |  |  | `String(6)` |  | Sequence Number |  | S/4 only entity |
-| `HierarchyLevel` |  |  |  |  |  | `String(6)` |  | Hierarchy Level |  | S/4 only entity |
-| `DebitCreditCode` |  |  |  |  |  | `String(1)` |  | Balance |  | S/4 only entity |
+| `FinancialStatementHierarchy` |  |  |  |  |  | `String(42)` | Y | Hierarchy ID |  |  |
+| `HierarchyNode` |  |  |  |  |  | `String(50)` | Y | Node |  |  |
+| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Valid To |  |  |
+| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Validity Start Date |  |  |
+| `ParentNode` |  |  |  |  |  | `String(50)` |  | Par. Node |  |  |
+| `HierarchyVersion` |  |  |  |  |  | `String(15)` |  | Version |  |  |
+| `FinancialStatementLeafItem` |  |  |  |  |  | `String(50)` |  | Node |  |  |
+| `SequenceNumber` |  |  |  |  |  | `String(56)` |  |  |  |  |
+| `SignIsInverted` |  |  |  |  |  | `Boolean` |  | Attribute Value |  |  |
+| `ChartOfAccounts` |  |  |  |  |  | `String(12)` |  | Node Class |  |  |
+| `FinancialStatementNodeType` |  |  |  |  |  | `String(1)` |  | Node Type |  |  |
+| `FinStmntNodeFormattedID` |  |  |  |  |  | `String(32)` |  | Node for Extraction |  |  |
+| `HierarchyNodeVal` |  |  |  |  |  | `String(40)` |  | Value |  |  |
+| `HierarchyNodeSequence` |  |  |  |  |  | `String(6)` |  | Sequence Number |  |  |
+| `HierarchyLevel` |  |  |  |  |  | `String(6)` |  | Hierarchy Level |  |  |
+| `DebitCreditCode` |  |  |  |  |  | `String(1)` |  | Balance |  |  |
 
 
 ## Entity: `FinancialStatementHierNodeText`
@@ -64,18 +64,18 @@
 - **ABAP CDS Name:** `I_FinancialStatementHierNodeT`
 - **Label:** Financial Statement Hierarchy Node - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** FINSC_FS_ITEM
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `FinancialStatementHierarchy` |  |  |  |  |  | `String(42)` | Y | Hierarchy ID |  | S/4 only entity |
-| `HierarchyNode` |  |  |  |  |  | `String(50)` | Y | Node |  | S/4 only entity |
-| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Valid To |  | S/4 only entity |
-| `Language` |  |  |  |  |  | `String(2)` | Y | Language Key |  | S/4 only entity |
-| `HierarchyNodeText` |  |  |  |  |  | `String(50)` |  | Description |  | S/4 only entity |
-| `HierarchyNodeShortText` |  |  |  |  |  | `String(20)` |  |  |  | S/4 only entity |
-| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Valid From |  | S/4 only entity |
-| `FinStmntNodeFormattedID` |  |  |  |  |  | `String(32)` |  | Node for Extraction |  | S/4 only entity |
+| `FinancialStatementHierarchy` |  |  |  |  |  | `String(42)` | Y | Hierarchy ID |  |  |
+| `HierarchyNode` |  |  |  |  |  | `String(50)` | Y | Node |  |  |
+| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Valid To |  |  |
+| `Language` |  |  |  |  |  | `String(2)` | Y | Language Key |  |  |
+| `HierarchyNodeText` |  |  |  |  |  | `String(50)` |  | Description |  |  |
+| `HierarchyNodeShortText` |  |  |  |  |  | `String(20)` |  |  |  |  |
+| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Valid From |  |  |
+| `FinStmntNodeFormattedID` |  |  |  |  |  | `String(32)` |  | Node for Extraction |  |  |
 
 
 ## Entity: `FinancialStatementHierText`
@@ -83,15 +83,15 @@
 - **ABAP CDS Name:** `I_FinancialStatementHierT`
 - **Label:** Financial Statement Hierarchy - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** FINSC_FS_ITEM
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `FinancialStatementHierarchy` |  |  |  |  |  | `String(42)` | Y | Hierarchy ID |  | S/4 only entity |
-| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Valid To |  | S/4 only entity |
-| `Language` |  |  |  |  |  | `String(2)` | Y | Language Key |  | S/4 only entity |
-| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Valid From |  | S/4 only entity |
-| `FinancialStmntHierarchyName` |  |  |  |  |  | `String(50)` |  | Financial Statement Description |  | S/4 only entity |
+| `FinancialStatementHierarchy` |  |  |  |  |  | `String(42)` | Y | Hierarchy ID |  |  |
+| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Valid To |  |  |
+| `Language` |  |  |  |  |  | `String(2)` | Y | Language Key |  |  |
+| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Valid From |  |  |
+| `FinancialStmntHierarchyName` |  |  |  |  |  | `String(50)` |  | Financial Statement Description |  |  |
 
 
 ## Entity: `FinancialStatementHierarchy`
@@ -99,27 +99,27 @@
 - **ABAP CDS Name:** `I_FinancialStatementHier`
 - **Label:** Financial Statement Hierarchy
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** FINSC_FS_ITEM
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `FinancialStatementHierarchy` |  |  |  |  |  | `String(42)` | Y | Hierarchy ID |  | S/4 only entity |
-| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Validity End Date |  | S/4 only entity |
-| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Validity Start Date |  | S/4 only entity |
-| `HierarchyType` |  |  |  |  |  | `String(4)` |  | Hierarchy Type |  | S/4 only entity |
-| `LastChangedByUser` |  |  |  |  |  | `String(12)` |  | Last Changed By |  | S/4 only entity |
-| `LastChangeTime` |  |  |  |  |  | `DateTime` |  | Updated At |  | S/4 only entity |
-| `LastChangeDateTime` |  |  |  |  |  | `DateTime` |  | Updated At |  | S/4 only entity |
-| `ChartOfAccounts` |  |  |  |  |  | `String(80)` |  | Char80 |  | S/4 only entity |
-| `FinancialStatementAssetsItem` |  |  |  |  |  | `String(80)` |  | Char80 |  | S/4 only entity |
-| `FinStatementLiabilitiesItem` |  |  |  |  |  | `String(80)` |  | Char80 |  | S/4 only entity |
-| `FinancialStatementNetLossItem` |  |  |  |  |  | `String(80)` |  | Char80 |  | S/4 only entity |
-| `FinStatementNetProfitItem` |  |  |  |  |  | `String(80)` |  | Char80 |  | S/4 only entity |
-| `FinStatementProfitAndLossItem` |  |  |  |  |  | `String(80)` |  | Char80 |  | S/4 only entity |
-| `FinancialStatementOrphansItem` |  |  |  |  |  | `String(80)` |  | Char80 |  | S/4 only entity |
-| `FinancialStatementNotesItem` |  |  |  |  |  | `String(80)` |  | Char80 |  | S/4 only entity |
-| `GroupChartOfAccountIsUsed` |  |  |  |  |  | `Boolean` |  | Char80 |  | S/4 only entity |
-| `FunctionalAreaIsUsed` |  |  |  |  |  | `Boolean` |  | Char80 |  | S/4 only entity |
+| `FinancialStatementHierarchy` |  |  |  |  |  | `String(42)` | Y | Hierarchy ID |  |  |
+| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Validity End Date |  |  |
+| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Validity Start Date |  |  |
+| `HierarchyType` |  |  |  |  |  | `String(4)` |  | Hierarchy Type |  |  |
+| `LastChangedByUser` |  |  |  |  |  | `String(12)` |  | Last Changed By |  |  |
+| `LastChangeTime` |  |  |  |  |  | `DateTime` |  | Updated At |  |  |
+| `LastChangeDateTime` |  |  |  |  |  | `DateTime` |  | Updated At |  |  |
+| `ChartOfAccounts` |  |  |  |  |  | `String(80)` |  | Char80 |  |  |
+| `FinancialStatementAssetsItem` |  |  |  |  |  | `String(80)` |  | Char80 |  |  |
+| `FinStatementLiabilitiesItem` |  |  |  |  |  | `String(80)` |  | Char80 |  |  |
+| `FinancialStatementNetLossItem` |  |  |  |  |  | `String(80)` |  | Char80 |  |  |
+| `FinStatementNetProfitItem` |  |  |  |  |  | `String(80)` |  | Char80 |  |  |
+| `FinStatementProfitAndLossItem` |  |  |  |  |  | `String(80)` |  | Char80 |  |  |
+| `FinancialStatementOrphansItem` |  |  |  |  |  | `String(80)` |  | Char80 |  |  |
+| `FinancialStatementNotesItem` |  |  |  |  |  | `String(80)` |  | Char80 |  |  |
+| `GroupChartOfAccountIsUsed` |  |  |  |  |  | `Boolean` |  | Char80 |  |  |
+| `FunctionalAreaIsUsed` |  |  |  |  |  | `Boolean` |  | Char80 |  |  |
 
 
 ## Entity: `GLAccountHierNodeBySemanticTag`
@@ -131,10 +131,10 @@
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `GLAccountHierarchy` |  |  |  |  |  | `String(42)` | Y | Hierarchy ID |  | S/4 only entity |
-| `HierarchyNode` |  |  |  |  |  | `String(50)` | Y | Node |  | S/4 only entity |
-| `SemanticTag` |  |  |  |  |  | `String(10)` | Y | Semantic Tag |  | S/4 only entity |
-| `HierarchyNodeType` |  |  |  |  |  | `String(30)` |  | Field Name |  | S/4 only entity |
+| `GLAccountHierarchy` |  |  |  |  |  | `String(42)` | Y | Hierarchy ID |  |  |
+| `HierarchyNode` |  |  |  |  |  | `String(50)` | Y | Node |  |  |
+| `SemanticTag` |  |  |  |  |  | `String(10)` | Y | Semantic Tag |  |  |
+| `HierarchyNodeType` |  |  |  |  |  | `String(30)` |  | Field Name |  |  |
 
 
 ## Entity: `GLAccountHierarchyNode`
@@ -142,24 +142,24 @@
 - **ABAP CDS Name:** `I_GLAccountHierarchyNode`
 - **Label:** G/L Account Hierarchy Node
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** FINSC_HIER, FINSC_HIER_T
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `GLAccountHierarchy` |  |  |  |  |  | `String(42)` | Y | G/L Account Hierarchy |  | S/4 only entity |
-| `HierarchyNode` |  |  |  |  |  | `String(50)` | Y | Node |  | S/4 only entity |
-| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Validity End Date |  | S/4 only entity |
-| `ParentNode` |  |  |  |  |  | `String(50)` |  | Par. Node |  | S/4 only entity |
-| `HierarchyVersion` |  |  |  |  |  | `String(15)` |  | Version |  | S/4 only entity |
-| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Validity Start Date |  | S/4 only entity |
-| `ChartOfAccounts` |  |  |  |  |  | `String(4)` |  | Chart of Accounts |  | S/4 only entity |
-| `GLAccount` |  |  |  |  |  | `String(10)` |  | G/L Account |  | S/4 only entity |
-| `SequenceNumber` |  |  |  |  |  | `String(56)` |  |  |  | S/4 only entity |
-| `HierarchyNodeSequence` |  |  |  |  |  | `String(6)` |  | Sequence Number |  | S/4 only entity |
-| `HierarchyNodeLevel` |  |  |  |  |  | `String(6)` |  | Hierarchy Level |  | S/4 only entity |
-| `NodeType` |  |  |  |  |  | `String(1)` |  | Node Type |  | S/4 only entity |
-| `SignIsInverted` |  |  |  |  |  | `Boolean` |  | Attribute Value |  | S/4 only entity |
-| `HierarchyNodeVal` |  |  |  |  |  | `String(40)` |  | Value |  | S/4 only entity |
+| `GLAccountHierarchy` |  |  |  |  |  | `String(42)` | Y | G/L Account Hierarchy |  |  |
+| `HierarchyNode` |  |  |  |  |  | `String(50)` | Y | Node |  |  |
+| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Validity End Date |  |  |
+| `ParentNode` |  |  |  |  |  | `String(50)` |  | Par. Node |  |  |
+| `HierarchyVersion` |  |  |  |  |  | `String(15)` |  | Version |  |  |
+| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Validity Start Date |  |  |
+| `ChartOfAccounts` |  |  |  |  |  | `String(4)` |  | Chart of Accounts |  |  |
+| `GLAccount` |  |  |  |  |  | `String(10)` |  | G/L Account |  |  |
+| `SequenceNumber` |  |  |  |  |  | `String(56)` |  |  |  |  |
+| `HierarchyNodeSequence` |  |  |  |  |  | `String(6)` |  | Sequence Number |  |  |
+| `HierarchyNodeLevel` |  |  |  |  |  | `String(6)` |  | Hierarchy Level |  |  |
+| `NodeType` |  |  |  |  |  | `String(1)` |  | Node Type |  |  |
+| `SignIsInverted` |  |  |  |  |  | `Boolean` |  | Attribute Value |  |  |
+| `HierarchyNodeVal` |  |  |  |  |  | `String(40)` |  | Value |  |  |
 
 
 ## Entity: `GLAccountHierarchyNodeText`
@@ -167,17 +167,17 @@
 - **ABAP CDS Name:** `I_GLAccountHierarchyNodeT`
 - **Label:** G/L Account Hierarchy Node - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** FINSC_HIER_T
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `GLAccountHierarchy` |  |  |  |  |  | `String(42)` | Y | G/L Account Hierarchy |  | S/4 only entity |
-| `HierarchyNode` |  |  |  |  |  | `String(50)` | Y | Node |  | S/4 only entity |
-| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Valid To |  | S/4 only entity |
-| `Language` |  |  |  |  |  | `String(2)` | Y | Language Key |  | S/4 only entity |
-| `HierarchyNodeText` |  |  |  |  |  | `String(50)` |  | Description |  | S/4 only entity |
-| `HierarchyNodeShortText` |  |  |  |  |  | `String(20)` |  |  |  | S/4 only entity |
-| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Valid From |  | S/4 only entity |
+| `GLAccountHierarchy` |  |  |  |  |  | `String(42)` | Y | G/L Account Hierarchy |  |  |
+| `HierarchyNode` |  |  |  |  |  | `String(50)` | Y | Node |  |  |
+| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Valid To |  |  |
+| `Language` |  |  |  |  |  | `String(2)` | Y | Language Key |  |  |
+| `HierarchyNodeText` |  |  |  |  |  | `String(50)` |  | Description |  |  |
+| `HierarchyNodeShortText` |  |  |  |  |  | `String(20)` |  |  |  |  |
+| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Valid From |  |  |
 
 
 ## Entity: `GLAccountHierarchyText`
@@ -185,15 +185,15 @@
 - **ABAP CDS Name:** `I_GLAccountHierarchyText`
 - **Label:** G/L Account Hierarchy - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** FINSC_HIER_T
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `GLAccountHierarchy` |  |  |  |  |  | `String(42)` | Y | G/L Account Hierarchy |  | S/4 only entity |
-| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Valid To |  | S/4 only entity |
-| `Language` |  |  |  |  |  | `String(2)` | Y | Language Key |  | S/4 only entity |
-| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Valid From |  | S/4 only entity |
-| `GLAccountHierarchyName` |  |  |  |  |  | `String(50)` |  | Description |  | S/4 only entity |
+| `GLAccountHierarchy` |  |  |  |  |  | `String(42)` | Y | G/L Account Hierarchy |  |  |
+| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Valid To |  |  |
+| `Language` |  |  |  |  |  | `String(2)` | Y | Language Key |  |  |
+| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Valid From |  |  |
+| `GLAccountHierarchyName` |  |  |  |  |  | `String(50)` |  | Description |  |  |
 
 
 ## Entity: `GLAccountTypeFlowType`
@@ -201,7 +201,7 @@
 - **ABAP CDS Name:** `I_GLAccountTypeFlowType`
 - **Label:** Flow Type for G/L Account Type
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -213,7 +213,7 @@
 - **ABAP CDS Name:** `I_GLAccountInChartOfAccounts`
 - **Label:** G/L Account In Chart Of Accounts
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** SKA1, SKAT
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -221,24 +221,24 @@
 | `GLAccount` |  | `SKA1` | `SAKNR` |  |  | `String(10)` | Y | G/L Account |  |  |
 | `IsBalanceSheetAccount` |  | `SKA1` | `XBILK` |  |  | `Boolean` |  | Balance sheet acct |  |  |
 | `GLAccountGroup` |  | `SKA1` | `KTOKS` |  |  | `String(4)` |  | Account Group |  |  |
-| `CorporateGroupChartOfAccounts` |  |  |  |  |  | `String(4)` |  | Group Chart of Accts |  | S/4 only entity |
-| `CorporateGroupAccount` |  |  |  |  |  | `String(10)` |  | Group Account Number |  | S/4 only entity |
+| `CorporateGroupChartOfAccounts` |  |  |  |  |  | `String(4)` |  | Group Chart of Accts |  |  |
+| `CorporateGroupAccount` |  |  |  |  |  | `String(10)` |  | Group Account Number |  |  |
 | `ProfitLossAccountType` |  | `SKA1` | `GVTYP` |  |  | `String(2)` |  | P&L state. acct |  |  |
 | `SampleGLAccount` |  | `SKA1` | `MUSTR` |  |  | `String(10)` |  | Sample Account |  |  |
-| `AccountIsMarkedForDeletion` |  |  |  |  |  | `Boolean` |  | Deletion Flag |  | S/4 only entity |
-| `AccountIsBlockedForCreation` |  |  |  |  |  | `Boolean` |  | Creation Block |  | S/4 only entity |
-| `AccountIsBlockedForPosting` |  |  |  |  |  | `Boolean` |  | Posting Block |  | S/4 only entity |
-| `AccountIsBlockedForPlanning` |  |  |  |  |  | `Boolean` |  | Planning Block |  | S/4 only entity |
-| `PartnerCompany` |  |  |  |  |  | `String(6)` |  | Trading Partner No. |  | S/4 only entity |
+| `AccountIsMarkedForDeletion` |  |  |  |  |  | `Boolean` |  | Deletion Flag |  |  |
+| `AccountIsBlockedForCreation` |  |  |  |  |  | `Boolean` |  | Creation Block |  |  |
+| `AccountIsBlockedForPosting` |  |  |  |  |  | `Boolean` |  | Posting Block |  |  |
+| `AccountIsBlockedForPlanning` |  |  |  |  |  | `Boolean` |  | Planning Block |  |  |
+| `PartnerCompany` |  |  |  |  |  | `String(6)` |  | Trading Partner No. |  |  |
 | `FunctionalArea` |  | `SKA1` | `FUNC_AREA` |  |  | `String(16)` |  | Functional Area |  |  |
-| `CreationDate` |  |  |  |  |  | `Date` |  | Created On |  | S/4 only entity |
-| `CreatedByUser` |  |  |  |  |  | `String(12)` |  | Created By |  | S/4 only entity |
-| `LastChangeDateTime` |  |  |  |  |  | `DateTime` |  | Time Stamp |  | S/4 only entity |
-| `GLAccountType` |  |  |  |  |  | `String(1)` |  | G/L Account Type |  | S/4 only entity |
-| `GLAccountSubtype` |  |  |  |  |  | `String(1)` |  | G/L Account Subtype |  | S/4 only entity |
-| `GLAccountExternal` |  |  |  |  |  | `String(10)` |  | G/L Acct External ID |  | S/4 only entity |
-| `BankReconciliationAccount` |  |  |  |  |  | `String(10)` |  | Reconciliation Acct |  | S/4 only entity |
-| `IsProfitLossAccount` |  |  |  |  |  | `Boolean` |  | Profit Loss Account |  | S/4 only entity |
+| `CreationDate` |  |  |  |  |  | `Date` |  | Created On |  |  |
+| `CreatedByUser` |  |  |  |  |  | `String(12)` |  | Created By |  |  |
+| `LastChangeDateTime` |  |  |  |  |  | `DateTime` |  | Time Stamp |  |  |
+| `GLAccountType` |  |  |  |  |  | `String(1)` |  | G/L Account Type |  |  |
+| `GLAccountSubtype` |  |  |  |  |  | `String(1)` |  | G/L Account Subtype |  |  |
+| `GLAccountExternal` |  |  |  |  |  | `String(10)` |  | G/L Acct External ID |  |  |
+| `BankReconciliationAccount` |  |  |  |  |  | `String(10)` |  | Reconciliation Acct |  |  |
+| `IsProfitLossAccount` |  |  |  |  |  | `Boolean` |  | Profit Loss Account |  |  |
 
 
 ## Entity: `GeneralLedgerAccountFlowType`
@@ -246,7 +246,7 @@
 - **ABAP CDS Name:** `I_GLAccountFlowType`
 - **Label:** GLAccount Flow Type
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -262,17 +262,17 @@
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `GLAccountHierarchy` |  |  |  |  |  | `String(42)` | Y | G/L Account Hierarchy |  | S/4 only entity |
-| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Valid To |  | S/4 only entity |
-| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Valid From |  | S/4 only entity |
-| `HierarchyType` |  |  |  |  |  | `String(4)` |  | Hierarchy Type |  | S/4 only entity |
-| `LastChangedByUser` |  |  |  |  |  | `String(12)` |  | Last Changed By |  | S/4 only entity |
-| `LastChangeTime` |  |  |  |  |  | `DateTime` |  | Updated At |  | S/4 only entity |
-| `LastChangeDateTime` |  |  |  |  |  | `DateTime` |  | Updated At |  | S/4 only entity |
-| `HierarchyShortID` |  |  |  |  |  | `String(20)` |  | Hierarchy ID |  | S/4 only entity |
-| `FunctionalAreaIsUsed` |  |  |  |  |  | `Boolean` |  | Functional Area |  | S/4 only entity |
-| `SemanticTagIsUsed` |  |  |  |  |  | `Boolean` |  | Sem. Tag Assigned |  | S/4 only entity |
-| `ChartOfAccounts` |  |  |  |  |  | `String(4)` |  | Chart of Accounts |  | S/4 only entity |
+| `GLAccountHierarchy` |  |  |  |  |  | `String(42)` | Y | G/L Account Hierarchy |  |  |
+| `ValidityEndDate` |  |  |  |  |  | `Date` | Y | Valid To |  |  |
+| `ValidityStartDate` |  |  |  |  |  | `Date` |  | Valid From |  |  |
+| `HierarchyType` |  |  |  |  |  | `String(4)` |  | Hierarchy Type |  |  |
+| `LastChangedByUser` |  |  |  |  |  | `String(12)` |  | Last Changed By |  |  |
+| `LastChangeTime` |  |  |  |  |  | `DateTime` |  | Updated At |  |  |
+| `LastChangeDateTime` |  |  |  |  |  | `DateTime` |  | Updated At |  |  |
+| `HierarchyShortID` |  |  |  |  |  | `String(20)` |  | Hierarchy ID |  |  |
+| `FunctionalAreaIsUsed` |  |  |  |  |  | `Boolean` |  | Functional Area |  |  |
+| `SemanticTagIsUsed` |  |  |  |  |  | `Boolean` |  | Sem. Tag Assigned |  |  |
+| `ChartOfAccounts` |  |  |  |  |  | `String(4)` |  | Chart of Accounts |  |  |
 
 
 ## Entity: `GeneralLedgerAccountLineItem`
@@ -280,7 +280,7 @@
 - **ABAP CDS Name:** `I_GLAccountLineItemRawData`
 - **Label:** Raw Data of G/L Account Line Item
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** BKPF, BSEG, ACDOCA
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -289,53 +289,53 @@
 | `FiscalYear` |  | `BKPF` | `GJAHR` | `ACDOCA` | `GJAHR` | `String(4)` | Y | Fiscal Year |  |  |
 | `AccountingDocument` |  | `BKPF` | `BELNR` | `ACDOCA` | `BELNR` | `String(10)` | Y | Journal Entry |  |  |
 | `LedgerGLLineItem` |  | `BSEG` | `BUZEI` | `ACDOCA` | `DOCLN` | `String(6)` | Y | Journal Entry Item |  |  |
-| `LedgerFiscalYear` |  |  |  |  |  | `String(4)` |  | Fiscal Year of Ledger |  | S/4 only entity |
-| `GLRecordType` |  |  |  |  |  | `String(1)` |  | Record Type |  | S/4 only entity |
-| `JrnlEntrAltvFYConsecutiveID` |  |  |  |  |  | `String(10)` |  | Shifted Fiscal Year Consecutive ID |  | S/4 only entity |
+| `LedgerFiscalYear` |  |  |  |  |  | `String(4)` |  | Fiscal Year of Ledger |  |  |
+| `GLRecordType` |  |  |  |  |  | `String(1)` |  | Record Type |  |  |
+| `JrnlEntrAltvFYConsecutiveID` |  |  |  |  |  | `String(10)` |  | Shifted Fiscal Year Consecutive ID |  |  |
 | `ChartOfAccounts` |  | `T001` | `KTOPL` | `ACDOCA` | `KTOPL` | `String(4)` |  | Chart of Accounts |  |  |
 | `ControllingArea` |  | `BSEG` | `KOKRS` | `ACDOCA` | `KOKRS` | `String(4)` |  | Controlling Area |  |  |
-| `FinancialTransactionType` |  |  |  |  |  | `String(3)` |  | Financial Transaction Type |  | S/4 only entity |
-| `GLBusinessTransactionType` |  |  |  |  |  | `String(4)` |  | Transaction Type for General Ledger |  | S/4 only entity |
-| `BusinessTransactionCategory` |  |  |  |  |  | `String(4)` |  | Business Transaction Category |  | S/4 only entity |
+| `FinancialTransactionType` |  |  |  |  |  | `String(3)` |  | Financial Transaction Type |  |  |
+| `GLBusinessTransactionType` |  |  |  |  |  | `String(4)` |  | Transaction Type for General Ledger |  |  |
+| `BusinessTransactionCategory` |  |  |  |  |  | `String(4)` |  | Business Transaction Category |  |  |
 | `BusinessTransactionType` |  | `BKPF` | `GLVOR` | `ACDOCA` | `BTTYPE` | `String(4)` |  | Business Transaction Type |  |  |
-| `FinancialClosingStep` |  |  |  |  |  | `String(3)` |  | Financial Closing Step |  | S/4 only entity |
-| `ControllingBusTransacType` |  |  |  |  |  | `String(4)` |  | Business Transaction |  | S/4 only entity |
+| `FinancialClosingStep` |  |  |  |  |  | `String(3)` |  | Financial Closing Step |  |  |
+| `ControllingBusTransacType` |  |  |  |  |  | `String(4)` |  | Business Transaction |  |  |
 | `ReferenceDocumentType` |  | `BKPF` | `AWTYP` | `ACDOCA` | `AWTYP` | `String(5)` |  | Reference Document Type |  |  |
-| `LogicalSystem` |  |  |  |  |  | `String(10)` |  | Logical System |  | S/4 only entity |
-| `ReferenceDocumentContext` |  |  |  |  |  | `String(10)` |  | Reference Document Context |  | S/4 only entity |
-| `ReferenceDocument` |  |  |  |  |  | `String(10)` |  | Reference Document |  | S/4 only entity |
-| `ReferenceDocumentItem` |  |  |  |  |  | `String(6)` |  | Reference Document Item |  | S/4 only entity |
-| `ReferenceDocumentItemGroup` |  |  |  |  |  | `String(6)` |  | Reference Document Item Group |  | S/4 only entity |
-| `TransactionSubitem` |  |  |  |  |  | `String(6)` |  | Sub Transaction |  | S/4 only entity |
-| `AccountingNotificationUUID` |  |  |  |  |  | `UUID` |  | Accounting Notification UUID |  | S/4 only entity |
-| `OffsettingLedgerGLLineItem` |  |  |  |  |  | `String(6)` |  | G/L Offsetting Entry Line Item |  | S/4 only entity |
+| `LogicalSystem` |  |  |  |  |  | `String(10)` |  | Logical System |  |  |
+| `ReferenceDocumentContext` |  |  |  |  |  | `String(10)` |  | Reference Document Context |  |  |
+| `ReferenceDocument` |  |  |  |  |  | `String(10)` |  | Reference Document |  |  |
+| `ReferenceDocumentItem` |  |  |  |  |  | `String(6)` |  | Reference Document Item |  |  |
+| `ReferenceDocumentItemGroup` |  |  |  |  |  | `String(6)` |  | Reference Document Item Group |  |  |
+| `TransactionSubitem` |  |  |  |  |  | `String(6)` |  | Sub Transaction |  |  |
+| `AccountingNotificationUUID` |  |  |  |  |  | `UUID` |  | Accounting Notification UUID |  |  |
+| `OffsettingLedgerGLLineItem` |  |  |  |  |  | `String(6)` |  | G/L Offsetting Entry Line Item |  |  |
 | `IsReversal` |  | `BKPF` | `XREVERSAL` | `ACDOCA` | `XREVERSING` | `Boolean` |  | Is Reversing |  |  |
-| `IsReversed` |  |  |  | `ACDOCA` | `XREVERSED` | `Boolean` |  | Is Reversed |  | S/4 only entity |
-| `ReversalReferenceDocumentType` |  |  |  |  |  | `String(5)` |  | Reversal Reference Document Type |  | S/4 only entity |
-| `ReversalReferenceDocumentCntxt` |  |  |  |  |  | `String(10)` |  | Reversal Reference Document Context |  | S/4 only entity |
-| `ReversalReferenceDocument` |  |  |  |  |  | `String(10)` |  | Reversal Reference Document |  | S/4 only entity |
-| `ReversalTransactionSubitem` |  |  |  |  |  | `String(6)` |  | Reversal Transaction Sub Item |  | S/4 only entity |
-| `IsSettlement` |  |  |  |  |  | `Boolean` |  | Is Settling |  | S/4 only entity |
-| `IsSettled` |  |  |  |  |  | `Boolean` |  | Is Settled |  | S/4 only entity |
-| `PredecessorReferenceDocType` |  |  |  |  |  | `String(5)` |  | Predecessor Reference Document Type |  | S/4 only entity |
-| `PredecessorReferenceDocCntxt` |  |  |  |  |  | `String(10)` |  | Predecessor Reference Document Context |  | S/4 only entity |
-| `PredecessorReferenceDocument` |  |  |  |  |  | `String(10)` |  | Predecessor Reference Document |  | S/4 only entity |
-| `PredecessorReferenceDocItem` |  |  |  |  |  | `String(6)` |  | Predecessor Reference Document Item |  | S/4 only entity |
-| `PrdcssrJournalEntryCompanyCode` |  |  |  |  |  | `String(4)` |  | Predecessor Journal Entry Company Code |  | S/4 only entity |
-| `PrdcssrJournalEntryFiscalYear` |  |  |  |  |  | `String(4)` |  | Predecessor Journal Entry Fiscal Year |  | S/4 only entity |
-| `PredecessorJournalEntry` |  |  |  |  |  | `String(10)` |  | Predecessor Journal Entry |  | S/4 only entity |
-| `PredecessorJournalEntryItem` |  |  |  |  |  | `String(6)` |  | Predecessor Journal Entry Item |  | S/4 only entity |
-| `SourceReferenceDocumentType` |  |  |  |  |  | `String(5)` |  | Source Reference Document Type |  | S/4 only entity |
-| `SourceLogicalSystem` |  |  |  |  |  | `String(10)` |  | Source Logical System |  | S/4 only entity |
-| `SourceReferenceDocumentCntxt` |  |  |  |  |  | `String(10)` |  | Source Reference Document Context |  | S/4 only entity |
-| `SourceReferenceDocument` |  |  |  |  |  | `String(10)` |  | Source Reference Document |  | S/4 only entity |
-| `SourceReferenceDocumentItem` |  |  |  |  |  | `String(6)` |  | Source Reference Document Item |  | S/4 only entity |
-| `SourceReferenceDocSubitem` |  |  |  |  |  | `String(6)` |  | Source Reference Document Subitem |  | S/4 only entity |
-| `IsCommitment` |  |  |  |  |  | `Boolean` |  | Is Commitment |  | S/4 only entity |
-| `JrnlEntryItemObsoleteReason` |  |  |  |  |  | `String(1)` |  | Obsolete Reason |  | S/4 only entity |
-| `JournalEntryIsSecondaryEntry` |  |  |  |  |  | `Boolean` |  | Is Secondary Journal Entry |  | S/4 only entity |
-| `JrnlPeriodEndClosingRunLogUUID` |  |  |  |  |  | `UUID` |  | Closing Run UUID |  | S/4 only entity |
-| `OrganizationalChange` |  |  |  |  |  | `String(10)` |  | Organizational Change |  | S/4 only entity |
+| `IsReversed` |  |  |  | `ACDOCA` | `XREVERSED` | `Boolean` |  | Is Reversed |  |  |
+| `ReversalReferenceDocumentType` |  |  |  |  |  | `String(5)` |  | Reversal Reference Document Type |  |  |
+| `ReversalReferenceDocumentCntxt` |  |  |  |  |  | `String(10)` |  | Reversal Reference Document Context |  |  |
+| `ReversalReferenceDocument` |  |  |  |  |  | `String(10)` |  | Reversal Reference Document |  |  |
+| `ReversalTransactionSubitem` |  |  |  |  |  | `String(6)` |  | Reversal Transaction Sub Item |  |  |
+| `IsSettlement` |  |  |  |  |  | `Boolean` |  | Is Settling |  |  |
+| `IsSettled` |  |  |  |  |  | `Boolean` |  | Is Settled |  |  |
+| `PredecessorReferenceDocType` |  |  |  |  |  | `String(5)` |  | Predecessor Reference Document Type |  |  |
+| `PredecessorReferenceDocCntxt` |  |  |  |  |  | `String(10)` |  | Predecessor Reference Document Context |  |  |
+| `PredecessorReferenceDocument` |  |  |  |  |  | `String(10)` |  | Predecessor Reference Document |  |  |
+| `PredecessorReferenceDocItem` |  |  |  |  |  | `String(6)` |  | Predecessor Reference Document Item |  |  |
+| `PrdcssrJournalEntryCompanyCode` |  |  |  |  |  | `String(4)` |  | Predecessor Journal Entry Company Code |  |  |
+| `PrdcssrJournalEntryFiscalYear` |  |  |  |  |  | `String(4)` |  | Predecessor Journal Entry Fiscal Year |  |  |
+| `PredecessorJournalEntry` |  |  |  |  |  | `String(10)` |  | Predecessor Journal Entry |  |  |
+| `PredecessorJournalEntryItem` |  |  |  |  |  | `String(6)` |  | Predecessor Journal Entry Item |  |  |
+| `SourceReferenceDocumentType` |  |  |  |  |  | `String(5)` |  | Source Reference Document Type |  |  |
+| `SourceLogicalSystem` |  |  |  |  |  | `String(10)` |  | Source Logical System |  |  |
+| `SourceReferenceDocumentCntxt` |  |  |  |  |  | `String(10)` |  | Source Reference Document Context |  |  |
+| `SourceReferenceDocument` |  |  |  |  |  | `String(10)` |  | Source Reference Document |  |  |
+| `SourceReferenceDocumentItem` |  |  |  |  |  | `String(6)` |  | Source Reference Document Item |  |  |
+| `SourceReferenceDocSubitem` |  |  |  |  |  | `String(6)` |  | Source Reference Document Subitem |  |  |
+| `IsCommitment` |  |  |  |  |  | `Boolean` |  | Is Commitment |  |  |
+| `JrnlEntryItemObsoleteReason` |  |  |  |  |  | `String(1)` |  | Obsolete Reason |  |  |
+| `JournalEntryIsSecondaryEntry` |  |  |  |  |  | `Boolean` |  | Is Secondary Journal Entry |  |  |
+| `JrnlPeriodEndClosingRunLogUUID` |  |  |  |  |  | `UUID` |  | Closing Run UUID |  |  |
+| `OrganizationalChange` |  |  |  |  |  | `String(10)` |  | Organizational Change |  |  |
 | `GLAccount` |  | `BSEG` | `HKONT` | `ACDOCA` | `RACCT` | `String(10)` |  | G/L Account |  |  |
 | `CostCenter` |  | `BSEG` | `KOSTL` | `ACDOCA` | `RCNTR` | `String(10)` |  | Cost Center |  |  |
 | `ProfitCenter` |  | `BSEG` | `PRCTR` | `ACDOCA` | `PRCTR` | `String(10)` |  | Profit Center |  |  |
@@ -343,397 +343,397 @@
 | `BusinessArea` |  | `BSEG` | `GSBER` | `ACDOCA` | `RBUSA` | `String(4)` |  | Business Area |  |  |
 | `Segment` |  | `BSEG` | `SEGMENT` | `ACDOCA` | `SEGMENT` | `String(10)` |  | Segment |  |  |
 | `PartnerCostCenter` |  | `BSEG` | `PARGB` | `ACDOCA` | `SCNTR` | `String(10)` |  | Partner Cost Center |  |  |
-| `PartnerProfitCenter` |  |  |  | `ACDOCA` | `PPRCTR` | `String(10)` |  | Partner Profit Center |  | S/4 only entity |
-| `PartnerFunctionalArea` |  |  |  | `ACDOCA` | `SFAREA` | `String(16)` |  | Partner Func. Area |  | S/4 only entity |
-| `PartnerBusinessArea` |  |  |  | `ACDOCA` | `SBUSA` | `String(4)` |  | Partner Bus. Area |  | S/4 only entity |
-| `PartnerCompany` |  |  |  |  |  | `String(6)` |  | Trading Partner |  | S/4 only entity |
-| `PartnerSegment` |  |  |  | `ACDOCA` | `PSEGMENT` | `String(10)` |  | Partner Segment |  | S/4 only entity |
-| `BalanceTransactionCurrency` |  |  |  |  |  | `String(5)` |  | Balance Transaction Currency |  | S/4 only entity |
-| `AmountInBalanceTransacCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Balance Transaction Currency | BalanceTransactionCurrency | S/4 only entity |
+| `PartnerProfitCenter` |  |  |  | `ACDOCA` | `PPRCTR` | `String(10)` |  | Partner Profit Center |  |  |
+| `PartnerFunctionalArea` |  |  |  | `ACDOCA` | `SFAREA` | `String(16)` |  | Partner Func. Area |  |  |
+| `PartnerBusinessArea` |  |  |  | `ACDOCA` | `SBUSA` | `String(4)` |  | Partner Bus. Area |  |  |
+| `PartnerCompany` |  |  |  |  |  | `String(6)` |  | Trading Partner |  |  |
+| `PartnerSegment` |  |  |  | `ACDOCA` | `PSEGMENT` | `String(10)` |  | Partner Segment |  |  |
+| `BalanceTransactionCurrency` |  |  |  |  |  | `String(5)` |  | Balance Transaction Currency |  |  |
+| `AmountInBalanceTransacCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Balance Transaction Currency | BalanceTransactionCurrency |  |
 | `TransactionCurrency` |  | `BKPF` | `WAERS` | `ACDOCA` | `RWCUR` | `String(5)` |  | Transaction Currency |  |  |
 | `AmountInTransactionCurrency` |  | `BSEG` | `WRBTR` | `ACDOCA` | `WSL` | `Decimal(34,4)` |  | Amount in Transaction Currency | TransactionCurrency |  |
 | `CompanyCodeCurrency` |  | `T001` | `WAERS` | `ACDOCA` | `RHCUR` | `String(5)` |  | Company Code Currency |  |  |
 | `AmountInCompanyCodeCurrency` |  | `BSEG` | `DMBTR` | `ACDOCA` | `HSL` | `Decimal(34,4)` |  | Amount in Company Code Currency | CompanyCodeCurrency |  |
 | `GlobalCurrency` |  |  |  | `ACDOCA` | `RKCUR` | `String(5)` |  | Global Currency |  | S/4 only — no ECC equivalent |
 | `AmountInGlobalCurrency` |  |  |  | `ACDOCA` | `KSL` | `Decimal(34,4)` |  | Amount in Global Currency | GlobalCurrency | S/4 only — no ECC equivalent |
-| `FunctionalCurrency` |  |  |  |  |  | `String(5)` |  | Functional Currency |  | S/4 only entity |
-| `AmountInFunctionalCurrency` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Functional Currency | FunctionalCurrency | S/4 only entity |
+| `FunctionalCurrency` |  |  |  |  |  | `String(5)` |  | Functional Currency |  |  |
+| `AmountInFunctionalCurrency` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Functional Currency | FunctionalCurrency |  |
 | `FreeDefinedCurrency1` |  |  |  | `ACDOCA` | `ROCUR` | `String(5)` |  | Freely Defined Currency 1 |  | S/4 only — no ECC equivalent |
 | `AmountInFreeDefinedCurrency1` |  |  |  | `ACDOCA` | `OSL` | `Decimal(34,4)` |  | Amount in Freely Defined Currency 1 | FreeDefinedCurrency1 | S/4 only — no ECC equivalent |
 | `FreeDefinedCurrency2` |  |  |  | `ACDOCA` | `RVCUR` | `String(5)` |  | Freely Defined Currency 2 |  | S/4 only — no ECC equivalent |
 | `AmountInFreeDefinedCurrency2` |  |  |  | `ACDOCA` | `VSL` | `Decimal(34,4)` |  | Amount in Freely Defined Currency 2 | FreeDefinedCurrency2 | S/4 only — no ECC equivalent |
 | `FreeDefinedCurrency3` |  |  |  |  |  | `String(5)` |  | Freely Defined Currency 3 |  | S/4 only — no ECC equivalent |
 | `AmountInFreeDefinedCurrency3` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Freely Defined Currency 3 | FreeDefinedCurrency3 | S/4 only — no ECC equivalent |
-| `FreeDefinedCurrency4` |  |  |  |  |  | `String(5)` |  | Freely Defined Currency 4 |  | S/4 only entity |
-| `AmountInFreeDefinedCurrency4` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Freely Defined Currency 4 | FreeDefinedCurrency4 | S/4 only entity |
-| `FreeDefinedCurrency5` |  |  |  |  |  | `String(5)` |  | Freely Defined Currency 5 |  | S/4 only entity |
-| `AmountInFreeDefinedCurrency5` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Freely Defined Currency 5 | FreeDefinedCurrency5 | S/4 only entity |
-| `FreeDefinedCurrency6` |  |  |  |  |  | `String(5)` |  | Freely Defined Currency 6 |  | S/4 only entity |
-| `AmountInFreeDefinedCurrency6` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Freely Defined Currency 6 | FreeDefinedCurrency6 | S/4 only entity |
-| `FreeDefinedCurrency7` |  |  |  |  |  | `String(5)` |  | Freely Defined Currency 7 |  | S/4 only entity |
-| `AmountInFreeDefinedCurrency7` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Freely Defined Currency 7 | FreeDefinedCurrency7 | S/4 only entity |
-| `FreeDefinedCurrency8` |  |  |  |  |  | `String(5)` |  | Freely Defined Currency 8 |  | S/4 only entity |
-| `AmountInFreeDefinedCurrency8` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Freely Defined Currency 8 | FreeDefinedCurrency8 | S/4 only entity |
-| `FixedAmountInGlobalCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Fixed Amount in Global Currency | GlobalCurrency | S/4 only entity |
-| `GrpValnFixedAmtInGlobCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Group Val. Fixed Amount in Global Cur. | GlobalCurrency | S/4 only entity |
-| `PrftCtrValnFxdAmtInGlobCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | PC Val. Fixed Amount in Global Currency | GlobalCurrency | S/4 only entity |
-| `FixedAmountInCoCodeCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Fixed Amount in Company Currency | CompanyCodeCurrency | S/4 only entity |
-| `FixedAmountInTransCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Fixed Amount in Transaction Currency | TransactionCurrency | S/4 only entity |
-| `TotalPriceVarcInGlobalCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Total Price Variance in Global Currency | GlobalCurrency | S/4 only entity |
-| `GrpValnTotPrcVarcInGlobCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | GV Total Price Var. in Global Currency | GlobalCurrency | S/4 only entity |
-| `PrftCtrValnTotPrcVarcInGlbCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | PC Val. Total Price Var. in Global Cur. | GlobalCurrency | S/4 only entity |
-| `FixedPriceVarcInGlobalCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Fixed Price Variance in Global Currency | GlobalCurrency | S/4 only entity |
-| `GrpValnFixedPrcVarcInGlobCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | GV Fixed Price Var. in Global Currency | GlobalCurrency | S/4 only entity |
-| `PrftCtrValnFxdPrcVarcInGlbCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | PC Val. Fixed Price Var. in Global Cur. | GlobalCurrency | S/4 only entity |
-| `ControllingObjectCurrency` |  |  |  |  |  | `String(5)` |  | CO Object Currency |  | S/4 only entity |
-| `AmountInObjectCurrency` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Object Currency | ControllingObjectCurrency | S/4 only entity |
-| `GrantCurrency` |  |  |  |  |  | `String(5)` |  | Grant Currency |  | S/4 only entity |
-| `AmountInGrantCurrency` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Grant Crcy | GrantCurrency | S/4 only entity |
+| `FreeDefinedCurrency4` |  |  |  |  |  | `String(5)` |  | Freely Defined Currency 4 |  |  |
+| `AmountInFreeDefinedCurrency4` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Freely Defined Currency 4 | FreeDefinedCurrency4 |  |
+| `FreeDefinedCurrency5` |  |  |  |  |  | `String(5)` |  | Freely Defined Currency 5 |  |  |
+| `AmountInFreeDefinedCurrency5` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Freely Defined Currency 5 | FreeDefinedCurrency5 |  |
+| `FreeDefinedCurrency6` |  |  |  |  |  | `String(5)` |  | Freely Defined Currency 6 |  |  |
+| `AmountInFreeDefinedCurrency6` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Freely Defined Currency 6 | FreeDefinedCurrency6 |  |
+| `FreeDefinedCurrency7` |  |  |  |  |  | `String(5)` |  | Freely Defined Currency 7 |  |  |
+| `AmountInFreeDefinedCurrency7` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Freely Defined Currency 7 | FreeDefinedCurrency7 |  |
+| `FreeDefinedCurrency8` |  |  |  |  |  | `String(5)` |  | Freely Defined Currency 8 |  |  |
+| `AmountInFreeDefinedCurrency8` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Freely Defined Currency 8 | FreeDefinedCurrency8 |  |
+| `FixedAmountInGlobalCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Fixed Amount in Global Currency | GlobalCurrency |  |
+| `GrpValnFixedAmtInGlobCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Group Val. Fixed Amount in Global Cur. | GlobalCurrency |  |
+| `PrftCtrValnFxdAmtInGlobCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | PC Val. Fixed Amount in Global Currency | GlobalCurrency |  |
+| `FixedAmountInCoCodeCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Fixed Amount in Company Currency | CompanyCodeCurrency |  |
+| `FixedAmountInTransCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Fixed Amount in Transaction Currency | TransactionCurrency |  |
+| `TotalPriceVarcInGlobalCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Total Price Variance in Global Currency | GlobalCurrency |  |
+| `GrpValnTotPrcVarcInGlobCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | GV Total Price Var. in Global Currency | GlobalCurrency |  |
+| `PrftCtrValnTotPrcVarcInGlbCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | PC Val. Total Price Var. in Global Cur. | GlobalCurrency |  |
+| `FixedPriceVarcInGlobalCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Fixed Price Variance in Global Currency | GlobalCurrency |  |
+| `GrpValnFixedPrcVarcInGlobCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | GV Fixed Price Var. in Global Currency | GlobalCurrency |  |
+| `PrftCtrValnFxdPrcVarcInGlbCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | PC Val. Fixed Price Var. in Global Cur. | GlobalCurrency |  |
+| `ControllingObjectCurrency` |  |  |  |  |  | `String(5)` |  | CO Object Currency |  |  |
+| `AmountInObjectCurrency` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Object Currency | ControllingObjectCurrency |  |
+| `GrantCurrency` |  |  |  |  |  | `String(5)` |  | Grant Currency |  |  |
+| `AmountInGrantCurrency` |  |  |  |  |  | `Decimal(34,4)` |  | Amount in Grant Crcy | GrantCurrency |  |
 | `BaseUnit` |  | `BSEG` | `MEINS` | `ACDOCA` | `RUNIT` | `String(3)` |  | Base Unit of Measure |  |  |
 | `Quantity` |  | `BSEG` | `MENGE` | `ACDOCA` | `MSL` | `Decimal(23,3)` |  | Quantity | BaseUnit |  |
-| `FixedQuantity` |  |  |  |  |  | `Decimal(23,3)` |  | Fixed Quantity | BaseUnit | S/4 only entity |
-| `CostSourceUnit` |  |  |  |  |  | `String(3)` |  | Cost Source Unit |  | S/4 only entity |
-| `ValuationQuantity` |  |  |  |  |  | `Decimal(23,3)` |  | Valuation Quantity | CostSourceUnit | S/4 only entity |
-| `ValuationFixedQuantity` |  |  |  |  |  | `Decimal(23,3)` |  | Valuation Fixed Quantity | CostSourceUnit | S/4 only entity |
-| `ReferenceQuantityUnit` |  |  |  |  |  | `String(3)` |  | Reference Qty UoM |  | S/4 only entity |
-| `ReferenceQuantity` |  |  |  |  |  | `Decimal(23,3)` |  | Reference quantity | ReferenceQuantityUnit | S/4 only entity |
-| `AdditionalQuantity1Unit` |  |  |  |  |  | `String(3)` |  | Additional Quantity 1 Unit |  | S/4 only entity |
-| `AdditionalQuantity1` |  |  |  |  |  | `Decimal(23,3)` |  | Additional Quantity 1 | AdditionalQuantity1Unit | S/4 only entity |
-| `AdditionalQuantity2Unit` |  |  |  |  |  | `String(3)` |  | Additional Quantity 2 Unit |  | S/4 only entity |
-| `AdditionalQuantity2` |  |  |  |  |  | `Decimal(23,3)` |  | Additional Quantity 2 | AdditionalQuantity2Unit | S/4 only entity |
-| `AdditionalQuantity3Unit` |  |  |  |  |  | `String(3)` |  | Additional Quantity 3 Unit |  | S/4 only entity |
-| `AdditionalQuantity3` |  |  |  |  |  | `Decimal(23,3)` |  | Additional Quantity 3 | AdditionalQuantity3Unit | S/4 only entity |
-| `IncmpltSummableValnQtyUnt` |  |  |  |  |  | `String(3)` |  | Incomplete Sum. Valuation Quantity Unit |  | S/4 only entity |
-| `IncmpltSummableValnQty` |  |  |  |  |  | `Decimal(23,3)` |  | Incomplete Summable Valuation Quantity | IncmpltSummableValnQtyUnt | S/4 only entity |
-| `IncmpltSummableValnFxdQty` |  |  |  |  |  | `Decimal(23,3)` |  | Incomplete Sum. Valuation Fix Quantity | IncmpltSummableValnQtyUnt | S/4 only entity |
+| `FixedQuantity` |  |  |  |  |  | `Decimal(23,3)` |  | Fixed Quantity | BaseUnit |  |
+| `CostSourceUnit` |  |  |  |  |  | `String(3)` |  | Cost Source Unit |  |  |
+| `ValuationQuantity` |  |  |  |  |  | `Decimal(23,3)` |  | Valuation Quantity | CostSourceUnit |  |
+| `ValuationFixedQuantity` |  |  |  |  |  | `Decimal(23,3)` |  | Valuation Fixed Quantity | CostSourceUnit |  |
+| `ReferenceQuantityUnit` |  |  |  |  |  | `String(3)` |  | Reference Qty UoM |  |  |
+| `ReferenceQuantity` |  |  |  |  |  | `Decimal(23,3)` |  | Reference quantity | ReferenceQuantityUnit |  |
+| `AdditionalQuantity1Unit` |  |  |  |  |  | `String(3)` |  | Additional Quantity 1 Unit |  |  |
+| `AdditionalQuantity1` |  |  |  |  |  | `Decimal(23,3)` |  | Additional Quantity 1 | AdditionalQuantity1Unit |  |
+| `AdditionalQuantity2Unit` |  |  |  |  |  | `String(3)` |  | Additional Quantity 2 Unit |  |  |
+| `AdditionalQuantity2` |  |  |  |  |  | `Decimal(23,3)` |  | Additional Quantity 2 | AdditionalQuantity2Unit |  |
+| `AdditionalQuantity3Unit` |  |  |  |  |  | `String(3)` |  | Additional Quantity 3 Unit |  |  |
+| `AdditionalQuantity3` |  |  |  |  |  | `Decimal(23,3)` |  | Additional Quantity 3 | AdditionalQuantity3Unit |  |
+| `IncmpltSummableValnQtyUnt` |  |  |  |  |  | `String(3)` |  | Incomplete Sum. Valuation Quantity Unit |  |  |
+| `IncmpltSummableValnQty` |  |  |  |  |  | `Decimal(23,3)` |  | Incomplete Summable Valuation Quantity | IncmpltSummableValnQtyUnt |  |
+| `IncmpltSummableValnFxdQty` |  |  |  |  |  | `Decimal(23,3)` |  | Incomplete Sum. Valuation Fix Quantity | IncmpltSummableValnQtyUnt |  |
 | `DebitCreditCode` |  | `BSEG` | `SHKZG` | `ACDOCA` | `DRCRK` | `String(1)` |  | Debit/Credit Code |  |  |
-| `FiscalPeriod` |  | `BKPF` | `MONAT` | `ACDOCA` | `POPER` | `String(3)` |  | Fiscal Period |  |  |
-| `FiscalYearVariant` |  |  |  |  |  | `String(2)` |  | Fiscal Year Variant |  | S/4 only entity |
-| `FiscalYearPeriod` |  |  |  |  |  | `String(7)` |  | Fiscal Year Period |  | S/4 only entity |
+| `FiscalPeriod` |  | `BKPF` | `MONAT` | `ACDOCA` | `POPER` | `String(3)` |  | Fiscal Period |  | ECC MONAT unpadded '3'; S/4 ACDOCA.POPER zero-padded '003' |
+| `FiscalYearVariant` |  |  |  |  |  | `String(2)` |  | Fiscal Year Variant |  |  |
+| `FiscalYearPeriod` |  |  |  |  |  | `String(7)` |  | Fiscal Year Period |  |  |
 | `PostingDate` |  | `BKPF` | `BUDAT` | `ACDOCA` | `BUDAT` | `Date` |  | Posting Date |  |  |
 | `DocumentDate` |  | `BKPF` | `BLDAT` | `ACDOCA` | `BLDAT` | `Date` |  | Journal Entry Date |  |  |
 | `AccountingDocumentType` |  | `BKPF` | `BLART` | `ACDOCA` | `BLART` | `String(2)` |  | Journal Entry Type |  |  |
 | `AccountingDocumentItem` |  | `BSEG` | `BUZEI` | `ACDOCA` | `BUZEI` | `String(3)` |  | Posting View Item |  |  |
 | `AssignmentReference` |  | `BSEG` | `ZUONR` | `ACDOCA` | `ZUONR` | `String(18)` |  | Assignment Reference |  |  |
-| `AccountingDocumentCategory` |  |  |  |  |  | `String(1)` |  | Journal Entry Category |  | S/4 only entity |
-| `JournalEntryItemCategory` |  |  |  |  |  | `String(5)` |  | Journal Entry Item Category |  | S/4 only entity |
+| `AccountingDocumentCategory` |  |  |  |  |  | `String(1)` |  | Journal Entry Category |  |  |
+| `JournalEntryItemCategory` |  |  |  |  |  | `String(5)` |  | Journal Entry Item Category |  |  |
 | `PostingKey` |  | `BSEG` | `BSCHL` | `ACDOCA` | `BSCHL` | `String(2)` |  | Posting Key |  |  |
-| `TransactionTypeDetermination` |  |  |  |  |  | `String(3)` |  | Transaction Key |  | S/4 only entity |
-| `SubLedgerAcctLineItemType` |  |  |  |  |  | `String(5)` |  | SLA Line Item Type |  | S/4 only entity |
-| `AccountingDocCreatedByUser` |  |  |  |  |  | `String(12)` |  | Journal Entry Created By |  | S/4 only entity |
-| `LastChangeDateTime` |  |  |  |  |  | `DateTime` |  | Last Change Date Time |  | S/4 only entity |
-| `CreationDateTime` |  |  |  |  |  | `DateTime` |  | Creation Date Time |  | S/4 only entity |
-| `CreationDate` |  |  |  |  |  | `Date` |  | Creation Date |  | S/4 only entity |
-| `EliminationProfitCenter` |  |  |  |  |  | `String(10)` |  | Elimination Profit Center |  | S/4 only entity |
-| `OriginObjectType` |  |  |  |  |  | `String(2)` |  | Origin Object Type |  | S/4 only entity |
-| `GLAccountType` |  |  |  |  |  | `String(1)` |  | G/L Account Type |  | S/4 only entity |
-| `AlternativeGLAccount` |  |  |  |  |  | `String(10)` |  | Alternative G/L Account |  | S/4 only entity |
-| `CountryChartOfAccounts` |  |  |  |  |  | `String(4)` |  | Alternative Chart of Accounts |  | S/4 only entity |
-| `ItemIsSplit` |  |  |  |  |  | `Boolean` |  | Itm chngd by Doc Spl |  | S/4 only entity |
-| `ConsolidationUnit` |  |  |  |  |  | `String(18)` |  | Consolidation Unit |  | S/4 only entity |
-| `PartnerConsolidationUnit` |  |  |  |  |  | `String(18)` |  | Partner Consolidation Unit |  | S/4 only entity |
-| `Company` |  |  |  |  |  | `String(6)` |  | Company |  | S/4 only entity |
-| `ConsolidationChartOfAccounts` |  |  |  |  |  | `String(2)` |  | Consolidation Chart of Accounts |  | S/4 only entity |
-| `CnsldtnFinancialStatementItem` |  |  |  |  |  | `String(10)` |  | Consolidation Financial Statement Item |  | S/4 only entity |
-| `CnsldtnSubitemCategory` |  |  |  |  |  | `String(3)` |  | Consolidation Subitem Category |  | S/4 only entity |
-| `CnsldtnSubitem` |  |  |  |  |  | `String(10)` |  | Consolidation Subitem |  | S/4 only entity |
+| `TransactionTypeDetermination` |  |  |  |  |  | `String(3)` |  | Transaction Key |  |  |
+| `SubLedgerAcctLineItemType` |  |  |  |  |  | `String(5)` |  | SLA Line Item Type |  |  |
+| `AccountingDocCreatedByUser` |  |  |  |  |  | `String(12)` |  | Journal Entry Created By |  |  |
+| `LastChangeDateTime` |  |  |  |  |  | `DateTime` |  | Last Change Date Time |  |  |
+| `CreationDateTime` |  |  |  |  |  | `DateTime` |  | Creation Date Time |  |  |
+| `CreationDate` |  |  |  |  |  | `Date` |  | Creation Date |  |  |
+| `EliminationProfitCenter` |  |  |  |  |  | `String(10)` |  | Elimination Profit Center |  |  |
+| `OriginObjectType` |  |  |  |  |  | `String(2)` |  | Origin Object Type |  |  |
+| `GLAccountType` |  |  |  |  |  | `String(1)` |  | G/L Account Type |  |  |
+| `AlternativeGLAccount` |  |  |  |  |  | `String(10)` |  | Alternative G/L Account |  |  |
+| `CountryChartOfAccounts` |  |  |  |  |  | `String(4)` |  | Alternative Chart of Accounts |  |  |
+| `ItemIsSplit` |  |  |  |  |  | `Boolean` |  | Itm chngd by Doc Spl |  |  |
+| `ConsolidationUnit` |  |  |  |  |  | `String(18)` |  | Consolidation Unit |  |  |
+| `PartnerConsolidationUnit` |  |  |  |  |  | `String(18)` |  | Partner Consolidation Unit |  |  |
+| `Company` |  |  |  |  |  | `String(6)` |  | Company |  |  |
+| `ConsolidationChartOfAccounts` |  |  |  |  |  | `String(2)` |  | Consolidation Chart of Accounts |  |  |
+| `CnsldtnFinancialStatementItem` |  |  |  |  |  | `String(10)` |  | Consolidation Financial Statement Item |  |  |
+| `CnsldtnSubitemCategory` |  |  |  |  |  | `String(3)` |  | Consolidation Subitem Category |  |  |
+| `CnsldtnSubitem` |  |  |  |  |  | `String(10)` |  | Consolidation Subitem |  |  |
 | `InvoiceReference` |  | `BSEG` | `REBZG` | `ACDOCA` | `REBZG` | `String(10)` |  | Invoice Reference |  |  |
 | `InvoiceReferenceFiscalYear` |  | `BSEG` | `REBZJ` | `ACDOCA` | `REBZJ` | `String(4)` |  | Invoice Reference Fiscal Year |  |  |
-| `FollowOnDocumentType` |  |  |  |  |  | `String(1)` |  | Follow-On Document Type |  | S/4 only entity |
-| `InvoiceItemReference` |  |  |  |  |  | `String(3)` |  | Invoice Item Reference |  | S/4 only entity |
-| `ReferencePurchaseOrderCategory` |  |  |  |  |  | `String(3)` |  | Reference Purchase Order Category |  | S/4 only entity |
+| `FollowOnDocumentType` |  |  |  |  |  | `String(1)` |  | Follow-On Document Type |  |  |
+| `InvoiceItemReference` |  |  |  |  |  | `String(3)` |  | Invoice Item Reference |  |  |
+| `ReferencePurchaseOrderCategory` |  |  |  |  |  | `String(3)` |  | Reference Purchase Order Category |  |  |
 | `PurchasingDocument` |  | `BSEG` | `EBELN` | `ACDOCA` | `EBELN` | `String(10)` |  | Purchasing Document |  |  |
 | `PurchasingDocumentItem` |  | `BSEG` | `EBELP` | `ACDOCA` | `EBELP` | `String(5)` |  | Purchasing Doc. Item |  |  |
-| `AccountAssignmentNumber` |  |  |  |  |  | `String(2)` |  | Account Assignment Number |  | S/4 only entity |
+| `AccountAssignmentNumber` |  |  |  |  |  | `String(2)` |  | Account Assignment Number |  |  |
 | `DocumentItemText` |  | `BSEG` | `SGTXT` | `ACDOCA` | `SGTXT` | `String(50)` |  | Item Text |  |  |
 | `SalesDocument` |  | `BSEG` | `VBELN` | `ACDOCA` | `KDAUF` | `String(10)` |  | Sales Document |  |  |
-| `SalesDocumentItem` |  |  |  |  |  | `String(6)` |  | Sales Document Item |  | S/4 only entity |
-| `Product` |  |  |  |  |  | `String(40)` |  | Product |  | S/4 only entity |
+| `SalesDocumentItem` |  |  |  |  |  | `String(6)` |  | Sales Document Item |  |  |
+| `Product` |  |  |  |  |  | `String(40)` |  | Product |  |  |
 | `Plant` |  | `BSEG` | `WERKS` | `ACDOCA` | `WERKS` | `String(4)` |  | Plant |  |  |
 | `Supplier` |  | `BSEG` | `LIFNR` | `ACDOCA` | `LIFNR` | `String(10)` |  | Supplier |  |  |
 | `Customer` |  | `BSEG` | `KUNNR` | `ACDOCA` | `KUNNR` | `String(10)` |  | Customer |  |  |
-| `ServicesRenderedDate` |  |  |  |  |  | `Date` |  | Serv. Rendered Date |  | S/4 only entity |
-| `PerformancePeriodStartDate` |  |  |  |  |  | `Date` |  | Per. of Perf. Start |  | S/4 only entity |
-| `PerformancePeriodEndDate` |  |  |  |  |  | `Date` |  | Per. of Perf. End |  | S/4 only entity |
-| `ConditionContract` |  |  |  |  |  | `String(10)` |  | Condition Contract |  | S/4 only entity |
-| `ExchangeRateDate` |  |  |  |  |  | `Date` |  | Translation Date |  | S/4 only entity |
-| `ComponentBreakdown` |  |  |  |  |  | `String(16)` |  | Component Breakdown |  | S/4 only entity |
-| `CompBreakdownScaleNumerator` |  |  |  |  |  | `Decimal(23,3)` |  | Component Breakdown Scale Numerator |  | S/4 only entity |
-| `FinancialAccountType` |  |  |  |  |  | `String(1)` |  | Account Type |  | S/4 only entity |
-| `SpecialGLCode` |  |  |  |  |  | `String(1)` |  | Special G/L |  | S/4 only entity |
+| `ServicesRenderedDate` |  |  |  |  |  | `Date` |  | Serv. Rendered Date |  |  |
+| `PerformancePeriodStartDate` |  |  |  |  |  | `Date` |  | Per. of Perf. Start |  |  |
+| `PerformancePeriodEndDate` |  |  |  |  |  | `Date` |  | Per. of Perf. End |  |  |
+| `ConditionContract` |  |  |  |  |  | `String(10)` |  | Condition Contract |  |  |
+| `ExchangeRateDate` |  |  |  |  |  | `Date` |  | Translation Date |  |  |
+| `ComponentBreakdown` |  |  |  |  |  | `String(16)` |  | Component Breakdown |  |  |
+| `CompBreakdownScaleNumerator` |  |  |  |  |  | `Decimal(23,3)` |  | Component Breakdown Scale Numerator |  |  |
+| `FinancialAccountType` |  |  |  |  |  | `String(1)` |  | Account Type |  |  |
+| `SpecialGLCode` |  |  |  |  |  | `String(1)` |  | Special G/L |  |  |
 | `TaxCode` |  | `BSEG` | `MWSKZ` | `ACDOCA` | `MWSKZ` | `String(2)` |  | Tax Code |  |  |
-| `TaxCountry` |  |  |  |  |  | `String(3)` |  | Tax Ctry/Reg. |  | S/4 only entity |
-| `HouseBank` |  |  |  |  |  | `String(5)` |  | House Bank |  | S/4 only entity |
-| `HouseBankAccount` |  |  |  |  |  | `String(5)` |  | House Bank Account |  | S/4 only entity |
-| `IsOpenItemManaged` |  |  |  |  |  | `Boolean` |  | Open Item Management |  | S/4 only entity |
+| `TaxCountry` |  |  |  |  |  | `String(3)` |  | Tax Ctry/Reg. |  |  |
+| `HouseBank` |  |  |  |  |  | `String(5)` |  | House Bank |  |  |
+| `HouseBankAccount` |  |  |  |  |  | `String(5)` |  | House Bank Account |  |  |
+| `IsOpenItemManaged` |  |  |  |  |  | `Boolean` |  | Open Item Management |  |  |
 | `ClearingDate` |  | `BSEG` | `AUGDT` | `ACDOCA` | `AUGDT` | `Date` |  | Clearing Date |  |  |
-| `ClearingDocFiscalYear` |  |  |  |  |  | `String(4)` |  | Fiscal Year of Clearing JE (Depr.) |  | S/4 only entity |
+| `ClearingDocFiscalYear` |  |  |  |  |  | `String(4)` |  | Fiscal Year of Clearing JE (Depr.) |  |  |
 | `ClearingAccountingDocument` |  | `BSEG` | `AUGBL` | `ACDOCA` | `AUGBL` | `String(10)` |  | Clearing Journal Entry (Deprecated) |  |  |
-| `ClearingJournalEntryFiscalYear` |  |  |  |  |  | `String(4)` |  | Fiscal Year of Clearing Journal Entry |  | S/4 only entity |
-| `ClearingJournalEntry` |  |  |  |  |  | `String(10)` |  | Clearing Journal Entry |  | S/4 only entity |
-| `ValueDate` |  |  |  |  |  | `Date` |  | Value date |  | S/4 only entity |
-| `GeneralLedgerAgingScope` |  |  |  |  |  | `String(10)` |  | General Ledger Aging Scope |  | S/4 only entity |
-| `GeneralLedgerAgingIncrement` |  |  |  |  |  | `String(15)` |  | General Ledger Aging Increment |  | S/4 only entity |
-| `AssetDepreciationArea` |  |  |  |  |  | `String(2)` |  | Depreciation Area |  | S/4 only entity |
+| `ClearingJournalEntryFiscalYear` |  |  |  |  |  | `String(4)` |  | Fiscal Year of Clearing Journal Entry |  |  |
+| `ClearingJournalEntry` |  |  |  |  |  | `String(10)` |  | Clearing Journal Entry |  |  |
+| `ValueDate` |  |  |  |  |  | `Date` |  | Value date |  |  |
+| `GeneralLedgerAgingScope` |  |  |  |  |  | `String(10)` |  | General Ledger Aging Scope |  |  |
+| `GeneralLedgerAgingIncrement` |  |  |  |  |  | `String(15)` |  | General Ledger Aging Increment |  |  |
+| `AssetDepreciationArea` |  |  |  |  |  | `String(2)` |  | Depreciation Area |  |  |
 | `MasterFixedAsset` |  | `BSEG` | `ANLN1` | `ACDOCA` | `ANLN1` | `String(12)` |  | Fixed Asset |  |  |
 | `FixedAsset` |  | `BSEG` | `ANLN2` | `ACDOCA` | `ANLN2` | `String(4)` |  | Asset Subnumber |  |  |
-| `AssetValueDate` |  |  |  |  |  | `Date` |  | Asset Value Date |  | S/4 only entity |
-| `AssetTransactionType` |  |  |  |  |  | `String(3)` |  | Asset Transaction Type |  | S/4 only entity |
-| `AssetAcctTransClassfctn` |  |  |  |  |  | `String(2)` |  | Trans. Type Category |  | S/4 only entity |
-| `DepreciationFiscalPeriod` |  |  |  |  |  | `String(3)` |  | Depreciation Fiscal Period |  | S/4 only entity |
-| `GroupMasterFixedAsset` |  |  |  |  |  | `String(12)` |  | Group Asset |  | S/4 only entity |
-| `GroupFixedAsset` |  |  |  |  |  | `String(4)` |  | Group Asset Subnmbr |  | S/4 only entity |
-| `AssetClass` |  |  |  |  |  | `String(8)` |  | Asset Class |  | S/4 only entity |
-| `PartnerMasterFixedAsset` |  |  |  |  |  | `String(12)` |  | Partner Master Fixed Asset |  | S/4 only entity |
-| `PartnerFixedAsset` |  |  |  |  |  | `String(4)` |  | Partner Fixed Asset |  | S/4 only entity |
-| `CostEstimate` |  |  |  |  |  | `String(12)` |  | Cost Estimate |  | S/4 only entity |
-| `InventorySpecialStockValnType` |  |  |  |  |  | `String(1)` |  | Inventory Special Stock Valuation Type |  | S/4 only entity |
-| `IsSupplierStockValuation` |  |  |  |  |  | `Boolean` |  | Is Supplier Stock Valuation |  | S/4 only entity |
-| `InventorySpecialStockType` |  |  |  |  |  | `String(1)` |  | Inventory Special Stock Type |  | S/4 only entity |
-| `InventorySpclStkSalesDocument` |  |  |  |  |  | `String(10)` |  | Inventory Special Stock Sales Document |  | S/4 only entity |
-| `InventorySpclStkSalesDocItm` |  |  |  |  |  | `String(6)` |  | Inventory Spcl Stock Sales Document Item |  | S/4 only entity |
-| `InvtrySpclStockWBSElmntIntID` |  |  |  |  |  | `String(8)` |  | Inv. Special Stock WBS Element Int. ID |  | S/4 only entity |
-| `InventorySpclStockWBSElement` |  |  |  |  |  | `String(24)` |  | Inventory WBS Element |  | S/4 only entity |
-| `InventorySpecialStockSupplier` |  |  |  |  |  | `String(10)` |  | Inventory Special Stock Supplier |  | S/4 only entity |
-| `InventoryValuationType` |  |  |  |  |  | `String(10)` |  | Inventory Valuation Type |  | S/4 only entity |
-| `ValuationArea` |  |  |  |  |  | `String(4)` |  | Valuation Area |  | S/4 only entity |
-| `MaterialLedgerProcessType` |  |  |  |  |  | `String(4)` |  | Material Ledger Process Type |  | S/4 only entity |
-| `MaterialLedgerCategory` |  |  |  |  |  | `String(2)` |  | Material Ledger Category |  | S/4 only entity |
-| `SlsPriceAmountInCoCodeCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Sales Price Amount in Company Code Crcy | CompanyCodeCurrency | S/4 only entity |
-| `ProductPriceControl` |  |  |  |  |  | `String(1)` |  | Product Price Control |  | S/4 only entity |
-| `ProcurementAlternative` |  |  |  |  |  | `String(12)` |  | Procurement Alternative |  | S/4 only entity |
-| `ProductionProcess` |  |  |  |  |  | `String(12)` |  | Production Process |  | S/4 only entity |
-| `SenderCompanyCode` |  |  |  |  |  | `String(4)` |  | Company Code in Sender System |  | S/4 only entity |
-| `SenderGLAccount` |  |  |  |  |  | `String(10)` |  | Sender G/L Account |  | S/4 only entity |
-| `SenderAccountAssignment` |  |  |  |  |  | `String(30)` |  | Sender Account Assignment |  | S/4 only entity |
-| `SenderAccountAssignmentType` |  |  |  |  |  | `String(2)` |  | Sender Account Assignment Type |  | S/4 only entity |
-| `ControllingObject` |  |  |  |  |  | `String(22)` |  | Controlling Object |  | S/4 only entity |
-| `ControllingKeySubNumber` |  |  |  |  |  | `String(14)` |  | CO subkey |  | S/4 only entity |
-| `CostOriginGroup` |  |  |  |  |  | `String(4)` |  | Origin Group |  | S/4 only entity |
-| `OriginSenderObject` |  |  |  |  |  | `String(22)` |  | Origin Sender Object |  | S/4 only entity |
-| `ControllingDebitCreditCode` |  |  |  |  |  | `String(1)` |  | Controlling Debit Credit Code |  | S/4 only entity |
-| `OriginCtrlgDebitCreditCode` |  |  |  |  |  | `String(1)` |  | Dr/Cr Ind. (Origin) |  | S/4 only entity |
-| `ControllingObjectDebitType` |  |  |  |  |  | `String(1)` |  | Controlling Object Debit Type |  | S/4 only entity |
-| `QuantityIsIncomplete` |  |  |  |  |  | `Boolean` |  | Qty Is Incomplete |  | S/4 only entity |
-| `OffsettingAccount` |  |  |  |  |  | `String(10)` |  | Offsetting Account |  | S/4 only entity |
-| `OffsettingAccountType` |  |  |  |  |  | `String(1)` |  | Offsetting Account Type |  | S/4 only entity |
-| `OffsettingChartOfAccounts` |  |  |  |  |  | `String(4)` |  | Offsetting Chart of Accounts |  | S/4 only entity |
-| `LineItemIsCompleted` |  |  |  |  |  | `Boolean` |  | Line Item is Completed |  | S/4 only entity |
-| `PersonnelNumber` |  |  |  |  |  | `String(8)` |  | Personnel Number |  | S/4 only entity |
-| `ProfitabilitySegment` |  |  |  |  |  | `String(10)` |  | Profitability Segment |  | S/4 only entity |
-| `ControllingObjectClass` |  |  |  |  |  | `String(2)` |  | Controlling Object Class |  | S/4 only entity |
-| `PartnerCompanyCode` |  |  |  |  |  | `String(4)` |  | Partner Company Code |  | S/4 only entity |
-| `PartnerControllingObjectClass` |  |  |  |  |  | `String(2)` |  | Partner Controlling Object Class |  | S/4 only entity |
-| `OriginProfitCenter` |  |  |  |  |  | `String(10)` |  | Origin Profit Center |  | S/4 only entity |
-| `OriginOrder` |  |  |  |  |  | `String(12)` |  | Origin Order |  | S/4 only entity |
-| `OriginCostCtrActivityType` |  |  |  |  |  | `String(6)` |  | Origin Cost Center Activity Type |  | S/4 only entity |
-| `OriginCostCenter` |  |  |  |  |  | `String(10)` |  | Origin Cost Center |  | S/4 only entity |
-| `OriginProduct` |  |  |  |  |  | `String(40)` |  | Origin Product |  | S/4 only entity |
-| `VarianceOriginGLAccount` |  |  |  |  |  | `String(10)` |  | Origin G/L Account of a Variance |  | S/4 only entity |
-| `AccountAssignment` |  |  |  |  |  | `String(30)` |  | Account Assignment |  | S/4 only entity |
-| `AccountAssignmentType` |  |  |  |  |  | `String(2)` |  | Account Assignment Type |  | S/4 only entity |
-| `CostCtrActivityType` |  |  |  |  |  | `String(6)` |  | Activity Type |  | S/4 only entity |
+| `AssetValueDate` |  |  |  |  |  | `Date` |  | Asset Value Date |  |  |
+| `AssetTransactionType` |  |  |  |  |  | `String(3)` |  | Asset Transaction Type |  |  |
+| `AssetAcctTransClassfctn` |  |  |  |  |  | `String(2)` |  | Trans. Type Category |  |  |
+| `DepreciationFiscalPeriod` |  |  |  |  |  | `String(3)` |  | Depreciation Fiscal Period |  |  |
+| `GroupMasterFixedAsset` |  |  |  |  |  | `String(12)` |  | Group Asset |  |  |
+| `GroupFixedAsset` |  |  |  |  |  | `String(4)` |  | Group Asset Subnmbr |  |  |
+| `AssetClass` |  |  |  |  |  | `String(8)` |  | Asset Class |  |  |
+| `PartnerMasterFixedAsset` |  |  |  |  |  | `String(12)` |  | Partner Master Fixed Asset |  |  |
+| `PartnerFixedAsset` |  |  |  |  |  | `String(4)` |  | Partner Fixed Asset |  |  |
+| `CostEstimate` |  |  |  |  |  | `String(12)` |  | Cost Estimate |  |  |
+| `InventorySpecialStockValnType` |  |  |  |  |  | `String(1)` |  | Inventory Special Stock Valuation Type |  |  |
+| `IsSupplierStockValuation` |  |  |  |  |  | `Boolean` |  | Is Supplier Stock Valuation |  |  |
+| `InventorySpecialStockType` |  |  |  |  |  | `String(1)` |  | Inventory Special Stock Type |  |  |
+| `InventorySpclStkSalesDocument` |  |  |  |  |  | `String(10)` |  | Inventory Special Stock Sales Document |  |  |
+| `InventorySpclStkSalesDocItm` |  |  |  |  |  | `String(6)` |  | Inventory Spcl Stock Sales Document Item |  |  |
+| `InvtrySpclStockWBSElmntIntID` |  |  |  |  |  | `String(8)` |  | Inv. Special Stock WBS Element Int. ID |  |  |
+| `InventorySpclStockWBSElement` |  |  |  |  |  | `String(24)` |  | Inventory WBS Element |  |  |
+| `InventorySpecialStockSupplier` |  |  |  |  |  | `String(10)` |  | Inventory Special Stock Supplier |  |  |
+| `InventoryValuationType` |  |  |  |  |  | `String(10)` |  | Inventory Valuation Type |  |  |
+| `ValuationArea` |  |  |  |  |  | `String(4)` |  | Valuation Area |  |  |
+| `MaterialLedgerProcessType` |  |  |  |  |  | `String(4)` |  | Material Ledger Process Type |  |  |
+| `MaterialLedgerCategory` |  |  |  |  |  | `String(2)` |  | Material Ledger Category |  |  |
+| `SlsPriceAmountInCoCodeCrcy` |  |  |  |  |  | `Decimal(34,4)` |  | Sales Price Amount in Company Code Crcy | CompanyCodeCurrency |  |
+| `ProductPriceControl` |  |  |  |  |  | `String(1)` |  | Product Price Control |  |  |
+| `ProcurementAlternative` |  |  |  |  |  | `String(12)` |  | Procurement Alternative |  |  |
+| `ProductionProcess` |  |  |  |  |  | `String(12)` |  | Production Process |  |  |
+| `SenderCompanyCode` |  |  |  |  |  | `String(4)` |  | Company Code in Sender System |  |  |
+| `SenderGLAccount` |  |  |  |  |  | `String(10)` |  | Sender G/L Account |  |  |
+| `SenderAccountAssignment` |  |  |  |  |  | `String(30)` |  | Sender Account Assignment |  |  |
+| `SenderAccountAssignmentType` |  |  |  |  |  | `String(2)` |  | Sender Account Assignment Type |  |  |
+| `ControllingObject` |  |  |  |  |  | `String(22)` |  | Controlling Object |  |  |
+| `ControllingKeySubNumber` |  |  |  |  |  | `String(14)` |  | CO subkey |  |  |
+| `CostOriginGroup` |  |  |  |  |  | `String(4)` |  | Origin Group |  |  |
+| `OriginSenderObject` |  |  |  |  |  | `String(22)` |  | Origin Sender Object |  |  |
+| `ControllingDebitCreditCode` |  |  |  |  |  | `String(1)` |  | Controlling Debit Credit Code |  |  |
+| `OriginCtrlgDebitCreditCode` |  |  |  |  |  | `String(1)` |  | Dr/Cr Ind. (Origin) |  |  |
+| `ControllingObjectDebitType` |  |  |  |  |  | `String(1)` |  | Controlling Object Debit Type |  |  |
+| `QuantityIsIncomplete` |  |  |  |  |  | `Boolean` |  | Qty Is Incomplete |  |  |
+| `OffsettingAccount` |  |  |  |  |  | `String(10)` |  | Offsetting Account |  |  |
+| `OffsettingAccountType` |  |  |  |  |  | `String(1)` |  | Offsetting Account Type |  |  |
+| `OffsettingChartOfAccounts` |  |  |  |  |  | `String(4)` |  | Offsetting Chart of Accounts |  |  |
+| `LineItemIsCompleted` |  |  |  |  |  | `Boolean` |  | Line Item is Completed |  |  |
+| `PersonnelNumber` |  |  |  |  |  | `String(8)` |  | Personnel Number |  |  |
+| `ProfitabilitySegment` |  |  |  |  |  | `String(10)` |  | Profitability Segment |  |  |
+| `ControllingObjectClass` |  |  |  |  |  | `String(2)` |  | Controlling Object Class |  |  |
+| `PartnerCompanyCode` |  |  |  |  |  | `String(4)` |  | Partner Company Code |  |  |
+| `PartnerControllingObjectClass` |  |  |  |  |  | `String(2)` |  | Partner Controlling Object Class |  |  |
+| `OriginProfitCenter` |  |  |  |  |  | `String(10)` |  | Origin Profit Center |  |  |
+| `OriginOrder` |  |  |  |  |  | `String(12)` |  | Origin Order |  |  |
+| `OriginCostCtrActivityType` |  |  |  |  |  | `String(6)` |  | Origin Cost Center Activity Type |  |  |
+| `OriginCostCenter` |  |  |  |  |  | `String(10)` |  | Origin Cost Center |  |  |
+| `OriginProduct` |  |  |  |  |  | `String(40)` |  | Origin Product |  |  |
+| `VarianceOriginGLAccount` |  |  |  |  |  | `String(10)` |  | Origin G/L Account of a Variance |  |  |
+| `AccountAssignment` |  |  |  |  |  | `String(30)` |  | Account Assignment |  |  |
+| `AccountAssignmentType` |  |  |  |  |  | `String(2)` |  | Account Assignment Type |  |  |
+| `CostCtrActivityType` |  |  |  |  |  | `String(6)` |  | Activity Type |  |  |
 | `OrderID` |  | `BSEG` | `AUFNR` | `ACDOCA` |  | `String(12)` |  | Order ID |  |  |
-| `OrderCategory` |  |  |  |  |  | `String(2)` |  | Order category |  | S/4 only entity |
-| `WBSElementInternalID` |  |  |  |  |  | `String(8)` |  | WBS Element Internal ID |  | S/4 only entity |
+| `OrderCategory` |  |  |  |  |  | `String(2)` |  | Order category |  |  |
+| `WBSElementInternalID` |  |  |  |  |  | `String(8)` |  | WBS Element Internal ID |  |  |
 | `WBSElement` |  | `BSEG` | `PS_PSP_PNR` | `ACDOCA` |  | `String(24)` |  | WBS Element |  |  |
-| `PartnerWBSElementInternalID` |  |  |  |  |  | `String(8)` |  | Partner WBS Element Internal ID |  | S/4 only entity |
-| `PartnerWBSElement` |  |  |  |  |  | `String(24)` |  | Partner WBS Element |  | S/4 only entity |
-| `ProjectInternalID` |  |  |  |  |  | `String(8)` |  | Project Internal ID |  | S/4 only entity |
-| `Project` |  |  |  |  |  | `String(24)` |  | Project |  | S/4 only entity |
-| `PartnerProjectInternalID` |  |  |  |  |  | `String(8)` |  | Partner Project Internal ID |  | S/4 only entity |
-| `PartnerProject` |  |  |  |  |  | `String(24)` |  | Partner Project |  | S/4 only entity |
-| `OperatingConcern` |  |  |  |  |  | `String(4)` |  | Operating concern |  | S/4 only entity |
-| `ProjectNetwork` |  |  |  |  |  | `String(12)` |  | Network |  | S/4 only entity |
-| `RelatedNetworkActivity` |  |  |  |  |  | `String(4)` |  | Related Network Activity |  | S/4 only entity |
-| `BusinessProcess` |  |  |  |  |  | `String(12)` |  | Business Process |  | S/4 only entity |
-| `CostObject` |  |  |  |  |  | `String(12)` |  | Cost Object |  | S/4 only entity |
-| `BillableControl` |  |  |  |  |  | `String(2)` |  | Billable Control |  | S/4 only entity |
-| `CostAnalysisResource` |  |  |  |  |  | `String(10)` |  | Cost Analysis Resource |  | S/4 only entity |
-| `CustomerServiceNotification` |  |  |  |  |  | `String(12)` |  | Customer Service Notification |  | S/4 only entity |
-| `ServiceDocumentType` |  |  |  |  |  | `String(4)` |  | Service Doc. Type |  | S/4 only entity |
-| `ServiceDocument` |  |  |  |  |  | `String(10)` |  | Service Document |  | S/4 only entity |
-| `ServiceDocumentItem` |  |  |  |  |  | `String(6)` |  | Service Doc. Item |  | S/4 only entity |
-| `PartnerServiceDocumentType` |  |  |  |  |  | `String(4)` |  | Partner Service Document Type |  | S/4 only entity |
-| `PartnerServiceDocument` |  |  |  |  |  | `String(10)` |  | Partner Service Document |  | S/4 only entity |
-| `PartnerServiceDocumentItem` |  |  |  |  |  | `String(6)` |  | Partner Service Document Item |  | S/4 only entity |
-| `ServiceContractType` |  |  |  |  |  | `String(4)` |  | Serv. Contract Type |  | S/4 only entity |
-| `ServiceContract` |  |  |  |  |  | `String(10)` |  | Service Contract |  | S/4 only entity |
-| `ServiceContractItem` |  |  |  |  |  | `String(6)` |  | Srv Contract Item |  | S/4 only entity |
-| `BusinessSolutionOrder` |  |  |  |  |  | `String(10)` |  | Solution Order |  | S/4 only entity |
-| `BusinessSolutionOrderItem` |  |  |  |  |  | `String(6)` |  | Solution Order Item |  | S/4 only entity |
-| `ProviderContract` |  |  |  |  |  | `String(20)` |  | Provider Contract |  | S/4 only entity |
-| `ProviderContractItem` |  |  |  |  |  | `String(6)` |  | Provider Contract Item |  | S/4 only entity |
-| `RevenueAccountingContract` |  |  |  |  |  | `String(14)` |  | Revenue Accounting Contract |  | S/4 only entity |
-| `PerformanceObligation` |  |  |  |  |  | `String(16)` |  | Performance Obligation |  | S/4 only entity |
-| `TimeSheetOvertimeCategory` |  |  |  |  |  | `String(4)` |  | Overtime Category |  | S/4 only entity |
-| `PartnerAccountAssignment` |  |  |  |  |  | `String(30)` |  | Partner Account Assignment |  | S/4 only entity |
-| `PartnerAccountAssignmentType` |  |  |  |  |  | `String(2)` |  | Partner Account Assignment Type |  | S/4 only entity |
-| `StstclAccountAssignmentType1` |  |  |  |  |  | `String(2)` |  | Statistical Account Assignment Type 1 |  | S/4 only entity |
-| `StstclAccountAssignmentType2` |  |  |  |  |  | `String(2)` |  | Statistical Account Assignment Type 2 |  | S/4 only entity |
-| `StstclAccountAssignmentType3` |  |  |  |  |  | `String(2)` |  | Statistical Account Assignment Type 3 |  | S/4 only entity |
-| `WorkPackage` |  |  |  |  |  | `String(50)` |  | Plan Item |  | S/4 only entity |
-| `WorkItem` |  |  |  |  |  | `String(10)` |  | Work Item ID |  | S/4 only entity |
-| `PartnerCostCtrActivityType` |  |  |  |  |  | `String(6)` |  | Partner Cost Center Activity Type |  | S/4 only entity |
-| `PartnerOrder` |  |  |  |  |  | `String(12)` |  | Partner Order |  | S/4 only entity |
-| `PartnerOrderCategory` |  |  |  |  |  | `String(2)` |  | Partner Order Cat. |  | S/4 only entity |
-| `PartnerSalesDocument` |  |  |  |  |  | `String(10)` |  | Partner Sales Doc. |  | S/4 only entity |
-| `PartnerSalesDocumentItem` |  |  |  |  |  | `String(6)` |  | Partner Sales Document Item |  | S/4 only entity |
-| `PartnerProjectNetwork` |  |  |  |  |  | `String(12)` |  | Partner Project Network |  | S/4 only entity |
-| `PartnerProjectNetworkActivity` |  |  |  |  |  | `String(4)` |  | Partner Project Network Activity |  | S/4 only entity |
-| `PartnerBusinessProcess` |  |  |  |  |  | `String(12)` |  | Partner Business Process |  | S/4 only entity |
-| `PartnerCostObject` |  |  |  |  |  | `String(12)` |  | Partner Cost Object |  | S/4 only entity |
-| `ControllingDocumentItem` |  |  |  |  |  | `String(3)` |  | Controlling Doc Item |  | S/4 only entity |
-| `VarianceOriginGroup` |  |  |  |  |  | `String(4)` |  | Varc. Origin Group |  | S/4 only entity |
-| `BillingDocumentType` |  |  |  |  |  | `String(4)` |  | Billing Type |  | S/4 only entity |
-| `SalesOrganization` |  |  |  |  |  | `String(4)` |  | Sales Organization |  | S/4 only entity |
-| `DistributionChannel` |  |  |  |  |  | `String(2)` |  | Distribution Channel |  | S/4 only entity |
-| `OrganizationDivision` |  |  |  |  |  | `String(2)` |  | Division |  | S/4 only entity |
-| `SoldProduct` |  |  |  |  |  | `String(40)` |  | Product Sold |  | S/4 only entity |
-| `SoldProductGroup` |  |  |  |  |  | `String(9)` |  | Product Sold Group |  | S/4 only entity |
-| `CustomerGroup` |  |  |  |  |  | `String(2)` |  | Customer Group |  | S/4 only entity |
-| `CustomerSupplierCountry` |  |  |  |  |  | `String(3)` |  | Customer or Supplier Country/Region |  | S/4 only entity |
-| `CustomerSupplierIndustry` |  |  |  |  |  | `String(4)` |  | Customer Supplier Industry |  | S/4 only entity |
-| `SalesDistrict` |  |  |  |  |  | `String(6)` |  | Sales District |  | S/4 only entity |
-| `BillToParty` |  |  |  |  |  | `String(10)` |  | Bill-to Party |  | S/4 only entity |
-| `ShipToParty` |  |  |  |  |  | `String(10)` |  | Ship-to Party |  | S/4 only entity |
-| `CustomerSupplierCorporateGroup` |  |  |  |  |  | `String(10)` |  | Customer Supplier Corporate Group |  | S/4 only entity |
-| `CashLedgerCompanyCode` |  |  |  |  |  | `String(4)` |  | Cash Origin CoCode |  | S/4 only entity |
-| `CashLedgerAccount` |  |  |  |  |  | `String(10)` |  | Cash Origin Account |  | S/4 only entity |
-| `FinancialManagementArea` |  |  |  |  |  | `String(4)` |  | FM Area |  | S/4 only entity |
-| `CommitmentItem` |  |  |  |  |  | `String(24)` |  | Commitment Item |  | S/4 only entity |
-| `FundsCenter` |  |  |  |  |  | `String(16)` |  | Funds Center |  | S/4 only entity |
-| `FundedProgram` |  |  |  |  |  | `String(24)` |  | Funded Program |  | S/4 only entity |
-| `Fund` |  |  |  |  |  | `String(10)` |  | Fund |  | S/4 only entity |
-| `GrantID` |  |  |  |  |  | `String(20)` |  | Grant |  | S/4 only entity |
-| `BudgetPeriod` |  |  |  |  |  | `String(10)` |  | Budget Period |  | S/4 only entity |
-| `PartnerFund` |  |  |  |  |  | `String(10)` |  | Partner Fund |  | S/4 only entity |
-| `PartnerGrant` |  |  |  |  |  | `String(20)` |  | Partner Grant |  | S/4 only entity |
-| `PartnerBudgetPeriod` |  |  |  |  |  | `String(10)` |  | Partner Budget Period |  | S/4 only entity |
-| `PubSecBudgetAccount` |  |  |  |  |  | `String(10)` |  | Budget Account |  | S/4 only entity |
-| `PubSecBudgetAccountCoCode` |  |  |  |  |  | `String(4)` |  | Company Code for Budget Account |  | S/4 only entity |
-| `PubSecBudgetCnsmpnDate` |  |  |  |  |  | `Date` |  | Budget Consumption Date |  | S/4 only entity |
-| `PubSecBudgetCnsmpnFsclPeriod` |  |  |  |  |  | `String(3)` |  | Posting Period for Budget Consumption |  | S/4 only entity |
-| `PubSecBudgetCnsmpnFsclYear` |  |  |  |  |  | `String(4)` |  | Year of Budget Consumption |  | S/4 only entity |
-| `PubSecBudgetIsRelevant` |  |  |  |  |  | `Boolean` |  | Budget-Relevant |  | S/4 only entity |
-| `PubSecBudgetCnsmpnType` |  |  |  |  |  | `String(2)` |  | Budget Consumption Type |  | S/4 only entity |
-| `PubSecBudgetCnsmpnAmtType` |  |  |  |  |  | `String(4)` |  | Amount Type for Budget Consumption |  | S/4 only entity |
-| `SponsoredProgram` |  |  |  |  |  | `String(20)` |  | Sponsored Program |  | S/4 only entity |
-| `SponsoredClass` |  |  |  |  |  | `String(20)` |  | Sponsored Class |  | S/4 only entity |
-| `GteeMBudgetValidityNumber` |  |  |  |  |  | `String(3)` |  | Bdgt Validty No. |  | S/4 only entity |
-| `EarmarkedFundsDocument` |  |  |  |  |  | `String(10)` |  | Earmarked Funds Document |  | S/4 only entity |
-| `EarmarkedFundsDocumentItem` |  |  |  |  |  | `String(3)` |  | Earmarked Funds Document Item |  | S/4 only entity |
-| `FinancialServicesProductGroup` |  |  |  |  |  | `String(10)` |  | Financial Services Product Group |  | S/4 only entity |
-| `FinancialServicesBranch` |  |  |  |  |  | `String(10)` |  | Financial Services Branch |  | S/4 only entity |
-| `FinancialDataSource` |  |  |  |  |  | `String(10)` |  | Financial Data Source |  | S/4 only entity |
-| `JointVenture` |  |  |  |  |  | `String(6)` |  | Joint venture |  | S/4 only entity |
-| `JointVentureEquityGroup` |  |  |  |  |  | `String(3)` |  | Joint Venture Equity Group |  | S/4 only entity |
-| `JointVentureCostRecoveryCode` |  |  |  |  |  | `String(2)` |  | Joint Venture Cost Recovery Code |  | S/4 only entity |
-| `JointVenturePartner` |  |  |  |  |  | `String(10)` |  | Joint Venture Partner |  | S/4 only entity |
-| `JointVentureBillingType` |  |  |  |  |  | `String(2)` |  | Joint Venture Billing Type |  | S/4 only entity |
-| `JointVentureEquityType` |  |  |  |  |  | `String(3)` |  | Joint Venture Equity Type |  | S/4 only entity |
-| `JointVentureProductionDate` |  |  |  |  |  | `Date` |  | Joint Venture Production Date |  | S/4 only entity |
-| `JointVentureBillingDate` |  |  |  |  |  | `Date` |  | Joint Venture Billing Date |  | S/4 only entity |
-| `JointVentureOperationalDate` |  |  |  |  |  | `Date` |  | Joint Venture Operational Date |  | S/4 only entity |
-| `CutbackRun` |  |  |  |  |  | `Timestamp` |  | Cutback Run |  | S/4 only entity |
-| `JointVentureAccountingActivity` |  |  |  |  |  | `String(2)` |  | Joint Venture Accounting Activity |  | S/4 only entity |
-| `PartnerVenture` |  |  |  |  |  | `String(6)` |  | PartnerVenture |  | S/4 only entity |
-| `PartnerEquityGroup` |  |  |  |  |  | `String(3)` |  | Partner Equity Group |  | S/4 only entity |
-| `SenderCostRecoveryCode` |  |  |  |  |  | `String(2)` |  | Sender Cost Recovery Code |  | S/4 only entity |
-| `CutbackAccount` |  |  |  |  |  | `String(10)` |  | Cutback Account |  | S/4 only entity |
-| `CutbackCostObject` |  |  |  |  |  | `String(22)` |  | Cutback Cost Object |  | S/4 only entity |
-| `REBusinessEntity` |  |  |  |  |  | `String(8)` |  | RE Business Entity |  | S/4 only entity |
-| `RealEstateBuilding` |  |  |  |  |  | `String(8)` |  | Real Estate Building |  | S/4 only entity |
-| `RealEstateProperty` |  |  |  |  |  | `String(8)` |  | Real Estate Property |  | S/4 only entity |
-| `RERentalObject` |  |  |  |  |  | `String(8)` |  | RE Rental Object |  | S/4 only entity |
-| `RealEstateContract` |  |  |  |  |  | `String(13)` |  | Real Estate Contract |  | S/4 only entity |
-| `REServiceChargeKey` |  |  |  |  |  | `String(4)` |  | RE Service Charge Key |  | S/4 only entity |
-| `RESettlementUnitID` |  |  |  |  |  | `String(5)` |  | RE Settlement Unit |  | S/4 only entity |
-| `SettlementReferenceDate` |  |  |  |  |  | `Date` |  | Settlement Reference Date |  | S/4 only entity |
-| `REPartnerBusinessEntity` |  |  |  |  |  | `String(8)` |  | RE Partner Business Entity |  | S/4 only entity |
-| `RealEstatePartnerBuilding` |  |  |  |  |  | `String(8)` |  | Real Estate Partner Building |  | S/4 only entity |
-| `RealEstatePartnerProperty` |  |  |  |  |  | `String(8)` |  | Real Estate Partner Property |  | S/4 only entity |
-| `REPartnerRentalObject` |  |  |  |  |  | `String(8)` |  | RE Partner Rental Object |  | S/4 only entity |
-| `RealEstatePartnerContract` |  |  |  |  |  | `String(13)` |  | Real Estate Partner Contract |  | S/4 only entity |
-| `REPartnerServiceChargeKey` |  |  |  |  |  | `String(4)` |  | RE Partner Service Charge Key |  | S/4 only entity |
-| `REPartnerSettlementUnitID` |  |  |  |  |  | `String(5)` |  | RE Partner Settlement Unit |  | S/4 only entity |
-| `PartnerSettlementReferenceDate` |  |  |  |  |  | `Date` |  | Ptnr. Reference Date |  | S/4 only entity |
-| `AccrualObjectType` |  |  |  |  |  | `String(4)` |  | Accrual Object Type |  | S/4 only entity |
-| `AccrualObjectLogicalSystem` |  |  |  |  |  | `String(10)` |  | Logical Syst. AcrObj |  | S/4 only entity |
-| `AccrualObject` |  |  |  |  |  | `String(32)` |  | Accrual Object |  | S/4 only entity |
-| `AccrualSubobject` |  |  |  |  |  | `String(32)` |  | Accrual Subobject |  | S/4 only entity |
-| `AccrualItemType` |  |  |  |  |  | `String(11)` |  | Accrual Item Type |  | S/4 only entity |
-| `AccrualReferenceObject` |  |  |  |  |  | `String(32)` |  | Accrual Reference Object |  | S/4 only entity |
-| `AccrualValueDate` |  |  |  |  |  | `Date` |  | Accrual Value Date |  | S/4 only entity |
-| `FinancialValuationObjectType` |  |  |  |  |  | `String(4)` |  | Financial Valuation Object Type |  | S/4 only entity |
-| `FinancialValuationObject` |  |  |  |  |  | `String(32)` |  | Financial Valuation Object |  | S/4 only entity |
-| `FinancialValuationSubobject` |  |  |  |  |  | `String(32)` |  | Financial Valuation Subobject |  | S/4 only entity |
-| `NetDueDate` |  |  |  |  |  | `Date` |  | Net Due Date |  | S/4 only entity |
-| `CreditRiskClass` |  |  |  |  |  | `String(3)` |  | Credit Risk Class |  | S/4 only entity |
-| `WorkCenterInternalID` |  |  |  |  |  | `String(8)` |  | Object ID |  | S/4 only entity |
-| `OrderOperation` |  |  |  |  |  | `String(4)` |  | Order Operation |  | S/4 only entity |
-| `OrderItem` |  |  |  |  |  | `String(4)` |  | Order item number |  | S/4 only entity |
-| `PartnerOrderItem` |  |  |  |  |  | `String(4)` |  | Partner Order item |  | S/4 only entity |
-| `OrderSuboperation` |  |  |  |  |  | `String(4)` |  | Order Suboperation |  | S/4 only entity |
-| `Equipment` |  |  |  |  |  | `String(18)` |  | Equipment |  | S/4 only entity |
-| `FunctionalLocation` |  |  |  |  |  | `String(30)` |  | Functional Location |  | S/4 only entity |
-| `Assembly` |  |  |  |  |  | `String(40)` |  | Assembly |  | S/4 only entity |
-| `MaintenanceActivityType` |  |  |  |  |  | `String(3)` |  | MaintActivityType |  | S/4 only entity |
-| `MaintenanceOrderPlanningCode` |  |  |  |  |  | `String(1)` |  | Order planning ind. |  | S/4 only entity |
-| `MaintPriorityType` |  |  |  |  |  | `String(2)` |  | Priority Type |  | S/4 only entity |
-| `MaintPriority` |  |  |  |  |  | `String(1)` |  | Priority |  | S/4 only entity |
-| `SuperiorOrder` |  |  |  |  |  | `String(12)` |  | Superior Order |  | S/4 only entity |
-| `ProductGroup` |  |  |  |  |  | `String(9)` |  | Product Group |  | S/4 only entity |
-| `MaintenanceOrderIsPlanned` |  |  |  |  |  | `Boolean` |  | Planned Parts/Work |  | S/4 only entity |
-| `OriginOrderOperation` |  |  |  |  |  | `String(4)` |  | Origin Order Operation |  | S/4 only entity |
-| `JrnlEntryItemMigrationSource` |  |  |  |  |  | `String(1)` |  | Journal Entry Item Migration Source |  | S/4 only entity |
-| `USFedCommitmentString` |  |  |  |  |  | `String(62)` |  | Commitment string |  | S/4 only entity |
-| `USFedBudgetaryLedgerStatus` |  |  |  |  |  | `String(5)` |  | BL Status |  | S/4 only entity |
-| `USFedFiscalYearBlank` |  |  |  |  |  | `String(4)` |  | FMA Fiscal Year |  | S/4 only entity |
-| `USFedObjectClass` |  |  |  |  |  | `String(24)` |  | Obj Class US Fed |  | S/4 only entity |
-| `USFedStandardGLAccount` |  |  |  |  |  | `String(6)` |  | SGL account |  | S/4 only entity |
-| `USFedAgencyLocationCode` |  |  |  |  |  | `String(8)` |  | Agency Location Code |  | S/4 only entity |
-| `USFedApplOfSecdrySrceFunds` |  |  |  |  |  | `String(16)` |  | Application of Funds |  | S/4 only entity |
-| `USFedFundType` |  |  |  |  |  | `String(6)` |  | Fund Type |  | S/4 only entity |
-| `USFedPaymentOffice` |  |  |  |  |  | `String(5)` |  | Payment Office |  | S/4 only entity |
-| `USFedAgency` |  |  |  |  |  | `String(3)` |  | Agency Identifier |  | S/4 only entity |
-| `USFedMainAccount` |  |  |  |  |  | `String(4)` |  | Main Account |  | S/4 only entity |
-| `USFedSubAccount` |  |  |  |  |  | `String(3)` |  | Sub account |  | S/4 only entity |
-| `USFedBeginPerdOfAvailability` |  |  |  |  |  | `String(4)` |  | Begin Prd of Avail |  | S/4 only entity |
-| `USFedEndPerdOfAvaily` |  |  |  |  |  | `String(4)` |  | Ending Prd of Avail |  | S/4 only entity |
-| `USFedAvailabilityType` |  |  |  |  |  | `String(1)` |  | Avail Type Code |  | S/4 only entity |
-| `USFedBusEventTypeCode` |  |  |  |  |  | `String(10)` |  | Business Evt Typ Cd |  | S/4 only entity |
-| `USFedSubLevelPrefix` |  |  |  |  |  | `String(2)` |  | Sublevel Prefix |  | S/4 only entity |
-| `USFedAuthorityType` |  |  |  |  |  | `String(1)` |  | Authority Type |  | S/4 only entity |
-| `USFedApportionmentCategory` |  |  |  |  |  | `String(1)` |  | Apportionment Cat |  | S/4 only entity |
-| `USFedApprtmtCatDetailPgmCode` |  |  |  |  |  | `String(4)` |  | Category B Detail |  | S/4 only entity |
-| `USFedYearOfBdgtAuthorityCode` |  |  |  |  |  | `String(4)` |  | Yr of Budget Auth |  | S/4 only entity |
-| `USFedAvailabilityTimeType` |  |  |  |  |  | `String(1)` |  | Availability Time |  | S/4 only entity |
-| `USFedPriorYearAdjmtCode` |  |  |  |  |  | `String(1)` |  | Prior Year Adj. Cd |  | S/4 only entity |
-| `USFedBudgetEnforcementActCat` |  |  |  |  |  | `String(1)` |  | BEA Category |  | S/4 only entity |
-| `USFedReductionType` |  |  |  |  |  | `String(3)` |  | Reduction Type |  | S/4 only entity |
-| `USFedBorrowingSource` |  |  |  |  |  | `String(1)` |  | Borrowing Source |  | S/4 only entity |
-| `USFedRptgYearForCohort` |  |  |  |  |  | `String(4)` |  | Year Cohort |  | S/4 only entity |
-| `USFedAllocTransfAgencyID` |  |  |  |  |  | `String(3)` |  | Alloc Transfr Agency |  | S/4 only entity |
-| `USFedReimbursable` |  |  |  |  |  | `String(1)` |  | Reimbursable |  | S/4 only entity |
-| `USFedBudgetImpact` |  |  |  |  |  | `String(1)` |  | Budget Impact |  | S/4 only entity |
-| `USFedDisasterEmergencyFundCode` |  |  |  |  |  | `String(3)` |  | Disastr Emer Fnd Cde |  | S/4 only entity |
-| `USFedPgmReportingCat` |  |  |  |  |  | `String(3)` |  | Prog.Rpt.Category |  | S/4 only entity |
-| `USFedCustodialIndicator` |  |  |  |  |  | `String(1)` |  | Custodial indicator |  | S/4 only entity |
-| `USFedPostingSequenceNumber` |  |  |  |  |  | `String(10)` |  | Sequence Nbr |  | S/4 only entity |
-| `USFedExchangeIndicator` |  |  |  |  |  | `String(1)` |  | Exchange Indicator |  | S/4 only entity |
-| `USFedFederalNonFederalCode` |  |  |  |  |  | `String(1)` |  | Federal/Nonfederal |  | S/4 only entity |
-| `USFedTradingPartnerAgency` |  |  |  |  |  | `String(3)` |  | Agency ID (TP) |  | S/4 only entity |
-| `USFedTrdgPartMainAccount` |  |  |  |  |  | `String(4)` |  | Main Account (TP) |  | S/4 only entity |
-| `USFedTrdgPartSubAccount` |  |  |  |  |  | `String(3)` |  | Subaccount (TP) |  | S/4 only entity |
-| `USFedTrdgPartBeginPerdOfAvaily` |  |  |  |  |  | `String(4)` |  | Begin Prd Avail (TP) |  | S/4 only entity |
-| `USFedTrdgPartEndPerdOfAvaily` |  |  |  |  |  | `String(4)` |  | End Prd Avail (TP) |  | S/4 only entity |
-| `USFedAllocTransfAgencyTrdgPart` |  |  |  |  |  | `String(3)` |  | AllcTrnsfrAgncy (TP) |  | S/4 only entity |
-| `USFedTrdgPartAvailabilityType` |  |  |  |  |  | `String(1)` |  | Avail Type Code (TP) |  | S/4 only entity |
-| `USFedTrdgPartBusEventTypeCode` |  |  |  |  |  | `String(10)` |  | BusinessEvtTypCd(TP) |  | S/4 only entity |
-| `USFedTrdgPartSubLevelPrefix` |  |  |  |  |  | `String(2)` |  | Sublevel Prefix (TP) |  | S/4 only entity |
-| `USFedPgmActivityReportingKey` |  |  |  |  |  | `String(15)` |  | Prog Act Rep Key |  | S/4 only entity |
-| `GeneralLedgerAccountLineItemOID` |  |  |  |  |  | `String(128)` |  |  |  | S/4 only entity |
+| `PartnerWBSElementInternalID` |  |  |  |  |  | `String(8)` |  | Partner WBS Element Internal ID |  |  |
+| `PartnerWBSElement` |  |  |  |  |  | `String(24)` |  | Partner WBS Element |  |  |
+| `ProjectInternalID` |  |  |  |  |  | `String(8)` |  | Project Internal ID |  |  |
+| `Project` |  |  |  |  |  | `String(24)` |  | Project |  |  |
+| `PartnerProjectInternalID` |  |  |  |  |  | `String(8)` |  | Partner Project Internal ID |  |  |
+| `PartnerProject` |  |  |  |  |  | `String(24)` |  | Partner Project |  |  |
+| `OperatingConcern` |  |  |  |  |  | `String(4)` |  | Operating concern |  |  |
+| `ProjectNetwork` |  |  |  |  |  | `String(12)` |  | Network |  |  |
+| `RelatedNetworkActivity` |  |  |  |  |  | `String(4)` |  | Related Network Activity |  |  |
+| `BusinessProcess` |  |  |  |  |  | `String(12)` |  | Business Process |  |  |
+| `CostObject` |  |  |  |  |  | `String(12)` |  | Cost Object |  |  |
+| `BillableControl` |  |  |  |  |  | `String(2)` |  | Billable Control |  |  |
+| `CostAnalysisResource` |  |  |  |  |  | `String(10)` |  | Cost Analysis Resource |  |  |
+| `CustomerServiceNotification` |  |  |  |  |  | `String(12)` |  | Customer Service Notification |  |  |
+| `ServiceDocumentType` |  |  |  |  |  | `String(4)` |  | Service Doc. Type |  |  |
+| `ServiceDocument` |  |  |  |  |  | `String(10)` |  | Service Document |  |  |
+| `ServiceDocumentItem` |  |  |  |  |  | `String(6)` |  | Service Doc. Item |  |  |
+| `PartnerServiceDocumentType` |  |  |  |  |  | `String(4)` |  | Partner Service Document Type |  |  |
+| `PartnerServiceDocument` |  |  |  |  |  | `String(10)` |  | Partner Service Document |  |  |
+| `PartnerServiceDocumentItem` |  |  |  |  |  | `String(6)` |  | Partner Service Document Item |  |  |
+| `ServiceContractType` |  |  |  |  |  | `String(4)` |  | Serv. Contract Type |  |  |
+| `ServiceContract` |  |  |  |  |  | `String(10)` |  | Service Contract |  |  |
+| `ServiceContractItem` |  |  |  |  |  | `String(6)` |  | Srv Contract Item |  |  |
+| `BusinessSolutionOrder` |  |  |  |  |  | `String(10)` |  | Solution Order |  |  |
+| `BusinessSolutionOrderItem` |  |  |  |  |  | `String(6)` |  | Solution Order Item |  |  |
+| `ProviderContract` |  |  |  |  |  | `String(20)` |  | Provider Contract |  |  |
+| `ProviderContractItem` |  |  |  |  |  | `String(6)` |  | Provider Contract Item |  |  |
+| `RevenueAccountingContract` |  |  |  |  |  | `String(14)` |  | Revenue Accounting Contract |  |  |
+| `PerformanceObligation` |  |  |  |  |  | `String(16)` |  | Performance Obligation |  |  |
+| `TimeSheetOvertimeCategory` |  |  |  |  |  | `String(4)` |  | Overtime Category |  |  |
+| `PartnerAccountAssignment` |  |  |  |  |  | `String(30)` |  | Partner Account Assignment |  |  |
+| `PartnerAccountAssignmentType` |  |  |  |  |  | `String(2)` |  | Partner Account Assignment Type |  |  |
+| `StstclAccountAssignmentType1` |  |  |  |  |  | `String(2)` |  | Statistical Account Assignment Type 1 |  |  |
+| `StstclAccountAssignmentType2` |  |  |  |  |  | `String(2)` |  | Statistical Account Assignment Type 2 |  |  |
+| `StstclAccountAssignmentType3` |  |  |  |  |  | `String(2)` |  | Statistical Account Assignment Type 3 |  |  |
+| `WorkPackage` |  |  |  |  |  | `String(50)` |  | Plan Item |  |  |
+| `WorkItem` |  |  |  |  |  | `String(10)` |  | Work Item ID |  |  |
+| `PartnerCostCtrActivityType` |  |  |  |  |  | `String(6)` |  | Partner Cost Center Activity Type |  |  |
+| `PartnerOrder` |  |  |  |  |  | `String(12)` |  | Partner Order |  |  |
+| `PartnerOrderCategory` |  |  |  |  |  | `String(2)` |  | Partner Order Cat. |  |  |
+| `PartnerSalesDocument` |  |  |  |  |  | `String(10)` |  | Partner Sales Doc. |  |  |
+| `PartnerSalesDocumentItem` |  |  |  |  |  | `String(6)` |  | Partner Sales Document Item |  |  |
+| `PartnerProjectNetwork` |  |  |  |  |  | `String(12)` |  | Partner Project Network |  |  |
+| `PartnerProjectNetworkActivity` |  |  |  |  |  | `String(4)` |  | Partner Project Network Activity |  |  |
+| `PartnerBusinessProcess` |  |  |  |  |  | `String(12)` |  | Partner Business Process |  |  |
+| `PartnerCostObject` |  |  |  |  |  | `String(12)` |  | Partner Cost Object |  |  |
+| `ControllingDocumentItem` |  |  |  |  |  | `String(3)` |  | Controlling Doc Item |  |  |
+| `VarianceOriginGroup` |  |  |  |  |  | `String(4)` |  | Varc. Origin Group |  |  |
+| `BillingDocumentType` |  |  |  |  |  | `String(4)` |  | Billing Type |  |  |
+| `SalesOrganization` |  |  |  |  |  | `String(4)` |  | Sales Organization |  |  |
+| `DistributionChannel` |  |  |  |  |  | `String(2)` |  | Distribution Channel |  |  |
+| `OrganizationDivision` |  |  |  |  |  | `String(2)` |  | Division |  |  |
+| `SoldProduct` |  |  |  |  |  | `String(40)` |  | Product Sold |  |  |
+| `SoldProductGroup` |  |  |  |  |  | `String(9)` |  | Product Sold Group |  |  |
+| `CustomerGroup` |  |  |  |  |  | `String(2)` |  | Customer Group |  |  |
+| `CustomerSupplierCountry` |  |  |  |  |  | `String(3)` |  | Customer or Supplier Country/Region |  |  |
+| `CustomerSupplierIndustry` |  |  |  |  |  | `String(4)` |  | Customer Supplier Industry |  |  |
+| `SalesDistrict` |  |  |  |  |  | `String(6)` |  | Sales District |  |  |
+| `BillToParty` |  |  |  |  |  | `String(10)` |  | Bill-to Party |  |  |
+| `ShipToParty` |  |  |  |  |  | `String(10)` |  | Ship-to Party |  |  |
+| `CustomerSupplierCorporateGroup` |  |  |  |  |  | `String(10)` |  | Customer Supplier Corporate Group |  |  |
+| `CashLedgerCompanyCode` |  |  |  |  |  | `String(4)` |  | Cash Origin CoCode |  |  |
+| `CashLedgerAccount` |  |  |  |  |  | `String(10)` |  | Cash Origin Account |  |  |
+| `FinancialManagementArea` |  |  |  |  |  | `String(4)` |  | FM Area |  |  |
+| `CommitmentItem` |  |  |  |  |  | `String(24)` |  | Commitment Item |  |  |
+| `FundsCenter` |  |  |  |  |  | `String(16)` |  | Funds Center |  |  |
+| `FundedProgram` |  |  |  |  |  | `String(24)` |  | Funded Program |  |  |
+| `Fund` |  |  |  |  |  | `String(10)` |  | Fund |  |  |
+| `GrantID` |  |  |  |  |  | `String(20)` |  | Grant |  |  |
+| `BudgetPeriod` |  |  |  |  |  | `String(10)` |  | Budget Period |  |  |
+| `PartnerFund` |  |  |  |  |  | `String(10)` |  | Partner Fund |  |  |
+| `PartnerGrant` |  |  |  |  |  | `String(20)` |  | Partner Grant |  |  |
+| `PartnerBudgetPeriod` |  |  |  |  |  | `String(10)` |  | Partner Budget Period |  |  |
+| `PubSecBudgetAccount` |  |  |  |  |  | `String(10)` |  | Budget Account |  |  |
+| `PubSecBudgetAccountCoCode` |  |  |  |  |  | `String(4)` |  | Company Code for Budget Account |  |  |
+| `PubSecBudgetCnsmpnDate` |  |  |  |  |  | `Date` |  | Budget Consumption Date |  |  |
+| `PubSecBudgetCnsmpnFsclPeriod` |  |  |  |  |  | `String(3)` |  | Posting Period for Budget Consumption |  |  |
+| `PubSecBudgetCnsmpnFsclYear` |  |  |  |  |  | `String(4)` |  | Year of Budget Consumption |  |  |
+| `PubSecBudgetIsRelevant` |  |  |  |  |  | `Boolean` |  | Budget-Relevant |  |  |
+| `PubSecBudgetCnsmpnType` |  |  |  |  |  | `String(2)` |  | Budget Consumption Type |  |  |
+| `PubSecBudgetCnsmpnAmtType` |  |  |  |  |  | `String(4)` |  | Amount Type for Budget Consumption |  |  |
+| `SponsoredProgram` |  |  |  |  |  | `String(20)` |  | Sponsored Program |  |  |
+| `SponsoredClass` |  |  |  |  |  | `String(20)` |  | Sponsored Class |  |  |
+| `GteeMBudgetValidityNumber` |  |  |  |  |  | `String(3)` |  | Bdgt Validty No. |  |  |
+| `EarmarkedFundsDocument` |  |  |  |  |  | `String(10)` |  | Earmarked Funds Document |  |  |
+| `EarmarkedFundsDocumentItem` |  |  |  |  |  | `String(3)` |  | Earmarked Funds Document Item |  |  |
+| `FinancialServicesProductGroup` |  |  |  |  |  | `String(10)` |  | Financial Services Product Group |  |  |
+| `FinancialServicesBranch` |  |  |  |  |  | `String(10)` |  | Financial Services Branch |  |  |
+| `FinancialDataSource` |  |  |  |  |  | `String(10)` |  | Financial Data Source |  |  |
+| `JointVenture` |  |  |  |  |  | `String(6)` |  | Joint venture |  |  |
+| `JointVentureEquityGroup` |  |  |  |  |  | `String(3)` |  | Joint Venture Equity Group |  |  |
+| `JointVentureCostRecoveryCode` |  |  |  |  |  | `String(2)` |  | Joint Venture Cost Recovery Code |  |  |
+| `JointVenturePartner` |  |  |  |  |  | `String(10)` |  | Joint Venture Partner |  |  |
+| `JointVentureBillingType` |  |  |  |  |  | `String(2)` |  | Joint Venture Billing Type |  |  |
+| `JointVentureEquityType` |  |  |  |  |  | `String(3)` |  | Joint Venture Equity Type |  |  |
+| `JointVentureProductionDate` |  |  |  |  |  | `Date` |  | Joint Venture Production Date |  |  |
+| `JointVentureBillingDate` |  |  |  |  |  | `Date` |  | Joint Venture Billing Date |  |  |
+| `JointVentureOperationalDate` |  |  |  |  |  | `Date` |  | Joint Venture Operational Date |  |  |
+| `CutbackRun` |  |  |  |  |  | `Timestamp` |  | Cutback Run |  |  |
+| `JointVentureAccountingActivity` |  |  |  |  |  | `String(2)` |  | Joint Venture Accounting Activity |  |  |
+| `PartnerVenture` |  |  |  |  |  | `String(6)` |  | PartnerVenture |  |  |
+| `PartnerEquityGroup` |  |  |  |  |  | `String(3)` |  | Partner Equity Group |  |  |
+| `SenderCostRecoveryCode` |  |  |  |  |  | `String(2)` |  | Sender Cost Recovery Code |  |  |
+| `CutbackAccount` |  |  |  |  |  | `String(10)` |  | Cutback Account |  |  |
+| `CutbackCostObject` |  |  |  |  |  | `String(22)` |  | Cutback Cost Object |  |  |
+| `REBusinessEntity` |  |  |  |  |  | `String(8)` |  | RE Business Entity |  |  |
+| `RealEstateBuilding` |  |  |  |  |  | `String(8)` |  | Real Estate Building |  |  |
+| `RealEstateProperty` |  |  |  |  |  | `String(8)` |  | Real Estate Property |  |  |
+| `RERentalObject` |  |  |  |  |  | `String(8)` |  | RE Rental Object |  |  |
+| `RealEstateContract` |  |  |  |  |  | `String(13)` |  | Real Estate Contract |  |  |
+| `REServiceChargeKey` |  |  |  |  |  | `String(4)` |  | RE Service Charge Key |  |  |
+| `RESettlementUnitID` |  |  |  |  |  | `String(5)` |  | RE Settlement Unit |  |  |
+| `SettlementReferenceDate` |  |  |  |  |  | `Date` |  | Settlement Reference Date |  |  |
+| `REPartnerBusinessEntity` |  |  |  |  |  | `String(8)` |  | RE Partner Business Entity |  |  |
+| `RealEstatePartnerBuilding` |  |  |  |  |  | `String(8)` |  | Real Estate Partner Building |  |  |
+| `RealEstatePartnerProperty` |  |  |  |  |  | `String(8)` |  | Real Estate Partner Property |  |  |
+| `REPartnerRentalObject` |  |  |  |  |  | `String(8)` |  | RE Partner Rental Object |  |  |
+| `RealEstatePartnerContract` |  |  |  |  |  | `String(13)` |  | Real Estate Partner Contract |  |  |
+| `REPartnerServiceChargeKey` |  |  |  |  |  | `String(4)` |  | RE Partner Service Charge Key |  |  |
+| `REPartnerSettlementUnitID` |  |  |  |  |  | `String(5)` |  | RE Partner Settlement Unit |  |  |
+| `PartnerSettlementReferenceDate` |  |  |  |  |  | `Date` |  | Ptnr. Reference Date |  |  |
+| `AccrualObjectType` |  |  |  |  |  | `String(4)` |  | Accrual Object Type |  |  |
+| `AccrualObjectLogicalSystem` |  |  |  |  |  | `String(10)` |  | Logical Syst. AcrObj |  |  |
+| `AccrualObject` |  |  |  |  |  | `String(32)` |  | Accrual Object |  |  |
+| `AccrualSubobject` |  |  |  |  |  | `String(32)` |  | Accrual Subobject |  |  |
+| `AccrualItemType` |  |  |  |  |  | `String(11)` |  | Accrual Item Type |  |  |
+| `AccrualReferenceObject` |  |  |  |  |  | `String(32)` |  | Accrual Reference Object |  |  |
+| `AccrualValueDate` |  |  |  |  |  | `Date` |  | Accrual Value Date |  |  |
+| `FinancialValuationObjectType` |  |  |  |  |  | `String(4)` |  | Financial Valuation Object Type |  |  |
+| `FinancialValuationObject` |  |  |  |  |  | `String(32)` |  | Financial Valuation Object |  |  |
+| `FinancialValuationSubobject` |  |  |  |  |  | `String(32)` |  | Financial Valuation Subobject |  |  |
+| `NetDueDate` |  |  |  |  |  | `Date` |  | Net Due Date |  |  |
+| `CreditRiskClass` |  |  |  |  |  | `String(3)` |  | Credit Risk Class |  |  |
+| `WorkCenterInternalID` |  |  |  |  |  | `String(8)` |  | Object ID |  |  |
+| `OrderOperation` |  |  |  |  |  | `String(4)` |  | Order Operation |  |  |
+| `OrderItem` |  |  |  |  |  | `String(4)` |  | Order item number |  |  |
+| `PartnerOrderItem` |  |  |  |  |  | `String(4)` |  | Partner Order item |  |  |
+| `OrderSuboperation` |  |  |  |  |  | `String(4)` |  | Order Suboperation |  |  |
+| `Equipment` |  |  |  |  |  | `String(18)` |  | Equipment |  |  |
+| `FunctionalLocation` |  |  |  |  |  | `String(30)` |  | Functional Location |  |  |
+| `Assembly` |  |  |  |  |  | `String(40)` |  | Assembly |  |  |
+| `MaintenanceActivityType` |  |  |  |  |  | `String(3)` |  | MaintActivityType |  |  |
+| `MaintenanceOrderPlanningCode` |  |  |  |  |  | `String(1)` |  | Order planning ind. |  |  |
+| `MaintPriorityType` |  |  |  |  |  | `String(2)` |  | Priority Type |  |  |
+| `MaintPriority` |  |  |  |  |  | `String(1)` |  | Priority |  |  |
+| `SuperiorOrder` |  |  |  |  |  | `String(12)` |  | Superior Order |  |  |
+| `ProductGroup` |  |  |  |  |  | `String(9)` |  | Product Group |  |  |
+| `MaintenanceOrderIsPlanned` |  |  |  |  |  | `Boolean` |  | Planned Parts/Work |  |  |
+| `OriginOrderOperation` |  |  |  |  |  | `String(4)` |  | Origin Order Operation |  |  |
+| `JrnlEntryItemMigrationSource` |  |  |  |  |  | `String(1)` |  | Journal Entry Item Migration Source |  |  |
+| `USFedCommitmentString` |  |  |  |  |  | `String(62)` |  | Commitment string |  |  |
+| `USFedBudgetaryLedgerStatus` |  |  |  |  |  | `String(5)` |  | BL Status |  |  |
+| `USFedFiscalYearBlank` |  |  |  |  |  | `String(4)` |  | FMA Fiscal Year |  |  |
+| `USFedObjectClass` |  |  |  |  |  | `String(24)` |  | Obj Class US Fed |  |  |
+| `USFedStandardGLAccount` |  |  |  |  |  | `String(6)` |  | SGL account |  |  |
+| `USFedAgencyLocationCode` |  |  |  |  |  | `String(8)` |  | Agency Location Code |  |  |
+| `USFedApplOfSecdrySrceFunds` |  |  |  |  |  | `String(16)` |  | Application of Funds |  |  |
+| `USFedFundType` |  |  |  |  |  | `String(6)` |  | Fund Type |  |  |
+| `USFedPaymentOffice` |  |  |  |  |  | `String(5)` |  | Payment Office |  |  |
+| `USFedAgency` |  |  |  |  |  | `String(3)` |  | Agency Identifier |  |  |
+| `USFedMainAccount` |  |  |  |  |  | `String(4)` |  | Main Account |  |  |
+| `USFedSubAccount` |  |  |  |  |  | `String(3)` |  | Sub account |  |  |
+| `USFedBeginPerdOfAvailability` |  |  |  |  |  | `String(4)` |  | Begin Prd of Avail |  |  |
+| `USFedEndPerdOfAvaily` |  |  |  |  |  | `String(4)` |  | Ending Prd of Avail |  |  |
+| `USFedAvailabilityType` |  |  |  |  |  | `String(1)` |  | Avail Type Code |  |  |
+| `USFedBusEventTypeCode` |  |  |  |  |  | `String(10)` |  | Business Evt Typ Cd |  |  |
+| `USFedSubLevelPrefix` |  |  |  |  |  | `String(2)` |  | Sublevel Prefix |  |  |
+| `USFedAuthorityType` |  |  |  |  |  | `String(1)` |  | Authority Type |  |  |
+| `USFedApportionmentCategory` |  |  |  |  |  | `String(1)` |  | Apportionment Cat |  |  |
+| `USFedApprtmtCatDetailPgmCode` |  |  |  |  |  | `String(4)` |  | Category B Detail |  |  |
+| `USFedYearOfBdgtAuthorityCode` |  |  |  |  |  | `String(4)` |  | Yr of Budget Auth |  |  |
+| `USFedAvailabilityTimeType` |  |  |  |  |  | `String(1)` |  | Availability Time |  |  |
+| `USFedPriorYearAdjmtCode` |  |  |  |  |  | `String(1)` |  | Prior Year Adj. Cd |  |  |
+| `USFedBudgetEnforcementActCat` |  |  |  |  |  | `String(1)` |  | BEA Category |  |  |
+| `USFedReductionType` |  |  |  |  |  | `String(3)` |  | Reduction Type |  |  |
+| `USFedBorrowingSource` |  |  |  |  |  | `String(1)` |  | Borrowing Source |  |  |
+| `USFedRptgYearForCohort` |  |  |  |  |  | `String(4)` |  | Year Cohort |  |  |
+| `USFedAllocTransfAgencyID` |  |  |  |  |  | `String(3)` |  | Alloc Transfr Agency |  |  |
+| `USFedReimbursable` |  |  |  |  |  | `String(1)` |  | Reimbursable |  |  |
+| `USFedBudgetImpact` |  |  |  |  |  | `String(1)` |  | Budget Impact |  |  |
+| `USFedDisasterEmergencyFundCode` |  |  |  |  |  | `String(3)` |  | Disastr Emer Fnd Cde |  |  |
+| `USFedPgmReportingCat` |  |  |  |  |  | `String(3)` |  | Prog.Rpt.Category |  |  |
+| `USFedCustodialIndicator` |  |  |  |  |  | `String(1)` |  | Custodial indicator |  |  |
+| `USFedPostingSequenceNumber` |  |  |  |  |  | `String(10)` |  | Sequence Nbr |  |  |
+| `USFedExchangeIndicator` |  |  |  |  |  | `String(1)` |  | Exchange Indicator |  |  |
+| `USFedFederalNonFederalCode` |  |  |  |  |  | `String(1)` |  | Federal/Nonfederal |  |  |
+| `USFedTradingPartnerAgency` |  |  |  |  |  | `String(3)` |  | Agency ID (TP) |  |  |
+| `USFedTrdgPartMainAccount` |  |  |  |  |  | `String(4)` |  | Main Account (TP) |  |  |
+| `USFedTrdgPartSubAccount` |  |  |  |  |  | `String(3)` |  | Subaccount (TP) |  |  |
+| `USFedTrdgPartBeginPerdOfAvaily` |  |  |  |  |  | `String(4)` |  | Begin Prd Avail (TP) |  |  |
+| `USFedTrdgPartEndPerdOfAvaily` |  |  |  |  |  | `String(4)` |  | End Prd Avail (TP) |  |  |
+| `USFedAllocTransfAgencyTrdgPart` |  |  |  |  |  | `String(3)` |  | AllcTrnsfrAgncy (TP) |  |  |
+| `USFedTrdgPartAvailabilityType` |  |  |  |  |  | `String(1)` |  | Avail Type Code (TP) |  |  |
+| `USFedTrdgPartBusEventTypeCode` |  |  |  |  |  | `String(10)` |  | BusinessEvtTypCd(TP) |  |  |
+| `USFedTrdgPartSubLevelPrefix` |  |  |  |  |  | `String(2)` |  | Sublevel Prefix (TP) |  |  |
+| `USFedPgmActivityReportingKey` |  |  |  |  |  | `String(15)` |  | Prog Act Rep Key |  |  |
+| `GeneralLedgerAccountLineItemOID` |  |  |  |  |  | `String(128)` |  |  |  |  |
 
 
 ## Entity: `GeneralLedgerAccountText`
@@ -741,16 +741,16 @@
 - **ABAP CDS Name:** `I_GLAccountTextRawData`
 - **Label:** General Ledger Account - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** SKAT
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `ChartOfAccounts` |  |  |  |  |  | `String(4)` | Y | Chart of Accounts |  | S/4 only entity |
-| `GLAccount` |  |  |  |  |  | `String(10)` | Y | G/L Account |  | S/4 only entity |
-| `Language` |  |  |  |  |  | `String(2)` | Y | Language Key |  | S/4 only entity |
-| `GLAccountName` |  |  |  |  |  | `String(20)` |  | G/L Account Name |  | S/4 only entity |
-| `GLAccountLongName` |  |  |  |  |  | `String(50)` |  | G/L Account Long Name |  | S/4 only entity |
-| `LastChangeDateTime` |  |  |  |  |  | `DateTime` |  | Time Stamp |  | S/4 only entity |
+| `ChartOfAccounts` |  |  |  |  |  | `String(4)` | Y | Chart of Accounts |  |  |
+| `GLAccount` |  |  |  |  |  | `String(10)` | Y | G/L Account |  |  |
+| `Language` |  |  |  |  |  | `String(2)` | Y | Language Key |  |  |
+| `GLAccountName` |  |  |  |  |  | `String(20)` |  | G/L Account Name |  |  |
+| `GLAccountLongName` |  |  |  |  |  | `String(50)` |  | G/L Account Long Name |  |  |
+| `LastChangeDateTime` |  |  |  |  |  | `DateTime` |  | Time Stamp |  |  |
 
 
 ## Entity: `GeneralLedgerAccountTypeText`
@@ -758,7 +758,7 @@
 - **ABAP CDS Name:** `I_GLAccountTypeText`
 - **Label:** G/L Account Type - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -773,52 +773,52 @@
 - **ABAP CDS Name:** `I_GLAccountInCompanyCode`
 - **Label:** General Ledger Account in Company Code
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** SKA1, SKB1
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `GLAccount` |  |  |  |  |  | `String(10)` | Y | G/L Account |  | S/4 only entity |
-| `CompanyCode` |  |  |  |  |  | `String(4)` | Y | Company Code |  | S/4 only entity |
-| `AuthorizationGroup` |  |  |  |  |  | `String(4)` |  | Authorization |  | S/4 only entity |
-| `AccountingClerk` |  |  |  |  |  | `String(2)` |  | Clerk Abbrev. |  | S/4 only entity |
-| `LastInterestCalcRunDate` |  |  |  |  |  | `Date` |  | Last Int. Calc. |  | S/4 only entity |
-| `CreationDate` |  |  |  |  |  | `Date` |  | Created On |  | S/4 only entity |
-| `CreatedByUser` |  |  |  |  |  | `String(12)` |  | Created By |  | S/4 only entity |
-| `LastChangeDateTime` |  |  |  |  |  | `DateTime` |  | Time Stamp |  | S/4 only entity |
-| `PlanningLevel` |  |  |  |  |  | `String(2)` |  | Planning Level |  | S/4 only entity |
-| `HouseBank` |  |  |  |  |  | `String(5)` |  | House Bank |  | S/4 only entity |
-| `HouseBankAccount` |  |  |  |  |  | `String(5)` |  | Account ID |  | S/4 only entity |
-| `ExchRateDifferencesAccountDetn` |  |  |  |  |  | `String(4)` |  | E/R Diff. Key |  | S/4 only entity |
-| `ReconciliationAccountType` |  |  |  |  |  | `String(1)` |  | Reconcil. ID |  | S/4 only entity |
-| `TaxCategory` |  |  |  |  |  | `String(2)` |  | Tax Category |  | S/4 only entity |
-| `InterestCalculationCode` |  |  |  |  |  | `String(2)` |  | Interest Indicator |  | S/4 only entity |
-| `GLAccountCurrency` |  |  |  |  |  | `String(5)` |  | Account Currency |  | S/4 only entity |
-| `ReconciliationAcctIsChangeable` |  |  |  |  |  | `Boolean` |  | Rec.Act Ready |  | S/4 only entity |
-| `IsManagedExternally` |  |  |  |  |  | `Boolean` |  | Is Managed Ext. |  | S/4 only entity |
-| `IsAutomaticallyPosted` |  |  |  |  |  | `Boolean` |  | Auto. Posting |  | S/4 only entity |
-| `LineItemDisplayIsEnabled` |  |  |  |  |  | `Boolean` |  | Line Items |  | S/4 only entity |
-| `SupplementIsAllowed` |  |  |  |  |  | `Boolean` |  | Supplement |  | S/4 only entity |
-| `IsOpenItemManaged` |  |  |  |  |  | `Boolean` |  | OI Management |  | S/4 only entity |
-| `InterestCalculationDate` |  |  |  |  |  | `Date` |  | Last Key Date |  | S/4 only entity |
-| `IntrstCalcFrequencyInMonths` |  |  |  |  |  | `String(2)` |  | Int.Calc.Freq. |  | S/4 only entity |
-| `AcctgDocItmDisplaySequenceRule` |  |  |  |  |  | `String(3)` |  | Sort key |  | S/4 only entity |
-| `AlternativeGLAccount` |  |  |  |  |  | `String(10)` |  | Alternative G/L Account |  | S/4 only entity |
-| `JointVentureRecoveryCode` |  |  |  |  |  | `String(2)` |  | Recovery Indicator |  | S/4 only entity |
-| `CommitmentItem` |  |  |  |  |  | `String(14)` |  | Commitment item |  | S/4 only entity |
-| `CommitmentItemShortID` |  |  |  |  |  | `String(14)` |  | Commitment Item Short ID |  | S/4 only entity |
-| `TaxCodeIsRequired` |  |  |  |  |  | `Boolean` |  | Pstg w/o tax allowed |  | S/4 only entity |
-| `BalanceHasLocalCurrency` |  |  |  |  |  | `Boolean` |  | Balances in LC |  | S/4 only entity |
-| `ValuationGroup` |  |  |  |  |  | `String(10)` |  | Valuation Group |  | S/4 only entity |
-| `APARToleranceGroup` |  |  |  |  |  | `String(4)` |  | Tolerance Group |  | S/4 only entity |
-| `AccountIsBlockedForPosting` |  |  |  |  |  | `Boolean` |  | Posting Block |  | S/4 only entity |
-| `AccountIsMarkedForDeletion` |  |  |  |  |  | `Boolean` |  | Deletion Flag |  | S/4 only entity |
-| `ClearingIsLedgerGroupSpecific` |  |  |  |  |  | `Boolean` |  | OI Mgmt by LedgerGrp |  | S/4 only entity |
-| `CashPlanningGroup` |  |  |  |  |  | `String(10)` |  | Planning Group |  | S/4 only entity |
-| `IsCashFlowAccount` |  |  |  |  |  | `Boolean` |  | Rel.Cash Flow |  | S/4 only entity |
-| `GLAcctInflationKey` |  |  |  |  |  | `String(8)` |  | Inflation key |  | S/4 only entity |
-| `FieldStatusGroup` |  |  |  |  |  | `String(4)` |  | Field status group |  | S/4 only entity |
-| `MultiCurrencyAccountingCode` |  |  |  |  |  | `String(5)` |  | MCA Key |  | S/4 only entity |
-| `IsExtendedOpenItemManaged` |  |  |  |  |  | `Boolean` |  | Extended OI Mgmt |  | S/4 only entity |
+| `GLAccount` |  |  |  |  |  | `String(10)` | Y | G/L Account |  |  |
+| `CompanyCode` |  |  |  |  |  | `String(4)` | Y | Company Code |  |  |
+| `AuthorizationGroup` |  |  |  |  |  | `String(4)` |  | Authorization |  |  |
+| `AccountingClerk` |  |  |  |  |  | `String(2)` |  | Clerk Abbrev. |  |  |
+| `LastInterestCalcRunDate` |  |  |  |  |  | `Date` |  | Last Int. Calc. |  |  |
+| `CreationDate` |  |  |  |  |  | `Date` |  | Created On |  |  |
+| `CreatedByUser` |  |  |  |  |  | `String(12)` |  | Created By |  |  |
+| `LastChangeDateTime` |  |  |  |  |  | `DateTime` |  | Time Stamp |  |  |
+| `PlanningLevel` |  |  |  |  |  | `String(2)` |  | Planning Level |  |  |
+| `HouseBank` |  |  |  |  |  | `String(5)` |  | House Bank |  |  |
+| `HouseBankAccount` |  |  |  |  |  | `String(5)` |  | Account ID |  |  |
+| `ExchRateDifferencesAccountDetn` |  |  |  |  |  | `String(4)` |  | E/R Diff. Key |  |  |
+| `ReconciliationAccountType` |  |  |  |  |  | `String(1)` |  | Reconcil. ID |  |  |
+| `TaxCategory` |  |  |  |  |  | `String(2)` |  | Tax Category |  |  |
+| `InterestCalculationCode` |  |  |  |  |  | `String(2)` |  | Interest Indicator |  |  |
+| `GLAccountCurrency` |  |  |  |  |  | `String(5)` |  | Account Currency |  |  |
+| `ReconciliationAcctIsChangeable` |  |  |  |  |  | `Boolean` |  | Rec.Act Ready |  |  |
+| `IsManagedExternally` |  |  |  |  |  | `Boolean` |  | Is Managed Ext. |  |  |
+| `IsAutomaticallyPosted` |  |  |  |  |  | `Boolean` |  | Auto. Posting |  |  |
+| `LineItemDisplayIsEnabled` |  |  |  |  |  | `Boolean` |  | Line Items |  |  |
+| `SupplementIsAllowed` |  |  |  |  |  | `Boolean` |  | Supplement |  |  |
+| `IsOpenItemManaged` |  |  |  |  |  | `Boolean` |  | OI Management |  |  |
+| `InterestCalculationDate` |  |  |  |  |  | `Date` |  | Last Key Date |  |  |
+| `IntrstCalcFrequencyInMonths` |  |  |  |  |  | `String(2)` |  | Int.Calc.Freq. |  |  |
+| `AcctgDocItmDisplaySequenceRule` |  |  |  |  |  | `String(3)` |  | Sort key |  |  |
+| `AlternativeGLAccount` |  |  |  |  |  | `String(10)` |  | Alternative G/L Account |  |  |
+| `JointVentureRecoveryCode` |  |  |  |  |  | `String(2)` |  | Recovery Indicator |  |  |
+| `CommitmentItem` |  |  |  |  |  | `String(14)` |  | Commitment item |  |  |
+| `CommitmentItemShortID` |  |  |  |  |  | `String(14)` |  | Commitment Item Short ID |  |  |
+| `TaxCodeIsRequired` |  |  |  |  |  | `Boolean` |  | Pstg w/o tax allowed |  |  |
+| `BalanceHasLocalCurrency` |  |  |  |  |  | `Boolean` |  | Balances in LC |  |  |
+| `ValuationGroup` |  |  |  |  |  | `String(10)` |  | Valuation Group |  |  |
+| `APARToleranceGroup` |  |  |  |  |  | `String(4)` |  | Tolerance Group |  |  |
+| `AccountIsBlockedForPosting` |  |  |  |  |  | `Boolean` |  | Posting Block |  |  |
+| `AccountIsMarkedForDeletion` |  |  |  |  |  | `Boolean` |  | Deletion Flag |  |  |
+| `ClearingIsLedgerGroupSpecific` |  |  |  |  |  | `Boolean` |  | OI Mgmt by LedgerGrp |  |  |
+| `CashPlanningGroup` |  |  |  |  |  | `String(10)` |  | Planning Group |  |  |
+| `IsCashFlowAccount` |  |  |  |  |  | `Boolean` |  | Rel.Cash Flow |  |  |
+| `GLAcctInflationKey` |  |  |  |  |  | `String(8)` |  | Inflation key |  |  |
+| `FieldStatusGroup` |  |  |  |  |  | `String(4)` |  | Field status group |  |  |
+| `MultiCurrencyAccountingCode` |  |  |  |  |  | `String(5)` |  | MCA Key |  |  |
+| `IsExtendedOpenItemManaged` |  |  |  |  |  | `Boolean` |  | Extended OI Mgmt |  |  |
 
 
 ## Entity: `SemanticTag`
@@ -826,7 +826,7 @@
 - **ABAP CDS Name:** `I_SemanticTag`
 - **Label:** Semantic Tag
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -840,7 +840,7 @@
 - **ABAP CDS Name:** `I_SemTagFuncArea`
 - **Label:** Functional Area with Semantic Tag
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -857,7 +857,7 @@
 - **ABAP CDS Name:** `I_SemTagGLAccount`
 - **Label:** G/L Account with Semantic Tag
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -877,7 +877,7 @@
 - **ABAP CDS Name:** `I_SemanticTagLeafNode`
 - **Label:** Hierarchy Leaf Node with Semantic Tag
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -896,7 +896,7 @@
 - **ABAP CDS Name:** `I_SemanticTagText`
 - **Label:** Semantic Tag - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|

@@ -8,33 +8,33 @@
 - **ABAP CDS Name:** `I_CompanyCode`
 - **Label:** Company Code
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** T001
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
 | `CompanyCode` |  | `T001` | `BUKRS` |  |  | `String(4)` | Y | Company Code |  |  |
 | `CompanyCodeName` |  | `T001` | `BUTXT` |  |  | `String(25)` |  | Company Name |  |  |
-| `CityName` |  |  |  |  |  | `String(25)` |  | City |  | S/4 only entity |
+| `CityName` |  |  |  |  |  | `String(25)` |  | City |  |  |
 | `Country` |  | `T001` | `LAND1` |  |  | `String(3)` |  | Country/Region Key |  |  |
 | `Currency` |  | `T001` | `WAERS` |  |  | `String(5)` |  | Currency |  |  |
 | `Language` |  | `T001` | `SPRAS` |  |  | `String(2)` |  | Language Key |  |  |
 | `ChartOfAccounts` |  | `T001` | `KTOPL` |  |  | `String(4)` |  | Chart of Accounts |  |  |
 | `FiscalYearVariant` |  | `T001` | `PERIV` |  |  | `String(2)` |  | Fiscal Year Variant |  |  |
-| `Company` |  |  |  |  |  | `String(6)` |  | Company |  | S/4 only entity |
+| `Company` |  |  |  |  |  | `String(6)` |  | Company |  |  |
 | `CreditControlArea` |  | `T001` | `KKBER` |  |  | `String(4)` |  | Credit Control Area |  |  |
 | `CountryChartOfAccounts` |  | `T001` | `LKONT` |  |  | `String(4)` |  | Alternative COA |  |  |
-| `FinancialManagementArea` |  |  |  |  |  | `String(4)` |  | FM Area |  | S/4 only entity |
+| `FinancialManagementArea` |  |  |  |  |  | `String(4)` |  | FM Area |  |  |
 | `AddressID` |  | `T001` | `ADRNR` |  |  | `String(10)` |  | Address |  |  |
-| `TaxableEntity` |  |  |  |  |  | `String(4)` |  | Taxes on Sls/Purc. |  | S/4 only entity |
-| `VATRegistration` |  |  |  |  |  | `String(20)` |  | VAT Registration No. |  | S/4 only entity |
-| `ExtendedWhldgTaxIsActive` |  |  |  |  |  | `Boolean` |  | Extended WTax Active |  | S/4 only entity |
+| `TaxableEntity` |  |  |  |  |  | `String(4)` |  | Taxes on Sls/Purc. |  |  |
+| `VATRegistration` |  |  |  |  |  | `String(20)` |  | VAT Registration No. |  |  |
+| `ExtendedWhldgTaxIsActive` |  |  |  |  |  | `Boolean` |  | Extended WTax Active |  |  |
 | `ControllingArea` |  | `T001` | `KOKRS` |  |  | `String(4)` |  | Controlling Area |  |  |
-| `FieldStatusVariant` |  |  |  |  |  | `String(4)` |  | Field Status Variant |  | S/4 only entity |
-| `NonTaxableTransactionTaxCode` |  |  |  |  |  | `String(2)` |  | Output Tax Code |  | S/4 only entity |
-| `DocDateIsUsedForTaxDetn` |  |  |  |  |  | `Boolean` |  | Tax Determ.with Doc.Date |  | S/4 only entity |
-| `TaxRptgDateIsActive` |  |  |  |  |  | `Boolean` |  | Tax Date |  | S/4 only entity |
-| `CashDiscountBaseAmtIsNetAmt` |  |  |  |  |  | `Boolean` |  | Net Discount Base |  | S/4 only entity |
-| `TransitPlant` |  |  |  |  |  | `String(4)` |  | Transit Plant |  | S/4 only entity |
+| `FieldStatusVariant` |  |  |  |  |  | `String(4)` |  | Field Status Variant |  |  |
+| `NonTaxableTransactionTaxCode` |  |  |  |  |  | `String(2)` |  | Output Tax Code |  |  |
+| `DocDateIsUsedForTaxDetn` |  |  |  |  |  | `Boolean` |  | Tax Determ.with Doc.Date |  |  |
+| `TaxRptgDateIsActive` |  |  |  |  |  | `Boolean` |  | Tax Date |  |  |
+| `CashDiscountBaseAmtIsNetAmt` |  |  |  |  |  | `Boolean` |  | Net Discount Base |  |  |
+| `TransitPlant` |  |  |  |  |  | `String(4)` |  | Transit Plant |  |  |
 
 
 ## Entity: `CompanyCodeCurrencyRole`
@@ -42,13 +42,13 @@
 - **ABAP CDS Name:** `I_Companycodecurrencyrole`
 - **Label:** Currency Role of Company Code
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** T001
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `CompanyCode` |  |  |  |  |  | `String(4)` | Y | Company Code |  | S/4 only entity |
-| `CurrencyRole` |  |  |  |  |  | `String(2)` | Y | Curr./Val. Type |  | S/4 only entity |
-| `Currency` |  |  |  |  |  | `String(5)` |  | Currency |  | S/4 only entity |
+| `CompanyCode` |  |  |  |  |  | `String(4)` | Y | Company Code |  |  |
+| `CurrencyRole` |  |  |  |  |  | `String(2)` | Y | Curr./Val. Type |  |  |
+| `Currency` |  |  |  |  |  | `String(5)` |  | Currency |  |  |
 
 
 ## Entity: `CompanyCodeCurrencyTranslation`
@@ -56,16 +56,16 @@
 - **ABAP CDS Name:** `I_CoCodeCrcyTranslationBasic`
 - **Label:** Currency Translation
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** T001
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
-| `CompanyCode` |  |  |  |  |  | `String(4)` | Y | Company Code |  | S/4 only entity |
-| `TargetCurrencyRole` |  |  |  |  |  | `String(2)` | Y | Target Currency Role |  | S/4 only entity |
-| `TargetCurrency` |  |  |  |  |  | `String(5)` |  | To Currency |  | S/4 only entity |
-| `SourceCurrencyRole` |  |  |  |  |  | `String(2)` |  | Source Currency Role |  | S/4 only entity |
-| `ExchangeRateType` |  |  |  |  |  | `String(4)` |  | Exchange Rate Type |  | S/4 only entity |
-| `CurrencyTranslationDateType` |  |  |  |  |  | `String(1)` |  | Transltn Date Type |  | S/4 only entity |
+| `CompanyCode` |  |  |  |  |  | `String(4)` | Y | Company Code |  |  |
+| `TargetCurrencyRole` |  |  |  |  |  | `String(2)` | Y | Target Currency Role |  |  |
+| `TargetCurrency` |  |  |  |  |  | `String(5)` |  | To Currency |  |  |
+| `SourceCurrencyRole` |  |  |  |  |  | `String(2)` |  | Source Currency Role |  |  |
+| `ExchangeRateType` |  |  |  |  |  | `String(4)` |  | Exchange Rate Type |  |  |
+| `CurrencyTranslationDateType` |  |  |  |  |  | `String(1)` |  | Transltn Date Type |  |  |
 
 
 ## Entity: `CompanyCodeHierarchy`
@@ -73,7 +73,7 @@
 - **ABAP CDS Name:** `I_CompanyCodeHierarchy`
 - **Label:** Company Code Hierarchy
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -91,7 +91,7 @@
 - **ABAP CDS Name:** `I_CompanyCodeHierNode`
 - **Label:** Company Code Hierarchy Node
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -114,7 +114,7 @@
 - **ABAP CDS Name:** `I_CompanyCodeHierNodeT`
 - **Label:** Company Code Hierarchy Node - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -131,7 +131,7 @@
 - **ABAP CDS Name:** `I_CompanyCodeHierarchyT`
 - **Label:** Company Code Hierarchy - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -147,7 +147,7 @@
 - **ABAP CDS Name:** `I_CurrencyRole`
 - **Label:** Currency Role
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -162,7 +162,7 @@
 - **ABAP CDS Name:** `I_CurrencyRoleText`
 - **Label:** Currency Role - Text
 - **VDM Type:** `` | **Data Category:** ``
-- **ECC Source Tables:** —
+- **ECC Source Tables:** S/4 only
 
 | CDS Field | ABAP Data Element | ECC Table | ECC Field | S/4 Table | S/4 Field | CDS Type | Key | Label | Curr/UOM | ECC / S4 Diff |
 |---|---|---|---|---|---|---|---|---|---|---|
